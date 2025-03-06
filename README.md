@@ -1,6 +1,33 @@
-# Intro-AI
-Find_Path_Using_AI_Search
-**Biểu diễn bản đồ**
-- Admin: Chức năng tạo tình huống(cấm đường, cấm vùng, chuyến 1 chiều, tắc đường, ngập lụt,...)
-- User: tìm đường đi từ A đến B
-* Nhóm 15: làm bản đồ phường Thịnh Quang
+# Test
+Web Flask tìm đường đi ngắn nhất trên bản đồ phường Thịnh Quang bằng một vài thuật toán, sử dụng OSMnx và Leaflet.js.
+
+Trong quá trình thử nghiệm nên còn nhiều lỗi.
+
+# Tutorial 
+
+## 1. Cài đặt môi trường
+
+### **Yêu cầu**  
+- **Python**  
+- **pip**
+
+
+### Tạo và kích hoạt môi trường ảo
+```bash
+# Với Windows (cmd hoặc PowerShell)
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Cài đặt thư viện cần thiết 
+```bash
+pip install -r requirements.txt
+```
+
+## 2. Chạy ứng dụng  
+```bash
+flask run
+```
+Hoặc chạy trực tiếp file `app.py`.
+
+Mở trình duyệt và truy cập http://127.0.0.1:5000/.
