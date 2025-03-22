@@ -39,7 +39,16 @@ function findRoute() {
         body: JSON.stringify({ start: startCoords, end: endCoords, algorithm: algorithm })
     })
     .then(response => response.json())
-    .then(data => animateSearch(data))
+    .then(data => {
+        if(data.error) {
+            alert(data.error)
+                return;
+        }
+        //ve tuyen duong
+        animateSearch(data);
+        //hien thi huong dan duong di va thoi gian di chuyen
+        showDirections(data.streets, data.distance);
+    })
     .catch(error => console.error("Lỗi:", error));
 }
 
@@ -88,3 +97,27 @@ function drawFinalPath(path) {
         L.polyline(path, { color: "green", weight: 5 }).addTo(routeLayer);
     }
 }
+
+function showDirections(streets, distance) {
+    let directionsDiv = document.getElementById("directions");
+    directionsDiv.innerHTML = "<h3>Hướng dẫn di chuyển</h3>";
+    //hiển thị danh sách các con đường đi qua
+    streets.forEach((street, index) => {
+        directionsDiv.innerHTML += `<p>${index + 1}. Đi qua: <b>${street}</b></p>`;
+    });
+    //tinh thoi gian du kien dua vao phuong tien
+    let vehicle = document.querySelector('input[name="vehicle"]:checked').value;
+    let speed = vehicleSpeeds[vehicle]; //toc do km/h
+    let time = distance / speed * 60; //chuyen doi sang phut
+
+    directionsDiv.innerHTML += `<h4>Khoảng cách: ${distance.toFixed(2)} km</h4>`;
+    directionsDiv.innerHTML += `<h4>Thời gian dự kiến: ${time.toFixed(0)} phút</h4>`;
+}
+
+//toc do trung binh cua phuong tien(km/h)
+const vehicleSpeeds = {
+    "walking": 5,
+    "bicycle": 15,
+    "motorbike": 35,
+    "car": 50
+};

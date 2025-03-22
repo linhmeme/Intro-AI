@@ -26,16 +26,29 @@ def find_route():
 
     def convert_edges_to_coords(edge_list):
         coords = []
+        street_names = []
         for u, v in edge_list:
             if u in G.nodes and v in G.nodes:    
                 coords.append([(G.nodes[u]["y"], G.nodes[u]["x"]), (G.nodes[v]["y"], G.nodes[v]["x"])])
+                #lay ten duong(neu co)
+                edge_data = G.get_edge_data(u,v)
+                if edge_data:
+                    street_name = edge_data[0].get("name", "Unknown")
+                else:
+                    street_name = "Unknown"
+
+                street_names.append(street_name)
         
-        return coords
+        return coords, street_names
+
+    edges_forward_coords, street_names = convert_edges_to_coords(edges_forward)
+    edges_backward_coords, _ = convert_edges_to_coords(edges_backward) 
 
     return jsonify({
         "path": [(G.nodes[node]["y"], G.nodes[node]["x"]) for node in path],
         "visited_forward": [(G.nodes[node]["y"], G.nodes[node]["x"]) for node in visited_forward],
         "visited_backward": [(G.nodes[node]["y"], G.nodes[node]["x"]) for node in visited_backward],
-        "edges_forward": convert_edges_to_coords(edges_forward),
-        "edges_backward": convert_edges_to_coords(edges_backward)
+        "edges_forward": edges_forward_coords,
+        "edges_backward": edges_backward_coords,
+        "streets": street_names # tra ve dsach cac duong di qua
     })
