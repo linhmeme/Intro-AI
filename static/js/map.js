@@ -3,14 +3,31 @@ let endPoint = null;
 let routePolyline = null;
 let map = L.map("map").setView([21.0092, 105.8223], 16);  // Tọa độ Thịnh Quang
 
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
-
-fetch("/get_boundary")
+//fetch("/get_boundary")
+fetch('/static/geojson/boundary.geojson')
 .then(response => response.json())
 .then(data => {
-    const boundaryCoords = data.boundary.map(coord => [coord[1], coord[0]]); 
-    
-    L.polygon(boundaryCoords, {color: "red", weight: 3}).addTo(map);
+    L.geoJSON(data, {
+        style: { color: 'black', weight: 5 }
+      }).addTo(map);
+});
+
+// Load diện tích
+fetch('/static/geojson/area.geojson')
+.then(res => res.json())
+.then(data => {
+  L.geoJSON(data, {
+    style: { color: '#666', fillColor: '#0d0d2d', fillOpacity: 0.8 }
+  }).addTo(map);
+});
+
+// Load đường
+fetch('/static/geojson/roads.geojson')
+.then(res => res.json())
+.then(data => {
+    L.geoJSON(data, {
+    style: { color: '#f0f0f0', weight: 2 }
+    }).addTo(map);
 });
 
 map.on("click", function(e) {

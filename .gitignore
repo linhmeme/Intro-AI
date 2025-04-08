@@ -303,3 +303,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+#Static geojson
+static/geojson/*.geojson
+!static/geojson/.gitkeep
