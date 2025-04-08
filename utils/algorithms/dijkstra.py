@@ -21,7 +21,7 @@ def dijkstra_with_steps(G, orig_node, dest_node):
             break
 
         for neighbor in G.neighbors(current):
-            edge_length = G[current][neighbor][0]["length"]
+            edge_length = G[current][neighbor]["length"]
             new_cost = cost + edge_length
             
             if neighbor not in costs or new_cost < costs[neighbor]:

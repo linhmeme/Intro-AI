@@ -1,6 +1,5 @@
-import osmnx as ox
 from flask import Blueprint, request, jsonify
-from utils.graph import G
+from utils.graph import G, get_nearest_node
 from utils.algorithms import find_shortest_path
 
 algo_bp = Blueprint("algorithms", __name__)
@@ -13,8 +12,8 @@ def find_route():
     end_lat, end_lng = data["end"]
     algorithm = data.get("algorithm", "dijkstra")  # Mặc định dùng Dijkstra
 
-    orig_node = ox.distance.nearest_nodes(G, start_lng, start_lat)
-    dest_node = ox.distance.nearest_nodes(G, end_lng, end_lat)
+    orig_node = get_nearest_node(G, start_lat, start_lng)
+    dest_node = get_nearest_node(G, end_lat, end_lng)
 
     result = find_shortest_path(G, orig_node, dest_node, algorithm)
 

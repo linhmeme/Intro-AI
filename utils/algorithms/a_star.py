@@ -1,5 +1,5 @@
 import heapq
-import osmnx as ox
+from geopy.distance import geodesic
 
 def a_star_with_steps(G, orig_node, dest_node):
     queue = [(0, orig_node)] 
@@ -21,13 +21,14 @@ def a_star_with_steps(G, orig_node, dest_node):
             break
 
         for neighbor in G.neighbors(current):
-            edge_data = G[current][neighbor][0]
+            edge_data = G[current][neighbor]
             new_cost = costs[current] + edge_data["length"]
             
-            heuristic = ox.distance.great_circle(
-                G.nodes[neighbor]["y"], G.nodes[neighbor]["x"],
-                G.nodes[dest_node]["y"], G.nodes[dest_node]["x"]
-            )
+            heuristic = geodesic(
+                (G.nodes[neighbor]["y"], G.nodes[neighbor]["x"]),
+                (G.nodes[dest_node]["y"], G.nodes[dest_node]["x"])
+            ).meters
+            
             priority = new_cost + heuristic
             
             if neighbor not in costs or new_cost < costs[neighbor]:

@@ -1,5 +1,4 @@
-from flask import Blueprint, jsonify, render_template
-from utils.graph import get_boundary
+from flask import Blueprint, render_template
 
 map_bp = Blueprint("map", __name__)
 

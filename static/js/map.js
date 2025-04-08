@@ -1,14 +1,14 @@
 let startPoint = null;
 let endPoint = null;
 let routePolyline = null;
-let map = L.map("map").setView([21.0092, 105.8223], 16);  // Tọa độ Thịnh Quang
+let map = L.map("map").setView([21.0085, 105.8185], 15);  // Tọa độ Thịnh Quang
 
 //fetch("/get_boundary")
 fetch('/static/geojson/boundary.geojson')
 .then(response => response.json())
 .then(data => {
     L.geoJSON(data, {
-        style: { color: 'black', weight: 5 }
+        style: { color: 'black', weight: 8 }
       }).addTo(map);
 });
 
@@ -62,7 +62,7 @@ function findRoute() {
 
 function drawVisitedEdges(edges, color) {
     edges.forEach(([start, end]) => {
-        L.polyline([start, end], { color: color, weight: 3, opacity: 0.7 }).addTo(visitedLayer);
+        L.polyline([start, end], { color: color, weight: 3, opacity: 1 }).addTo(visitedLayer);
     });
 }
 
@@ -81,17 +81,17 @@ function animateSearch(data) {
 
     function drawVisited() {
         if (i < edgesForward.length) {
-            drawVisitedEdges([edgesForward[i]], "blue");
+            drawVisitedEdges([edgesForward[i]], "#0b209c");
             i++;
         }
 
         if (edgesBackward.length > 0 && j < edgesBackward.length) {
-            drawVisitedEdges([edgesBackward[j]], "red");
+            drawVisitedEdges([edgesBackward[j]], "#9c0b23");
             j++;
         }
 
         if (i < edgesForward.length || j < edgesBackward.length) {
-            setTimeout(drawVisited, 50);
+            setTimeout(drawVisited, 10);
         } else {
             drawFinalPath(path);
         }

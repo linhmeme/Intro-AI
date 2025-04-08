@@ -1,5 +1,5 @@
 # Test
-Web Flask tìm đường đi ngắn nhất trên bản đồ phường Thịnh Quang bằng một vài thuật toán, sử dụng OSMnx và Leaflet.js.
+Web Flask tìm đường đi ngắn nhất trên bản đồ phường Thịnh Quang bằng một vài thuật toán, sử dụng Leaflet.js.
 
 Trong quá trình thử nghiệm nên còn nhiều lỗi.
 

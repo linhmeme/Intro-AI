@@ -307,3 +307,5 @@ $RECYCLE.BIN/
 #Static geojson
 static/geojson/*.geojson
 !static/geojson/.gitkeep
+
+data/graph/*.pkl
