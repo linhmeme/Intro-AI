@@ -17,16 +17,44 @@ fetch('/static/geojson/area.geojson')
 .then(res => res.json())
 .then(data => {
   L.geoJSON(data, {
-    style: { color: '#666', fillColor: '#0d0d2d', fillOpacity: 0.8 }
+    style: { color: '#666', fillColor: '#FFFFFF', fillOpacity: 0.8 }
   }).addTo(map);
 });
 
 // Load đường
-fetch('/static/geojson/roads.geojson')
+// fetch('/static/geojson/roads.geojson')
+// .then(res => res.json())
+// .then(data => {
+//     L.geoJSON(data, {
+//     style: { color: '#f0f0f0', weight: 2 }
+//     }).addTo(map);
+// });
+
+fetch('/static/geojson/edges.geojson')
+    .then(response => response.json())
+    .then(data => {
+        L.geoJSON(data, {
+            onEachFeature: onEachFeature
+        }).addTo(map);
+    });
+
+// Load các nodes (nút giao)
+fetch('/data/geojson/nodes.geojson')
 .then(res => res.json())
 .then(data => {
     L.geoJSON(data, {
-    style: { color: '#f0f0f0', weight: 2 }
+        pointToLayer: function (feature, latlng) {
+            return L.circleMarker(latlng, {
+                radius: 5,
+                color: 'red',
+                fillColor: 'red',
+                fillOpacity: 1
+            }).bindTooltip(feature.properties.id, {
+                permanent: true,
+                direction: 'top',
+                className: 'node-label'
+            });
+        }
     }).addTo(map);
 });
 
@@ -105,3 +133,28 @@ function drawFinalPath(path) {
         L.polyline(path, { color: "green", weight: 5 }).addTo(routeLayer);
     }
 }
+
+function onEachFeature(feature, layer) {
+    layer.on('click', function (e) {
+        const edgeId = feature.properties.id;
+        const currentCondition = feature.properties.condition || "none";
+        const newCondition = prompt("Nhập condition cho đoạn đường (flooded, congestion...)", currentCondition);
+        
+        if (newCondition !== null) {
+            fetch('/update-condition', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    edge_id: edgeId,
+                    condition: newCondition
+                })
+            })
+            .then(res => res.json())
+            .then(data => alert(data.message))
+            .catch(err => console.error('Error:', err));
+        }
+    });
+}
+console.log("Map loaded:", map);

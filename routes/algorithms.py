@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from utils.graph import G, get_nearest_node
-from utils.algorithms import find_shortest_path
+from algorithms import find_shortest_path
 
 algo_bp = Blueprint("algorithms", __name__)
 

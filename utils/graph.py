@@ -6,10 +6,11 @@ from geopy.distance import geodesic
 from scipy.spatial import KDTree
 from pathlib import Path
 
-GEOJSON_PATH = Path("data/geojson/roads.geojson")
+EDGES_PATH = Path("data/geojson/edges.geojson")
 GRAPH_PATH = Path("data/graph/graph_data.pkl")
+NODES_PATH = Path("data/geojson/nodes.geojson")
 
-def calculate_distance(lat1, lon1, lat2, lon2):
+def calculate_distance(lat1, lon1, lat2, lon2):#distance between two nearest nodes
     return geodesic((lat1, lon1), (lat2, lon2)).meters
 
 def build_graph_from_geojson(geojson_file, snap_threshold=1):
@@ -18,8 +19,8 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
 
     G = nx.DiGraph()
 
-    coord_list = []
-    coord_to_node = {}
+    coord_list = []#List to store coordinates of nodes
+    coord_to_node = {}#Helps map coordinates to nodes when adding edges.
     tree = None
 
     def find_or_add_node(coord):
@@ -40,13 +41,11 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
                 dist_m = geodesic((lat, lon), (snapped_lat, snapped_lon)).meters
 
                 if dist_m < snap_threshold:
-                    #print(f"    → Snap về node gần nhất: {snapped_coord} (cách {dist_m:.5f} m)")
                     return tuple(snapped_coord)
 
         # Thêm node mới  # Đảo lại [lat, lon] để KDTree hiểu đúng
         coord_list.append(coord)
         coord_to_node[tuple(coord)] = tuple(coord)   # lưu node theo (lon, lat)
-        #print(f"    → Thêm node mới: {coord}")
 
         # Cập nhật lại KDTree
         if len(coord_list) > 1:
@@ -91,6 +90,29 @@ def save_graph(G, output_file):
         pickle.dump(G, f)
         print(f"Saved graph with {len(G.nodes)} nodes, {len(G.edges)} edges → {output_file}")
 
+def save_nodes_to_geojson(G, output_file):
+    features = []
+    for node in G.nodes:
+        lon, lat = node
+        feature = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [lon, lat]
+            },
+            "properties": {}
+        }
+        features.append(feature)
+
+    geojson = {
+        "type": "FeatureCollection",
+        "features": features
+    }
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(geojson, f, ensure_ascii=False, indent=2)
+        print(f"Saved {len(features)} nodes to {output_file}")
+
 def load_graph(pkl_file):
     with open(pkl_file, "rb") as f:
         return pickle.load(f)
@@ -108,6 +130,7 @@ def get_nearest_node(G, lat, lon):
 
     return nearest_node
 
-G = build_graph_from_geojson(GEOJSON_PATH)
+G = build_graph_from_geojson(EDGES_PATH)
 GRAPH_PATH.parent.mkdir(parents=True, exist_ok=True)
 save_graph(G, GRAPH_PATH)
+save_nodes_to_geojson(G, NODES_PATH)
