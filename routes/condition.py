@@ -3,7 +3,30 @@ import json
 import os
 
 condition_bp = Blueprint('condition_bp', __name__)
-EDGES_FILE = 'data/geojson/edges.geojson'  # sửa đường dẫn theo project bạn
+ROADS_FILE = 'data/geojson/roads.geojson'  # sửa đường dẫn theo project bạn
+WEIGHTS_FILE = 'data/geojson/weights.geojson'
+
+DEFAULT_WEIGHT=1.0
+
+CONDITION_WEIGHTS = {
+    "normal": 1.0,
+    "flooded": 5.0,
+    "congested": 3.0,
+    "under_construction": 10.0
+}
+
+def update_weight_file(edge_id, condition):
+    if not WEIGHTS_FILE.exists():
+        weights = {}
+    else:
+        with open(WEIGHTS_FILE, "r", encoding="utf-8") as f:
+            weights = json.load(f)
+
+    weight = CONDITION_WEIGHTS.get(condition, DEFAULT_WEIGHT)
+    weights[edge_id] = {"condition": condition, "weight": weight}
+
+    with open(WEIGHTS_FILE, "w", encoding="utf-8") as f:
+        json.dump(weights, f, indent=2, ensure_ascii=False)
 
 @condition_bp.route('/update-condition', methods=['POST'])
 def update_condition():
@@ -30,7 +53,7 @@ def update_condition():
     if not updated:
         return jsonify({'status': 'error', 'message': 'Edge not found'}), 404
 
-    with open(EDGES_FILE, 'w', encoding='utf-8') as f:
+    with open(ROADS_FILE, 'w', encoding='utf-8') as f:
         json.dump(geojson_data, f, ensure_ascii=False, indent=2)
 
     return jsonify({'status': 'success', 'message': f'Updated condition: {condition}'})
