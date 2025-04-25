@@ -22,21 +22,21 @@ fetch('/static/geojson/area.geojson')
 });
 
 // Load đường
-// fetch('/static/geojson/roads.geojson')
-// .then(res => res.json())
-// .then(data => {
-//     L.geoJSON(data, {
-//     style: { color: '#f0f0f0', weight: 2 }
-//     }).addTo(map);
-// });
+fetch('/static/geojson/roads.geojson')
+.then(res => res.json())
+.then(data => {
+  L.geoJSON(data, {
+    style: { color: '#f0f0f0', weight: 2 }
+}).addTo(map);
+});
 
-fetch('/static/geojson/edges.geojson')
-    .then(response => response.json())
-    .then(data => {
-        L.geoJSON(data, {
-            onEachFeature: onEachFeature
-        }).addTo(map);
-    });
+//fetch('/static/geojson/edges.geojson')
+//    .then(response => response.json())
+//    .then(data => {
+//        L.geoJSON(data, {
+//            onEachFeature: onEachFeature
+//        }).addTo(map);
+//    });
 
 // Load các nodes (nút giao)
 fetch('/data/geojson/nodes.geojson')
@@ -134,12 +134,21 @@ function drawFinalPath(path) {
     }
 }
 
+let addingCondition=false
+
+function addCondition(){
+  addingCondition=true
+  alert("Chọn điều kiện cho đoạn đường bạn muốn");
+}
+
 function onEachFeature(feature, layer) {
     layer.on('click', function (e) {
+        if (!addingCondition) return; // chỉ xử lý nếu đã bật chế độ "thêm điều kiện"
+
         const edgeId = feature.properties.id;
         const currentCondition = feature.properties.condition || "none";
         const newCondition = prompt("Nhập condition cho đoạn đường (flooded, congestion...)", currentCondition);
-        
+
         if (newCondition !== null) {
             fetch('/update-condition', {
                 method: 'POST',
@@ -152,9 +161,22 @@ function onEachFeature(feature, layer) {
                 })
             })
             .then(res => res.json())
-            .then(data => alert(data.message))
+            .then(data => {
+                alert(data.message);
+                feature.properties.condition = newCondition; // cập nhật condition tại chỗ
+                layer.setStyle({ color: getColorByCondition(newCondition) }); // cập nhật màu sắc nếu muốn
+            })
             .catch(err => console.error('Error:', err));
-        }
     });
 }
+
+function getColorByCondition(condition) {
+    switch (condition) {
+        case 'flooded': return 'blue';
+        case 'congestion': return 'red';
+        case 'under_construction': return 'orange';
+        default: return 'green';
+    }
+}
+
 console.log("Map loaded:", map);
