@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm đường đi trong phường Thịnh Quang</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        #map { height: 500px; width: 100%; }
+        #directions { margin-top: 20px; padding: 10px; border: 1px solid #ccc; background: #f9f9f9; }
+    </style>
+</head>
+<body>
+    <p>Click vào bản đồ để chọn điểm xuất phát và điểm kết thúc.</p>
+    
+    <!--chon thuat toan tim duong-->
+    <label for="algorithm">Thuật toán:</label>
+    <select id="algorithm">
+        <option value="dijkstra">Dijkstra</option>
+        <option value="a_star">A*</option>
+        <option value="bidirectional_dijkstra">Bidirectional Dijkstra</option>
+        <option value="bfs">Breadth-First Search</Search></option>
+    </select>
+
+    <!--chon phuong tien di chuyen-->
+    <p>,<b>Chon phuong tien: </b></p>
+    <input type="radio" name = "vehicle" value = "walking" checked> Đi bộ
+    <input type="radio" name="vehicle" value="bicycle"> Xe đạp
+    <input type="radio" name="vehicle" value="motorbike"> Xe máy
+    <input type="radio" name="vehicle" value="car"> Ô tô
+
+    <br><br>
+    <button onclick="findRoute()">Tìm đường</button>
+    <div id="map"></div>
+    
+    <!--khu vuc hien thi huong dan duong di-->
+    <div id = "directions">
+        <h3>Huong dan di chuyen</h3>
+        <p>Thong tin ve quang duong se hien thi o day</p>
+    </div>
+    <script src="{{ url_for('static', filename='js/map.js') }}"></script>  
+</body>
+</html>
