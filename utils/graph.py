@@ -6,9 +6,9 @@ from geopy.distance import geodesic
 from scipy.spatial import KDTree
 from pathlib import Path
 
-EDGES_PATH = Path("data/geojson/edges.geojson")
+ROADS_PATH = Path("data/geojson/roads.geojson")
 GRAPH_PATH = Path("data/graph/graph_data.pkl")
-NODES_PATH = Path("data/geojson/nodes.geojson")
+# NODES_PATH = Path("data/geojson/nodes.geojson")
 
 def calculate_distance(lat1, lon1, lat2, lon2):#distance between two nearest nodes
     return geodesic((lat1, lon1), (lat2, lon2)).meters
@@ -90,28 +90,28 @@ def save_graph(G, output_file):
         pickle.dump(G, f)
         print(f"Saved graph with {len(G.nodes)} nodes, {len(G.edges)} edges → {output_file}")
 
-def save_nodes_to_geojson(G, output_file):
-    features = []
-    for node in G.nodes:
-        lon, lat = node
-        feature = {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [lon, lat]
-            },
-            "properties": {}
-        }
-        features.append(feature)
+# def save_nodes_to_geojson(G, output_file):
+#     features = []
+#     for node in G.nodes:
+#         lon, lat = node
+#         feature = {
+#             "type": "Feature",
+#             "geometry": {
+#                 "type": "Point",
+#                 "coordinates": [lon, lat]
+#             },
+#             "properties": {}
+#         }
+#         features.append(feature)
 
-    geojson = {
-        "type": "FeatureCollection",
-        "features": features
-    }
+#     geojson = {
+#         "type": "FeatureCollection",
+#         "features": features
+#     }
 
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(geojson, f, ensure_ascii=False, indent=2)
-        print(f"Saved {len(features)} nodes to {output_file}")
+#     with open(output_file, "w", encoding="utf-8") as f:
+#         json.dump(geojson, f, ensure_ascii=False, indent=2)
+#         print(f"Saved {len(features)} nodes to {output_file}")
 
 def load_graph(pkl_file):
     with open(pkl_file, "rb") as f:
@@ -130,7 +130,7 @@ def get_nearest_node(G, lat, lon):
 
     return nearest_node
 
-G = build_graph_from_geojson(EDGES_PATH)
+G = build_graph_from_geojson(ROADS_PATH)
 GRAPH_PATH.parent.mkdir(parents=True, exist_ok=True)
 save_graph(G, GRAPH_PATH)
-save_nodes_to_geojson(G, NODES_PATH)
+# save_nodes_to_geojson(G, NODES_PATH)

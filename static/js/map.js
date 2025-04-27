@@ -26,7 +26,13 @@ fetch('/static/geojson/roads.geojson')
 .then(res => res.json())
 .then(data => {
   L.geoJSON(data, {
-    style: { color: '#f0f0f0', weight: 2 }
+    style: function(feature){
+        return { 
+            color: getColorByCondition(feature.properties.condition || "normal"), 
+            weight: 1 
+        };
+    },
+    onEachFeature: onEachFeature
 }).addTo(map);
 });
 
@@ -39,24 +45,24 @@ fetch('/static/geojson/roads.geojson')
 //    });
 
 // Load các nodes (nút giao)
-fetch('/data/geojson/nodes.geojson')
-.then(res => res.json())
-.then(data => {
-    L.geoJSON(data, {
-        pointToLayer: function (feature, latlng) {
-            return L.circleMarker(latlng, {
-                radius: 5,
-                color: 'red',
-                fillColor: 'red',
-                fillOpacity: 1
-            }).bindTooltip(feature.properties.id, {
-                permanent: true,
-                direction: 'top',
-                className: 'node-label'
-            });
-        }
-    }).addTo(map);
-});
+// fetch('/data/geojson/nodes.geojson')
+// .then(res => res.json())
+// .then(data => {
+//     L.geoJSON(data, {
+//         pointToLayer: function (feature, latlng) {
+//             return L.circleMarker(latlng, {
+//                 radius: 5,
+//                 color: 'red',
+//                 fillColor: 'red',
+//                 fillOpacity: 1
+//             }).bindTooltip(feature.properties.id, {
+//                 permanent: true,
+//                 direction: 'top',
+//                 className: 'node-label'
+//             });
+//         }
+//     }).addTo(map);
+// });
 
 map.on("click", function(e) {
     if (!startPoint) {
@@ -135,22 +141,38 @@ function drawFinalPath(path) {
 }
 
 let addingCondition=false
+let addConditionButton=null;
 
 function addCondition(){
-  addingCondition=true
-  alert("Chọn điều kiện cho đoạn đường bạn muốn");
+    if (!addConditionButton) {
+        addConditionButton = document.querySelector('button[onclick="addCondition()"]');
+    }
+    if (!addingCondition){
+        addingCondition = true;
+        alert("Chế độ thêm điều kiện đã bật. Click vào các đoạn đường để nhập condition.");
+        
+        if (startPoint) { map.removeLayer(startPoint); startPoint = null; }
+        if (endPoint) { map.removeLayer(endPoint); endPoint = null; }
+    }else {
+        addingCondition = false;
+        addConditionButton.textContent = "Thêm điều kiện";
+        alert("Đã huỷ thêm điều kiện. Giờ bạn có thể chọn điểm xuất phát và điểm đến.");
+    }
 }
 
 function onEachFeature(feature, layer) {
     layer.on('click', function (e) {
-        if (!addingCondition) return; // chỉ xử lý nếu đã bật chế độ "thêm điều kiện"
+        if (addingCondition) {
+            alert("Đang ở chế độ thêm điều kiện, hãy click vào đoạn đường để chỉnh sửa, không chọn điểm!");
+            return;
+        }; // chỉ xử lý nếu đã bật chế độ "thêm điều kiện"
 
         const edgeId = feature.properties.id;
         const currentCondition = feature.properties.condition || "none";
         const newCondition = prompt("Nhập condition cho đoạn đường (flooded, congestion...)", currentCondition);
 
         if (newCondition !== null) {
-            fetch('/update-condition', {
+            fetch('/update_condition', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -167,6 +189,7 @@ function onEachFeature(feature, layer) {
                 layer.setStyle({ color: getColorByCondition(newCondition) }); // cập nhật màu sắc nếu muốn
             })
             .catch(err => console.error('Error:', err));
+        }
     });
 }
 
