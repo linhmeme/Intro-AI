@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm đường đi trong phường Thịnh Quang</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <style>
+        #map { height: 500px; width: 100%; }
+    </style>
+</head>
+<body>
+    <p>Click vào bản đồ để chọn điểm xuất phát và điểm kết thúc.</p>
+    
+    <label for="algorithm">Thuật toán:</label>
+    <select id="algorithm">
+        <option value="dijkstra">Dijkstra</option>
+        <option value="a_star">A*</option>
+        <option value="bidirectional_dijkstra">Bidirectional Dijkstra</option>
+        <option value="bfs">Breadth-First Search</Search></option>
+    </select>
+    <button onclick="findRoute()">Tìm đường</button>
+    <div id="map"></div>
+        
+    <script src="{{ url_for('static', filename='js/map.js') }}"></script>  
+</body>
+</html>
