@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Tìm đường đi trong phường Thịnh Quang</title>
+    <!-- Leaflet CSS cho bản đồ -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        #map { height: 500px; width: 100%; }
+    </style>
 </head>
 <body>
     <div id="controls">
         <p>Click vào bản đồ để chọn điểm xuất phát và điểm kết thúc.</p>
     
+        <label for="vehicle">Phương tiện:</label>
+        <select id="vehicle">
+            <option value="car">Ô tô</option>
+            <option value="motor">Xe máy</option>
+            <option value="foot">Đi bộ</option>
+        </select>
+
         <label for="algorithm">Thuật toán:</label>
         <select id="algorithm">
             <option value="dijkstra">Dijkstra</option>
@@ -18,11 +29,13 @@
             <option value="bidirectional_dijkstra">Bidirectional Dijkstra</option>
             <option value="bfs">Breadth-First Search</option>
         </select>
+
         <button onclick="addCondition()">Thêm điều kiện</button>
         <button onclick="findRoute()">Tìm đường</button>
     </div>
     <div id="map"></div>
     
-    <script src="{{ url_for('static', filename='js/map.js') }}"></script>  
+    <!-- Kết nối đến tệp JS để xử lý bản đồ -->
+    <script src="{{ url_for('static', filename='js/map.js') }}"></script>
 </body>
 </html>
