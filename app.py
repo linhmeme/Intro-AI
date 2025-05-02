@@ -1,11 +1,11 @@
 from flask import Flask
 from routes import map_bp, algo_bp, condition_bp
-from utils.sync_geojson import sync_geojson
+from utils.sync_geojson import sync_geojson_selected
 
 def create_app():
     app = Flask(__name__)
 
-    sync_geojson()
+    sync_geojson_selected(['area.geojson', 'boundary.geojson'])
     
     app.register_blueprint(map_bp)
     app.register_blueprint(algo_bp)

@@ -1,0 +1,1981 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "name": "Phố Cầu Mới",
+        "highway": "secondary",
+        "z_order": 6,
+        "oneway": "yes",
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8169541,
+              21.005215
+            ],
+            [
+              105.8169889,
+              21.0050108
+            ],
+            [
+              105.8170158,
+              21.0049279
+            ],
+            [
+              105.8171325,
+              21.0046119
+            ],
+            [
+              105.8172555,
+              21.0042574
+            ],
+            [
+              105.8173382,
+              21.0040193
+            ],
+            [
+              105.8175419,
+              21.0034996
+            ],
+            [
+              105.8175642,
+              21.0034427
+            ],
+            [
+              105.8176165,
+              21.003309
+            ],
+            [
+              105.8182342,
+              21.0020049
+            ],
+            [
+              105.8182696,
+              21.0019298
+            ],
+            [
+              105.8182888,
+              21.0018862
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8179006,
+              21.0043221
+            ],
+            [
+              105.8179607,
+              21.0042658
+            ],
+            [
+              105.8180009,
+              21.0042281
+            ],
+            [
+              105.8182566,
+              21.0039563
+            ],
+            [
+              105.8184915,
+              21.0037492
+            ],
+            [
+              105.8185081,
+              21.0037345
+            ],
+            [
+              105.8185892,
+              21.003663
+            ],
+            [
+              105.8186123,
+              21.003645
+            ],
+            [
+              105.818664,
+              21.0036046
+            ],
+            [
+              105.8188294,
+              21.0034876
+            ],
+            [
+              105.8190292,
+              21.0033772
+            ],
+            [
+              105.8192561,
+              21.0032768
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8171357,
+              21.0052039
+            ],
+            [
+              105.8168988,
+              21.0055384
+            ],
+            [
+              105.8167471,
+              21.0057527
+            ],
+            [
+              105.8165418,
+              21.0060746
+            ],
+            [
+              105.8164237,
+              21.0062468
+            ],
+            [
+              105.8162123,
+              21.0065606
+            ],
+            [
+              105.8156665,
+              21.0073042
+            ],
+            [
+              105.8155536,
+              21.0074649
+            ],
+            [
+              105.8153995,
+              21.0076719
+            ],
+            [
+              105.815362,
+              21.0077222
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6,
+        "name": "Cầu vượt Ngã Tư Sở",
+        "highway": "primary",
+        "z_order": 27,
+        "oneway": "yes",
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8219435,
+              21.0045686
+            ],
+            [
+              105.8218669,
+              21.0044784
+            ],
+            [
+              105.8217717,
+              21.0043796
+            ],
+            [
+              105.8216509,
+              21.004259
+            ],
+            [
+              105.8215385,
+              21.0041616
+            ],
+            [
+              105.821412,
+              21.004065
+            ],
+            [
+              105.8211492,
+              21.0038605
+            ],
+            [
+              105.8207552,
+              21.0035416
+            ],
+            [
+              105.8196072,
+              21.0027005
+            ],
+            [
+              105.8190266,
+              21.0022848
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7,
+        "name": "Phố Tây Sơn",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8221002,
+              21.0048876
+            ],
+            [
+              105.8219971,
+              21.0047568
+            ],
+            [
+              105.8219249,
+              21.004657
+            ],
+            [
+              105.8218432,
+              21.0045548
+            ],
+            [
+              105.8217497,
+              21.0044381
+            ],
+            [
+              105.8216135,
+              21.0043083
+            ],
+            [
+              105.8213531,
+              21.0041009
+            ],
+            [
+              105.8208251,
+              21.0037108
+            ],
+            [
+              105.8206802,
+              21.0036036
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 8,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "4"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8193971,
+              21.003419
+            ],
+            [
+              105.8192838,
+              21.0034638
+            ],
+            [
+              105.819167,
+              21.0035181
+            ],
+            [
+              105.8190468,
+              21.0035792
+            ],
+            [
+              105.8189463,
+              21.0036388
+            ],
+            [
+              105.8188661,
+              21.0036953
+            ],
+            [
+              105.8187146,
+              21.0038031
+            ],
+            [
+              105.818031,
+              21.0044283
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 9,
+        "name": "Đường Nguyễn Trãi",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8199683,
+              21.0030929
+            ],
+            [
+              105.81961,
+              21.0028361
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 10,
+        "name": "Phố Yên Lãng",
+        "highway": "secondary",
+        "z_order": 6,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.81714394659167,
+              21.01206925792478
+            ],
+            [
+              105.8170921,
+              21.0120048
+            ],
+            [
+              105.8166773,
+              21.0114805
+            ],
+            [
+              105.8164081,
+              21.0111327
+            ],
+            [
+              105.8161596,
+              21.0108197
+            ],
+            [
+              105.8160188,
+              21.010642
+            ],
+            [
+              105.8159375,
+              21.0105436
+            ],
+            [
+              105.8158918,
+              21.0104883
+            ],
+            [
+              105.8156933,
+              21.0102375
+            ],
+            [
+              105.8155793,
+              21.0100902
+            ],
+            [
+              105.8154653,
+              21.009957
+            ],
+            [
+              105.8151875,
+              21.0096782
+            ],
+            [
+              105.8149107,
+              21.0094103
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 22,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "4"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8144074,
+              21.0086391
+            ],
+            [
+              105.8146087,
+              21.0083998
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 23,
+        "name": "Phố Yên Lãng",
+        "highway": "secondary",
+        "z_order": 6,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8151113,
+              21.0094149
+            ],
+            [
+              105.815295,
+              21.0095805
+            ],
+            [
+              105.8154172,
+              21.0096905
+            ],
+            [
+              105.8156305,
+              21.0098977
+            ],
+            [
+              105.8157918,
+              21.010097
+            ],
+            [
+              105.8160258,
+              21.010392
+            ],
+            [
+              105.8160708,
+              21.0104471
+            ],
+            [
+              105.8162611,
+              21.0106983
+            ],
+            [
+              105.8167112,
+              21.0112375
+            ],
+            [
+              105.8170327,
+              21.0116576
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 31,
+        "name": "Cầu Giáp Nhất",
+        "highway": "secondary",
+        "z_order": 6,
+        "oneway": null,
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8169541,
+              21.005215
+            ],
+            [
+              105.8168697,
+              21.0051722
+            ],
+            [
+              105.816832,
+              21.0051536
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 32,
+        "name": "Cầu Giáp Nhất",
+        "highway": "secondary",
+        "z_order": 26,
+        "oneway": null,
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.816832,
+              21.0051536
+            ],
+            [
+              105.81664416279499,
+              21.005058797596337
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 33,
+        "name": null,
+        "highway": "primary_link",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.81974741791157,
+              21.002772418368917
+            ],
+            [
+              105.8197304,
+              21.0027842
+            ],
+            [
+              105.819681,
+              21.0028004
+            ],
+            [
+              105.819641,
+              21.0028048
+            ],
+            [
+              105.8196012,
+              21.0028013
+            ],
+            [
+              105.8195644,
+              21.002798
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 36,
+        "name": null,
+        "highway": "primary_link",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8204857,
+              21.003463
+            ],
+            [
+              105.8200149,
+              21.0033729
+            ],
+            [
+              105.8199004,
+              21.003361
+            ],
+            [
+              105.8197654,
+              21.0033754
+            ],
+            [
+              105.8195974,
+              21.0034134
+            ],
+            [
+              105.8194994,
+              21.003421
+            ],
+            [
+              105.8193971,
+              21.003419
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 37,
+        "name": null,
+        "highway": "primary_link",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8192561,
+              21.0032768
+            ],
+            [
+              105.8195376,
+              21.0031411
+            ],
+            [
+              105.8195931,
+              21.0030783
+            ],
+            [
+              105.8196143,
+              21.0030077
+            ],
+            [
+              105.8196176,
+              21.0029124
+            ],
+            [
+              105.81961,
+              21.0028361
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 60,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8152619,
+              21.0076421
+            ],
+            [
+              105.8154884,
+              21.0073545
+            ],
+            [
+              105.8159867,
+              21.0066641
+            ],
+            [
+              105.816321,
+              21.0061894
+            ],
+            [
+              105.8165951,
+              21.0057774
+            ],
+            [
+              105.816732,
+              21.0055753
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 61,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "4"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.81430911229734,
+              21.008729640503166
+            ],
+            [
+              105.8144074,
+              21.0086391
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 62,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8144908,
+              21.0087249
+            ],
+            [
+              105.81440468474558,
+              21.008827573037244
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 63,
+        "name": "Phố Yên Lãng",
+        "highway": "secondary",
+        "z_order": 6,
+        "oneway": "yes",
+        "lanes": "4"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8144074,
+              21.0086391
+            ],
+            [
+              105.8144908,
+              21.0087249
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 79,
+        "name": null,
+        "highway": "primary_link",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8227121,
+              21.0060987
+            ],
+            [
+              105.8225952,
+              21.0060318
+            ],
+            [
+              105.8225065,
+              21.005981
+            ],
+            [
+              105.8224472,
+              21.0059542
+            ],
+            [
+              105.8223919,
+              21.0059404
+            ],
+            [
+              105.822311,
+              21.0059451
+            ],
+            [
+              105.822243,
+              21.005964
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 80,
+        "name": null,
+        "highway": "primary_link",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8222852,
+              21.0059295
+            ],
+            [
+              105.822364,
+              21.0057599
+            ],
+            [
+              105.8224433,
+              21.0055776
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 94,
+        "name": "Cầu vượt Ngã Tư Sở",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "4"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8190266,
+              21.0022848
+            ],
+            [
+              105.8184862,
+              21.0018999
+            ],
+            [
+              105.818339,
+              21.0018154
+            ],
+            [
+              105.8182251,
+              21.0017879
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 95,
+        "name": "Đường Nguyễn Trãi",
+        "highway": "primary",
+        "z_order": 27,
+        "oneway": "yes",
+        "lanes": "4"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8182251,
+              21.0017879
+            ],
+            [
+              105.8180808857277,
+              21.00169772147483
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 114,
+        "name": "Phố Yên Lãng",
+        "highway": "secondary",
+        "z_order": 6,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8149107,
+              21.0094103
+            ],
+            [
+              105.81488501162568,
+              21.00938706586009
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 115,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "4"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8147835,
+              21.0083622
+            ],
+            [
+              105.8145518,
+              21.0086508
+            ],
+            [
+              105.8144908,
+              21.0087249
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 116,
+        "name": "Phố Yên Lãng",
+        "highway": "secondary",
+        "z_order": 6,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8148097,
+              21.0090667
+            ],
+            [
+              105.8151113,
+              21.0094149
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 117,
+        "name": "Phố Yên Lãng",
+        "highway": "secondary",
+        "z_order": 6,
+        "oneway": "yes",
+        "lanes": "4"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8144908,
+              21.0087249
+            ],
+            [
+              105.8145777,
+              21.008818
+            ],
+            [
+              105.8147241,
+              21.0089737
+            ],
+            [
+              105.8148097,
+              21.0090667
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 118,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8146087,
+              21.0083998
+            ],
+            [
+              105.8148725,
+              21.0081011
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 119,
+        "name": "Đường Nguyễn Trãi",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8195644,
+              21.002798
+            ],
+            [
+              105.8195185,
+              21.0027673
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 120,
+        "name": "Đường Nguyễn Trãi",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8195185,
+              21.0027673
+            ],
+            [
+              105.8191784,
+              21.0025299
+            ],
+            [
+              105.8191089,
+              21.0024813
+            ],
+            [
+              105.8182888,
+              21.0018862
+            ],
+            [
+              105.8182251,
+              21.0017879
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 121,
+        "name": "Đường Trường Chinh",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8200335,
+              21.0031375
+            ],
+            [
+              105.8199683,
+              21.0030929
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 127,
+        "name": "Phố Yên Lãng",
+        "highway": "secondary",
+        "z_order": 6,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8170327,
+              21.0116576
+            ],
+            [
+              105.8171866,
+              21.0118493
+            ],
+            [
+              105.81724363220953,
+              21.011924956790462
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 129,
+        "name": "Phố Tây Sơn",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8206802,
+              21.0036036
+            ],
+            [
+              105.8206148,
+              21.003553
+            ],
+            [
+              105.8205414,
+              21.0034963
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 130,
+        "name": null,
+        "highway": "primary_link",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8205414,
+              21.0034963
+            ],
+            [
+              105.8205257,
+              21.0034327
+            ],
+            [
+              105.8205278,
+              21.0033905
+            ],
+            [
+              105.8205412,
+              21.0033781
+            ],
+            [
+              105.82055253720057,
+              21.003365894048418
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 131,
+        "name": "Cầu vượt Ngã Tư Sở",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8221002,
+              21.0048876
+            ],
+            [
+              105.8220643,
+              21.0047337
+            ],
+            [
+              105.8219435,
+              21.0045686
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 133,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8198406,
+              21.0032992
+            ],
+            [
+              105.8193971,
+              21.003419
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 134,
+        "name": "Đường Trường Chinh",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8199683,
+              21.0030929
+            ],
+            [
+              105.82012383373461,
+              21.003048871187353
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 135,
+        "name": "Đường Trường Chinh",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.82029470250062,
+              21.00317492203104
+            ],
+            [
+              105.8202308,
+              21.0031848
+            ],
+            [
+              105.820156,
+              21.0031839
+            ],
+            [
+              105.8200878,
+              21.0031681
+            ],
+            [
+              105.8200335,
+              21.0031375
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 136,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8174062,
+              21.0048341
+            ],
+            [
+              105.8173526,
+              21.0048982
+            ],
+            [
+              105.8171649,
+              21.0051596
+            ],
+            [
+              105.8171357,
+              21.0052039
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 137,
+        "name": null,
+        "highway": "primary_link",
+        "z_order": 7,
+        "oneway": null,
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8164237,
+              21.0062468
+            ],
+            [
+              105.816321,
+              21.0061894
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 138,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.818031,
+              21.0044283
+            ],
+            [
+              105.8175054,
+              21.0047512
+            ],
+            [
+              105.8174531,
+              21.0047893
+            ],
+            [
+              105.8174062,
+              21.0048341
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 142,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8149733,
+              21.0081672
+            ],
+            [
+              105.8147835,
+              21.0083622
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 143,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.815362,
+              21.0077222
+            ],
+            [
+              105.8153226,
+              21.0077683
+            ],
+            [
+              105.8152738,
+              21.0078249
+            ],
+            [
+              105.8149733,
+              21.0081672
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 144,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8148725,
+              21.0081011
+            ],
+            [
+              105.8152619,
+              21.0076421
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 145,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "4"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.816732,
+              21.0055753
+            ],
+            [
+              105.8169541,
+              21.005215
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 162,
+        "name": "Phố Tây Sơn",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "4"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.82297046600141,
+              21.006648175479675
+            ],
+            [
+              105.8229571,
+              21.0066213
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 179,
+        "name": "Phố Tây Sơn",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8205414,
+              21.0034963
+            ],
+            [
+              105.8204857,
+              21.003463
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 192,
+        "name": "Phố Tây Sơn",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "4"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8225293,
+              21.0057479
+            ],
+            [
+              105.8224759,
+              21.005643
+            ],
+            [
+              105.8224433,
+              21.0055776
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 194,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8192561,
+              21.0032768
+            ],
+            [
+              105.8195094,
+              21.0032162
+            ],
+            [
+              105.8198703,
+              21.0031163
+            ],
+            [
+              105.8199683,
+              21.0030929
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 195,
+        "name": "Đường Nguyễn Trãi",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.81961,
+              21.0028361
+            ],
+            [
+              105.8195644,
+              21.002798
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 219,
+        "name": null,
+        "highway": "primary_link",
+        "z_order": 7,
+        "oneway": null,
+        "lanes": null
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.818031,
+              21.0044283
+            ],
+            [
+              105.8179006,
+              21.0043221
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 220,
+        "name": "Đường Láng",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "2"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8169541,
+              21.005215
+            ],
+            [
+              105.8172896,
+              21.0047998
+            ],
+            [
+              105.8173805,
+              21.0047074
+            ],
+            [
+              105.8175887,
+              21.0045494
+            ],
+            [
+              105.8176268,
+              21.0045216
+            ],
+            [
+              105.8179006,
+              21.0043221
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 296,
+        "name": "Đường Trường Chinh",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "3"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.82043743206269,
+              21.003280638416047
+            ],
+            [
+              105.8203675,
+              21.0032986
+            ],
+            [
+              105.8202463,
+              21.0033096
+            ],
+            [
+              105.8201336,
+              21.0033107
+            ],
+            [
+              105.819962,
+              21.0032948
+            ],
+            [
+              105.8198406,
+              21.0032992
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 302,
+        "name": "Phố Tây Sơn",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "4"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8227121,
+              21.0060987
+            ],
+            [
+              105.8226109,
+              21.0059065
+            ],
+            [
+              105.8225293,
+              21.0057479
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 306,
+        "name": "Phố Tây Sơn",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "4"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8224433,
+              21.0055776
+            ],
+            [
+              105.8223639,
+              21.005414
+            ],
+            [
+              105.822161,
+              21.0050117
+            ],
+            [
+              105.8221002,
+              21.0048876
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 314,
+        "name": "Phố Tây Sơn",
+        "highway": "primary",
+        "z_order": 7,
+        "oneway": "yes",
+        "lanes": "4"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8229571,
+              21.0066213
+            ],
+            [
+              105.8228359,
+              21.0063568
+            ],
+            [
+              105.8227121,
+              21.0060987
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

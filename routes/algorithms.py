@@ -10,6 +10,7 @@ def find_route():
     data = request.json
     start_lat, start_lng = data["start"]
     end_lat, end_lng = data["end"]
+    vehicle = data["vehicle"]
     algorithm = data.get("algorithm", "dijkstra")  # Mặc định dùng Dijkstra
 
     # Gọi get_nearest_node với direction_check

@@ -1,15 +1,9 @@
-window.addEventListener('load', () => {
-  fetch('/reset_roads', { method: 'POST' })
-  .then(res => res.json())
-  .then(data => {
-      console.log(data.message);
-  })
-  .catch(err => console.error('Lỗi reset roads:', err));
-});
-
 let startPoint = null;
 let endPoint = null;
 let routePolyline = null;
+let allowedLayer = null;
+let currentVehicle = 'car';  // mặc định ô tô
+
 let map = L.map("map").setView([21.0085, 105.8185], 15); // Tọa độ Thịnh Quang
 
 // 🌍 Thêm lớp nền từ OpenStreetMap
@@ -51,7 +45,44 @@ fetch("/static/geojson/boundary.geojson")
     routeLayer,
     visitedLayer = null;
   let snapLayer = null; // ✅ Thêm layer riêng cho snapping
+
+  function filterRoutesByVehicle() {
+    const selectedVehicle = document.getElementById('vehicle').value;
+    currentVehicle = selectedVehicle;
+
+    fetch('/filter_routes', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ vehicle: selectedVehicle })
+    })
+    .then(res => res.json())
+    .then(data => {
+      console.log(data.message);
+      updateAllowedRoutes(); // tải lại file vhc_allowed và hiển thị
+    })
+    .catch(err => console.error('Lỗi khi lọc các đoạn đường:', err));
+  }
   
+  function updateAllowedRoutes() {
+    if (allowedLayer) map.removeLayer(allowedLayer);
+  
+    fetch('/static/geojson/vhc_allowed.geojson?ts='+Date.now())
+      .then(res => res.json())
+      .then(data => {
+        allowedLayer = L.geoJSON(data, {
+          style: {
+            color: "green",
+            weight: 3,
+            opacity: 0.9
+          },
+          onEachFeature: onEachFeature  // Giữ lại click thêm condition nếu muốn
+        }).addTo(map);
+      });
+  }
+  
+
   function findRoute() {
     if (!startPoint || !endPoint) {
       alert("Hãy chọn cả điểm xuất phát và điểm đến!");
@@ -69,6 +100,7 @@ fetch("/static/geojson/boundary.geojson")
         start: startCoords,
         end: endCoords,
         algorithm: algorithm,
+        vehicle: currentVehicle,
       }),
     })
       .then((response) => response.json())
@@ -145,84 +177,9 @@ fetch("/static/geojson/boundary.geojson")
     }
   }
 
-  let addingCondition = false;
-  let addConditionButton = null;
-  function filterRoutesByVehicle() {
-    const selectedVehicle = document.getElementById('vehicle').value;
-
-    fetch('/filter_routes', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ vehicle: selectedVehicle })
-    })
-    .then(res => res.json())
-    .then(data => {
-        alert(data.message);
-    })
-    .catch(err => console.error('Lỗi khi lọc các đoạn đường:', err));
-  }
-
-// Hàm thêm điều kiện cho các đoạn đường
-function addCondition() {
-  if (!addConditionButton) {
-      addConditionButton = document.querySelector('button[onclick="addCondition()"]');
-  }
-
-  addingCondition = !addingCondition;
-
-  if (addingCondition) {
-      addConditionButton.textContent = "Huỷ thêm điều kiện";
-      alert("🛠️ Đã bật chế độ thêm điều kiện.\nClick vào các đoạn đường để nhập (cấm hoặc không cấm).");
-  } else {
-      addConditionButton.textContent = "Thêm điều kiện";
-      alert("✅ Đã huỷ chế độ thêm điều kiện. Bạn có thể chọn điểm xuất phát và điểm đến.");
-  }
-}
-
-// Hàm xử lý khi click vào đoạn đường
-function onEachFeature(feature, layer) {
-  layer.on('click', function (e) {
-      if (!addingCondition) return;
-
-      const edgeId = feature.properties.id;
-      const currentCondition = feature.properties.condition || "normal";
-      const newCondition = prompt("Nhập condition cho đoạn đường:\n - 'normal' (được đi)\n - 'not allowed' (cấm đi)", currentCondition);
-
-      if (newCondition === "normal" || newCondition === "not allowed") {
-          // Gửi yêu cầu cập nhật condition vào backend (Flask API)
-          fetch('/update_condition', {
-              method: 'POST',
-              headers: {
-                  'Content-Type': 'application/json'
-              },
-              body: JSON.stringify({
-                  edge_id: edgeId,
-                  condition: newCondition,
-                  vehicle: document.getElementById('vehicle').value  // Sử dụng phương tiện người dùng chọn
-              })
-          })
-          .then(res => res.json())
-          .then(data => {
-              alert(data.message);
-              feature.properties.condition = newCondition; // Cập nhật condition tại chỗ
-              layer.setStyle({ color: getColorByCondition(newCondition) }); // Đổi màu đoạn đường
-          })
-          .catch(err => console.error('Lỗi khi gửi dữ liệu:', err));
-      } else {
-          alert("❌ Chỉ được nhập 'normal' hoặc 'not allowed'!");
-      }
-  });
-}
-
-// Chỉnh màu đường tùy theo condition
-function getColorByCondition(condition) {
-  switch (condition) {
-      case 'not allowed': return 'black';  // Màu đen cho đường cấm
-      case 'normal': return 'green';      // Màu xanh cho đường bình thường
-      default: return 'gray';
-  }
-}
-
-console.log("Map loaded:", map);
+document.addEventListener("DOMContentLoaded", function () {
+  filterRoutesByVehicle();  // gọi lần đầu khi mở trang
+  // 🔁 Gọi lại khi người dùng đổi phương tiện
+  document.getElementById('vehicle').addEventListener('change', filterRoutesByVehicle);
+});
+console.log("Đang lọc cho vehicle:", selectedVehicle);
