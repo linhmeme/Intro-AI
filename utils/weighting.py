@@ -1,33 +1,54 @@
-from config import ROADS_FILE, VHC_ALLOWED_FILE, WEIGHTS_FILE, ALLOWED_HIGHWAYS, VEHICLE_WEIGHTS, CONDITION_WEIGHTS
+from config import WEIGHTS_FILE
 import json
 import os
+from config import DEFAULT_SPEED_BY_VEHICLE, CONDITION_SPEED_FACTORS
 
-def compute_weight(vehicle, highway, condition):
+def compute_weight(length, highway, vehicle, edge_id=None, condition_cache=None):
     """
-    Tính trọng số dựa trên phương tiện, các phương tiện được phép và điều kiện của đường.
-    Trọng số càng cao => đoạn đường càng ít được chọn.
+    Tính trọng số (thời gian di chuyển) cho một đoạn đường:
+    - Nếu không có condition → mặc định "normal"
+    - Nếu bị jam, flooded → giảm tốc độ theo hệ số
     """
-    allowed_highways = ALLOWED_HIGHWAYS.get(vehicle, [])
-    if highway not in allowed_highways:
-        return float('inf')  # Trọng số vô cùng nếu không được phép đi qua
+    if not length or length <= 0:
+        return float('inf')
 
-    # Nếu phương tiện được phép đi qua, trọng số theo loại phương tiện
-    vehicle_weight = VEHICLE_WEIGHTS.get(vehicle, 1.0)  # Trọng số phương tiện (mặc định là 1.0 nếu không có)
+    base_speed = DEFAULT_SPEED_BY_VEHICLE.get(vehicle, {}).get(highway, 0)
+    if base_speed <= 0:
+        return float('inf')
 
-    # Thêm yếu tố condition
-    condition_factor = CONDITION_WEIGHTS.get(condition, 1.0)  # Nếu condition là "not allowed" thì trọng số rất cao
+    # Lấy condition từ cache hoặc mặc định
+    if condition_cache and edge_id:
+        condition = condition_cache.get(str(edge_id), "normal")
+    else:
+        condition = "normal"
 
-    return vehicle_weight * condition_factor
+    # Lấy hệ số tốc độ tương ứng với điều kiện
+    factor = CONDITION_SPEED_FACTORS.get(condition, 1.0)
+    adjusted_speed = base_speed * factor
 
-def update_weight_file(edge_id, condition, highway, vehicle):
+    if adjusted_speed <= 0:
+        return float('inf')
+
+    travel_time = length / (adjusted_speed * 1000 / 3600)  # m / (m/s) = s
+
+    return round(travel_time, 2), round(adjusted_speed, 1), condition
+
+def update_weight_file(edge_id, length, condition, highway, vehicle, condition_cache):
+    weight, speed_used, condition = compute_weight(length, highway, vehicle, edge_id, condition_cache)
     if not os.path.exists(WEIGHTS_FILE):
         weights = {}
     else:
         with open(WEIGHTS_FILE, "r", encoding="utf-8") as f:
             weights = json.load(f)
-#mỗi weights ứng vs id trong geojson(từ roads_origin) có 3 trường 
-    weight = compute_weight(highway, vehicle, condition)
-    weights[edge_id] = {"vehicle": vehicle, "highway": highway, "condition": condition, "weight": weight, }
+ 
+    weights[edge_id] = {
+        "vehicle": vehicle,
+        "highway": highway,
+        "length": length,
+        "condition": condition,
+        "speed": speed_used,
+        "weight": weight
+    }
 
     with open(WEIGHTS_FILE, "w", encoding="utf-8") as f:
         json.dump(weights, f, indent=2, ensure_ascii=False)

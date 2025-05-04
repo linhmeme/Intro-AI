@@ -2,15 +2,13 @@ import json
 import pickle
 import networkx as nx
 import numpy as np
-from geopy.distance import geodesic
+# from geopy.distance import geodesic
 from scipy.spatial import KDTree
 from pathlib import Path
+from config import WEIGHTS_FILE, GRAPH_PATH
 
-ROADS_PATH = Path("data/geojson/roads.geojson")
-GRAPH_PATH = Path("data/graph/graph_data.pkl")
-
-def calculate_distance(lat1, lon1, lat2, lon2):#distance between two nearest nodes
-    return geodesic((lat1, lon1), (lat2, lon2)).meters
+# def calculate_distance(lat1, lon1, lat2, lon2):#distance between two nearest nodes
+#     return geodesic((lat1, lon1), (lat2, lon2)).meters
 
 def build_graph_from_geojson(geojson_file, snap_threshold=1):
     with open(geojson_file, "r", encoding="utf-8") as f:
@@ -34,7 +32,10 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
                 snapped_coord = coord_list[idx]
                 snapped_lat, snapped_lon = snapped_coord[1], snapped_coord[0]
 
-                dist_m = geodesic((lat, lon), (snapped_lat, snapped_lon)).meters
+                # ✅ Dùng công thức nhanh thay vì geodesic
+                dist_m = np.linalg.norm([lat - snapped_lat, lon - snapped_lon]) * 111139
+
+                # dist_m = geodesic((lat, lon), (snapped_lat, snapped_lon)).meters
 
                 if dist_m < snap_threshold:
                     return tuple(snapped_coord)
@@ -51,7 +52,12 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
     print(f"Đang xử lý {len(data['features'])} feature từ GeoJSON")
     for feature in data["features"]:
         geometry = feature.get("geometry", {})
+        props = feature.get("properties", {})
+        weight = props.get("weight")  # 🔹 Lấy từ file weights.geojson
         coords_list = []
+
+        if weight is None:
+            continue  # Bỏ qua nếu không có trường length
 
         if geometry["type"] == "LineString":
             coords_list = [geometry["coordinates"]]
@@ -74,10 +80,10 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
                 G.add_node(node1, x=node1[0], y=node1[1])
                 G.add_node(node2, x=node2[0], y=node2[1])
 
-                dist = geodesic((node1[1], node1[0]), (node2[1], node2[0])).meters
+                # dist = geodesic((node1[1], node1[0]), (node2[1], node2[0])).meters
 
-                G.add_edge(node1, node2, length=dist)
-                G.add_edge(node2, node1, length=dist)  # ✅ (2) Sửa: thêm chiều ngược lại để graph đi được 2 chiều
+                G.add_edge(node1, node2, weight=weight)
+                G.add_edge(node2, node1, weight=weight)  # ✅ (2) Sửa: thêm chiều ngược lại để graph đi được 2 chiều
 
     return G
 
@@ -102,7 +108,7 @@ def get_nearest_node(G, lat, lon, direction_check=False, goal_lat=None, goal_lon
     for node in G.nodes:
         node_lon, node_lat = node
 
-        dist = geodesic((lat, lon), (node_lat, node_lon)).meters
+        dist = np.linalg.norm([lat - node_lat, lon - node_lon]) * 111139
 
         if direction_check and goal_lat is not None and goal_lon is not None:
             # Kiểm tra hướng di chuyển
@@ -128,6 +134,6 @@ def get_nearest_node(G, lat, lon, direction_check=False, goal_lat=None, goal_lon
     return nearest_node
 
 
-G = build_graph_from_geojson(ROADS_PATH)
+G = build_graph_from_geojson(WEIGHTS_FILE)
 GRAPH_PATH.parent.mkdir(parents=True, exist_ok=True)
 save_graph(G, GRAPH_PATH)

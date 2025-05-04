@@ -1,10 +1,10 @@
 from flask import Blueprint, request, jsonify
 import json
-import os
-import shutil
-from config import ROADS_FILE, VHC_ALLOWED_FILE, ALLOWED_HIGHWAYS
+from config import ROADS_FILE, VHC_ALLOWED_FILE, ALLOWED_HIGHWAYS, WEIGHTS_FILE
 from utils.sync_geojson import sync_geojson_file
-# from utils.weighting import compute_weight, update_weight_file
+from utils.weighting import compute_weight
+from cache.condition_cache import condition_cache
+from utils.length import add_length_to_vhc_allowed
 
 condition_bp = Blueprint('condition_bp', __name__)
 
@@ -29,45 +29,57 @@ def filter_routes():
     with open(VHC_ALLOWED_FILE, 'w', encoding='utf-8') as f:
         json.dump({"type": "FeatureCollection", "features": allowed_routes}, f, indent=2, ensure_ascii=False)
 
+    add_length_to_vhc_allowed()    
+
     #✅ Sau khi ghi xong, đồng bộ sang static/
     sync_geojson_file('vhc_allowed.geojson')
     print(f"[filter_routes] Ghi {len(allowed_routes)} tuyến cho {vehicle}")
 
     return jsonify({'status': 'success', 'message': 'Đã lọc các đoạn đường cho phương tiện: ' + vehicle}), 200
 
-# @condition_bp.route('/update_condition', methods=['POST'])
-# def update_condition():
-#     """
-#     Cập nhật điều kiện và trọng số cho đoạn đường, sau đó lưu vào weights.geojson.
-#     """
-#     data = request.get_json()
-#     edge_id = data.get('edge_id')
-#     condition = data.get('condition')
-#     vehicle = data.get('vehicle')
+@condition_bp.route('/update_condition_temp', methods=['POST'])
+def update_condition_temp():
+    data = request.get_json()
+    edge_id = data.get('edge_id')
+    condition = data.get('condition')
+    
+    if not edge_id or condition not in ["normal", "not allowed"]:
+        return jsonify({"status": "error", "message": "Thông tin không hợp lệ"}), 400
 
-#     if not edge_id or not condition:
-#         return jsonify({'status': 'error', 'message': 'Thiếu edge_id hoặc condition'}), 400
+    condition_cache[edge_id] = condition
+    return jsonify({"status": "success", "message": f"Đã ghi tạm điều kiện cho edge {edge_id}"}), 200
 
-#     if vehicle not in VEHICLE_WEIGHTS:
-#         return jsonify({'status': 'error', 'message': 'Loại phương tiện không hợp lệ'}), 400
+@condition_bp.route('/finalize_conditions', methods=['POST'])
+def finalize_conditions():
+    vehicle = request.get_json().get("vehicle")
+    if not vehicle:
+        return jsonify({"status": "error", "message": "Thiếu phương tiện"}), 400
 
-#     # Đọc từ vhc_allowed.geojson
-#     with open(VHC_ALLOWED_FILE, 'r', encoding='utf-8') as f:
-#         geojson_data = json.load(f)
+    with open(VHC_ALLOWED_FILE, 'r', encoding='utf-8') as f:
+        geojson_data = json.load(f)
 
-#     updated = False
-#     for feature in geojson_data['features']:
-#         if feature['properties'].get('id') == edge_id:
-#             # Tính trọng số và cập nhật condition
-#             highway_type = feature['properties'].get('highway', '')
-#             weight = compute_weight(vehicle, highway_type, condition)
+    weights = {}
+    for feature in geojson_data['features']:
+        props = feature['properties']
+        edge_id = str(props['id'])
+        highway = props.get('highway', '')
+        length = props.get('length', 0)
+        
+        weight, speed_used, condition = compute_weight(length, highway, vehicle, edge_id, condition_cache)
 
-#             # Cập nhật trọng số vào weights.geojson
-#             update_weight_file(edge_id, condition, highway_type, vehicle, weight)
-#             updated = True
-#             break
+        weights[edge_id] = {
+            "vehicle": vehicle,
+            "highway": highway,
+            "length": length,
+            "condition": condition,
+            "speed": speed_used,
+            "weight": weight
+        }
 
-#     if not updated:
-#         return jsonify({'status': 'error', 'message': 'Edge not found'}), 404
+    with open(WEIGHTS_FILE, 'w', encoding='utf-8') as f:
+        json.dump(weights, f, indent=2, ensure_ascii=False)
 
-    # return jsonify({'status': 'success', 'message': f'Cập nhật condition và trọng số cho đoạn đường {edge_id}'}), 200
+    print(f"[finalize_conditions] Ghi {len(weights)} dòng vào weights.geojson")
+    condition_cache.clear()
+    return jsonify({"status": "success", "message": "Đã cập nhật xong weights.geojson"}), 200
+
