@@ -1,3 +1,4 @@
+from flask import Blueprint 
 from flask import request, jsonify
 from config import WEIGHTS_FILE, VHC_ALLOWED_FILE, GRAPH_PATH
 import json
@@ -6,10 +7,13 @@ from graph import build_graph_from_geojson, save_graph
 from utils.sync_geojson import sync_geojson_file
 from cache.condition_cache import condition_cache
 
+final_bp = Blueprint('finalize_conditions',__name__)
+
 def build_new_graph_from_weights(weights_file):
     # Đọc weights.geojson và xây dựng lại graph mới từ dữ liệu này
     return build_graph_from_geojson(weights_file)
 
+@final_bp.route('/finalize_conditions', methods=['POST'])
 def finalize_conditions():
     vehicle = request.get_json().get("vehicle")
     if not vehicle:

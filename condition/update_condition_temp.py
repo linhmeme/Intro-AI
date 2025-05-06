@@ -1,6 +1,8 @@
-from flask import request, jsonify
+from flask import Blueprint, request, jsonify
 from cache.condition_cache import condition_cache
 
+update_bp = Blueprint('update_condition_temp',__name__)
+@update_bp.route('/update_condition_temp', methods=['POST'])
 def update_condition_temp():
     data = request.get_json()
     edge_id = data.get('edge_id')

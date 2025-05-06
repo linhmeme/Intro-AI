@@ -10,6 +10,7 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 400.3889150328046
       },
       "geometry": {
@@ -81,6 +82,7 @@
         "z_order": 6,
         "oneway": "yes",
         "lanes": "2",
+        "weight": 1,
         "length": 394.66772110525943
       },
       "geometry": {
@@ -148,6 +150,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
+        "weight": 1,
         "length": 184.14696634051012
       },
       "geometry": {
@@ -215,6 +218,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 334.36460414485975
       },
       "geometry": {
@@ -268,12 +272,129 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 5,
+        "name": "Phố Thái Thịnh",
+        "highway": "tertiary",
+        "z_order": 4,
+        "oneway": null,
+        "lanes": "2",
+        "weight": 1,
+        "length": 582.8693825317407
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.822243,
+              21.005964
+            ],
+            [
+              105.822111,
+              21.0060932
+            ],
+            [
+              105.8218494,
+              21.0063576
+            ],
+            [
+              105.8218043,
+              21.0064082
+            ],
+            [
+              105.8217204,
+              21.0065076
+            ],
+            [
+              105.8215159,
+              21.0067469
+            ],
+            [
+              105.8213276,
+              21.0069832
+            ],
+            [
+              105.8211635,
+              21.0072018
+            ],
+            [
+              105.8211332,
+              21.0072364
+            ],
+            [
+              105.8209278,
+              21.0074932
+            ],
+            [
+              105.8207373,
+              21.0077239
+            ],
+            [
+              105.8205136,
+              21.0079848
+            ],
+            [
+              105.82039673160764,
+              21.00812171645159
+            ]
+          ],
+          [
+            [
+              105.820046,
+              21.0085341
+            ],
+            [
+              105.8198943,
+              21.0087156
+            ],
+            [
+              105.8198311,
+              21.0087912
+            ],
+            [
+              105.8198149910871,
+              21.008812217841978
+            ]
+          ],
+          [
+            [
+              105.81941913370099,
+              21.009288801193573
+            ],
+            [
+              105.8193895,
+              21.0093226
+            ],
+            [
+              105.8193538,
+              21.0093637
+            ],
+            [
+              105.8192785,
+              21.0094491
+            ],
+            [
+              105.818971,
+              21.0097992
+            ],
+            [
+              105.8187493,
+              21.0100776
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": 6,
         "name": "Cầu vượt Ngã Tư Sở",
         "highway": "primary",
         "z_order": 27,
         "oneway": "yes",
         "lanes": "2",
+        "weight": 1,
         "length": 395.56924411107053
       },
       "geometry": {
@@ -333,6 +454,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
+        "weight": 1,
         "length": 206.39613213219857
       },
       "geometry": {
@@ -388,6 +510,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
+        "weight": 1,
         "length": 182.29653919547314
       },
       "geometry": {
@@ -439,6 +562,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 46.862434197812014
       },
       "geometry": {
@@ -466,6 +590,7 @@
         "z_order": 6,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 375.42240800177314
       },
       "geometry": {
@@ -537,6 +662,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 237.61875054987595
       },
       "geometry": {
@@ -580,6 +706,7 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 261.4432456718218
       },
       "geometry": {
@@ -639,6 +766,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 44.23326815273313
       },
       "geometry": {
@@ -674,6 +802,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 158.0951983710341
       },
       "geometry": {
@@ -715,6 +844,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 153.35910704547473
       },
       "geometry": {
@@ -758,6 +888,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 151.56806864903618
       },
       "geometry": {
@@ -801,6 +932,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 87.45418923180412
       },
       "geometry": {
@@ -832,6 +964,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 234.8223503104727
       },
       "geometry": {
@@ -879,6 +1012,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 69.77722571055337
       },
       "geometry": {
@@ -910,6 +1044,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 38.50230525945476
       },
       "geometry": {
@@ -937,6 +1072,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 242.09046017448378
       },
       "geometry": {
@@ -984,6 +1120,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
+        "weight": 1,
         "length": 33.763113915470186
       },
       "geometry": {
@@ -1011,6 +1148,7 @@
         "z_order": 6,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 319.3682501036891
       },
       "geometry": {
@@ -1064,117 +1202,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 24,
-        "name": "Hầm đường bộ Ngã Tư Sở",
-        "highway": "footway",
-        "z_order": -20,
-        "oneway": "no",
-        "lanes": null,
-        "length": 106.88936103091945
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8204427,
-              21.0034471
-            ],
-            [
-              105.8202251,
-              21.0033581
-            ],
-            [
-              105.8200972,
-              21.003308
-            ],
-            [
-              105.8200166,
-              21.0032751
-            ],
-            [
-              105.8194944,
-              21.0030743
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 27,
-        "name": "Hầm đường bộ Ngã Tư Sở",
-        "highway": "footway",
-        "z_order": -20,
-        "oneway": "no",
-        "lanes": null,
-        "length": 43.02425133464256
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8194944,
-              21.0030743
-            ],
-            [
-              105.8195112,
-              21.0030565
-            ],
-            [
-              105.8195663,
-              21.0030047
-            ],
-            [
-              105.8196399,
-              21.0029375
-            ],
-            [
-              105.81979443289275,
-              21.002806944829338
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 28,
-        "name": "Hầm đường bộ Ngã Tư Sở",
-        "highway": "footway",
-        "z_order": -20,
-        "oneway": "no",
-        "lanes": null,
-        "length": 14.334057483409063
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.82054501531452,
-              21.003360322766692
-            ],
-            [
-              105.8204427,
-              21.0034471
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 30,
         "name": "Ngõ Thịnh Quang",
         "highway": "service",
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 480.8806044607458
       },
       "geometry": {
@@ -1290,6 +1324,7 @@
         "z_order": 6,
         "oneway": null,
         "lanes": "2",
+        "weight": 1,
         "length": 14.40018763064338
       },
       "geometry": {
@@ -1321,6 +1356,7 @@
         "z_order": 26,
         "oneway": null,
         "lanes": "2",
+        "weight": 1,
         "length": 22.17085905843449
       },
       "geometry": {
@@ -1348,6 +1384,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "1",
+        "weight": 1,
         "length": 19.825080284055563
       },
       "geometry": {
@@ -1385,12 +1422,41 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 34,
+        "name": null,
+        "highway": "tertiary",
+        "z_order": 4,
+        "oneway": null,
+        "lanes": "2",
+        "weight": 1,
+        "length": 7.164387196594863
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8225293,
+              21.0057479
+            ],
+            [
+              105.82258553494151,
+              21.005710500050906
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": 35,
         "name": null,
         "highway": "service",
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 76.65529276671813
       },
       "geometry": {
@@ -1434,6 +1500,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
+        "weight": 1,
         "length": 114.88528697649966
       },
       "geometry": {
@@ -1481,6 +1548,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
+        "weight": 1,
         "length": 69.0966109731004
       },
       "geometry": {
@@ -1524,6 +1592,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 126.23449586841267
       },
       "geometry": {
@@ -1559,6 +1628,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 65.80658237635095
       },
       "geometry": {
@@ -1586,6 +1656,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 46.33791817938128
       },
       "geometry": {
@@ -1613,6 +1684,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 31.61701713393942
       },
       "geometry": {
@@ -1640,6 +1712,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 41.46512906514285
       },
       "geometry": {
@@ -1671,6 +1744,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 209.8295177546302
       },
       "geometry": {
@@ -1734,6 +1808,7 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 110.09790574091568
       },
       "geometry": {
@@ -1773,6 +1848,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 36.60925209224426
       },
       "geometry": {
@@ -1800,6 +1876,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 102.42285710175734
       },
       "geometry": {
@@ -1879,6 +1956,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 87.89160540998377
       },
       "geometry": {
@@ -1910,6 +1988,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 164.50205907220874
       },
       "geometry": {
@@ -1977,6 +2056,7 @@
         "z_order": 0,
         "oneway": "yes",
         "lanes": null,
+        "weight": 1,
         "length": 85.80658865353878
       },
       "geometry": {
@@ -2076,6 +2156,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 46.97112308414189
       },
       "geometry": {
@@ -2103,6 +2184,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 43.13228740526301
       },
       "geometry": {
@@ -2130,6 +2212,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 48.237911859540446
       },
       "geometry": {
@@ -2157,6 +2240,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 39.055406518006706
       },
       "geometry": {
@@ -2188,6 +2272,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 68.70826504592776
       },
       "geometry": {
@@ -2215,6 +2300,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 84.8611357165056
       },
       "geometry": {
@@ -2250,6 +2336,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 105.79073475287245
       },
       "geometry": {
@@ -2293,6 +2380,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 85.47641131842906
       },
       "geometry": {
@@ -2336,6 +2424,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 249.37049110096203
       },
       "geometry": {
@@ -2387,6 +2476,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
+        "weight": 1,
         "length": 275.2584965336427
       },
       "geometry": {
@@ -2430,6 +2520,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
+        "weight": 1,
         "length": 14.314483135073983
       },
       "geometry": {
@@ -2457,6 +2548,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 14.469916461373943
       },
       "geometry": {
@@ -2484,6 +2576,7 @@
         "z_order": 6,
         "oneway": "yes",
         "lanes": "4",
+        "weight": 1,
         "length": 12.86160587952372
       },
       "geometry": {
@@ -2511,6 +2604,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 20.806082441681752
       },
       "geometry": {
@@ -2542,6 +2636,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 317.3289244557328
       },
       "geometry": {
@@ -2597,6 +2692,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 166.42656944138096
       },
       "geometry": {
@@ -2636,6 +2732,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 70.01379014928591
       },
       "geometry": {
@@ -2667,6 +2764,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 36.85679858320776
       },
       "geometry": {
@@ -2694,6 +2792,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 38.18461977821637
       },
       "geometry": {
@@ -2721,6 +2820,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 33.79062808920931
       },
       "geometry": {
@@ -2748,6 +2848,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 282.36553352992246
       },
       "geometry": {
@@ -2807,6 +2908,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 35.75441504046879
       },
       "geometry": {
@@ -2834,6 +2936,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 144.17955208344736
       },
       "geometry": {
@@ -2881,6 +2984,7 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 41.3789540591053
       },
       "geometry": {
@@ -2920,6 +3024,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 149.51650078316342
       },
       "geometry": {
@@ -2967,6 +3072,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 0.8818470913712431
       },
       "geometry": {
@@ -2994,6 +3100,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 31.254715182041295
       },
       "geometry": {
@@ -3029,6 +3136,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 119.47456257788721
       },
       "geometry": {
@@ -3060,6 +3168,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "1",
+        "weight": 1,
         "length": 53.62534696713774
       },
       "geometry": {
@@ -3107,6 +3216,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "1",
+        "weight": 1,
         "length": 42.28963809803501
       },
       "geometry": {
@@ -3138,6 +3248,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 84.3301499891347
       },
       "geometry": {
@@ -3169,6 +3280,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 48.09443042417778
       },
       "geometry": {
@@ -3200,6 +3312,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 69.25608608909047
       },
       "geometry": {
@@ -3231,6 +3344,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 72.12257975055324
       },
       "geometry": {
@@ -3262,6 +3376,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 61.66238339052226
       },
       "geometry": {
@@ -3293,6 +3408,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 61.9827108058109
       },
       "geometry": {
@@ -3324,6 +3440,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 78.02923189811051
       },
       "geometry": {
@@ -3355,6 +3472,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 80.89970792450693
       },
       "geometry": {
@@ -3386,6 +3504,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 59.1651009345902
       },
       "geometry": {
@@ -3417,6 +3536,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 66.77859815214089
       },
       "geometry": {
@@ -3452,6 +3572,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 151.63109301181765
       },
       "geometry": {
@@ -3495,6 +3616,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 127.51322655156719
       },
       "geometry": {
@@ -3534,6 +3656,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 55.317422322557434
       },
       "geometry": {
@@ -3565,6 +3688,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
+        "weight": 1,
         "length": 100.68243571974921
       },
       "geometry": {
@@ -3600,6 +3724,7 @@
         "z_order": 27,
         "oneway": "yes",
         "lanes": "4",
+        "weight": 1,
         "length": 18.013926306638382
       },
       "geometry": {
@@ -3627,6 +3752,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 18.498398863707237
       },
       "geometry": {
@@ -3658,6 +3784,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 72.47220143276667
       },
       "geometry": {
@@ -3689,6 +3816,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 74.96530874211743
       },
       "geometry": {
@@ -3724,6 +3852,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 151.25250817530184
       },
       "geometry": {
@@ -3759,6 +3888,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 59.38954645275342
       },
       "geometry": {
@@ -3794,6 +3924,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 31.163032857906572
       },
       "geometry": {
@@ -3821,6 +3952,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 48.86029937063553
       },
       "geometry": {
@@ -3848,6 +3980,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 155.65147155286633
       },
       "geometry": {
@@ -3891,6 +4024,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 114.07321564641559
       },
       "geometry": {
@@ -3938,6 +4072,7 @@
         "z_order": 3,
         "oneway": "yes",
         "lanes": null,
+        "weight": 1,
         "length": 210.08244735276452
       },
       "geometry": {
@@ -4005,6 +4140,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 33.822261260840804
       },
       "geometry": {
@@ -4036,6 +4172,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 162.56067546515916
       },
       "geometry": {
@@ -4099,6 +4236,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 37.28574634528682
       },
       "geometry": {
@@ -4126,6 +4264,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 52.585730855731434
       },
       "geometry": {
@@ -4165,6 +4304,7 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 34.96179435614762
       },
       "geometry": {
@@ -4196,6 +4336,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 25.61014184112546
       },
       "geometry": {
@@ -4227,6 +4368,7 @@
         "z_order": 6,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 3.7080690111436057
       },
       "geometry": {
@@ -4254,6 +4396,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
+        "weight": 1,
         "length": 50.385149252861055
       },
       "geometry": {
@@ -4285,6 +4428,7 @@
         "z_order": 6,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 49.693102678090135
       },
       "geometry": {
@@ -4312,6 +4456,7 @@
         "z_order": 6,
         "oneway": "yes",
         "lanes": "4",
+        "weight": 1,
         "length": 50.31252809026828
       },
       "geometry": {
@@ -4347,6 +4492,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
+        "weight": 1,
         "length": 42.963751455084655
       },
       "geometry": {
@@ -4374,6 +4520,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 5.858902547350388
       },
       "geometry": {
@@ -4401,6 +4548,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 173.5638162374829
       },
       "geometry": {
@@ -4440,6 +4588,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 8.386586444044497
       },
       "geometry": {
@@ -4461,95 +4610,26 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 122,
+        "id": 124,
         "name": null,
-        "highway": "footway",
-        "z_order": 0,
+        "highway": "secondary_link",
+        "z_order": 6,
         "oneway": null,
-        "lanes": null,
-        "length": 15.867525520409517
+        "lanes": "2",
+        "weight": 1,
+        "length": 17.498695357957498
       },
       "geometry": {
         "type": "MultiLineString",
         "coordinates": [
           [
             [
-              105.8225335,
-              21.0059405
+              105.8160708,
+              21.0104471
             ],
             [
-              105.8226109,
-              21.0059065
-            ],
-            [
-              105.82267177571241,
-              21.00587983833484
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 123,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 19.396444359536602
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8225039414569,
-              21.00555028695775
-            ],
-            [
-              105.8224433,
-              21.0055776
-            ],
-            [
-              105.8223357,
-              21.005626
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 125,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 29.852275718746373
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8158483,
-              21.0105195
-            ],
-            [
-              105.8158918,
-              21.0104883
-            ],
-            [
-              105.8160258,
-              21.010392
-            ],
-            [
-              105.8160763,
-              21.0103556
+              105.8159375,
+              21.0105436
             ]
           ]
         ]
@@ -4564,6 +4644,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 74.54190317011363
       },
       "geometry": {
@@ -4607,6 +4688,7 @@
         "z_order": 6,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 36.842152542740344
       },
       "geometry": {
@@ -4632,43 +4714,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 128,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 22.9498243364403
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.822404,
-              21.0057727
-            ],
-            [
-              105.8224422,
-              21.0058186
-            ],
-            [
-              105.8225335,
-              21.0059405
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 129,
         "name": "Phố Tây Sơn",
         "highway": "primary",
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
+        "weight": 1,
         "length": 18.69169956015714
       },
       "geometry": {
@@ -4700,6 +4752,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "1",
+        "weight": 1,
         "length": 15.654857433047098
       },
       "geometry": {
@@ -4739,6 +4792,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
+        "weight": 1,
         "length": 39.62151241003495
       },
       "geometry": {
@@ -4770,6 +4824,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 0.6630757192347485
       },
       "geometry": {
@@ -4797,6 +4852,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 47.979668968402926
       },
       "geometry": {
@@ -4824,6 +4880,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
+        "weight": 1,
         "length": 16.889362444705167
       },
       "geometry": {
@@ -4851,6 +4908,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 28.397969720564056
       },
       "geometry": {
@@ -4890,6 +4948,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
+        "weight": 1,
         "length": 49.6976123976897
       },
       "geometry": {
@@ -4925,6 +4984,7 @@
         "z_order": 7,
         "oneway": null,
         "lanes": "2",
+        "weight": 1,
         "length": 12.42550610616062
       },
       "geometry": {
@@ -4952,6 +5012,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 79.13818994823222
       },
       "geometry": {
@@ -4987,6 +5048,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 67.9844425945457
       },
       "geometry": {
@@ -5026,6 +5088,7 @@
         "z_order": 3,
         "oneway": "yes",
         "lanes": null,
+        "weight": 1,
         "length": 238.9600396960154
       },
       "geometry": {
@@ -5097,6 +5160,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 37.5942662140806
       },
       "geometry": {
@@ -5128,6 +5192,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 29.24880565313254
       },
       "geometry": {
@@ -5155,6 +5220,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 63.7228000696
       },
       "geometry": {
@@ -5190,6 +5256,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
+        "weight": 1,
         "length": 64.97336058941514
       },
       "geometry": {
@@ -5217,6 +5284,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
+        "weight": 1,
         "length": 46.09246712694045
       },
       "geometry": {
@@ -5244,6 +5312,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 44.980320260989686
       },
       "geometry": {
@@ -5271,6 +5340,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 70.89036781423471
       },
       "geometry": {
@@ -5302,6 +5372,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 97.50703276121085
       },
       "geometry": {
@@ -5341,6 +5412,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 46.71189348697245
       },
       "geometry": {
@@ -5368,6 +5440,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 71.29330642915644
       },
       "geometry": {
@@ -5399,6 +5472,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 36.66688143589511
       },
       "geometry": {
@@ -5426,6 +5500,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 37.46717574361642
       },
       "geometry": {
@@ -5453,6 +5528,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 72.06718413207128
       },
       "geometry": {
@@ -5488,6 +5564,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 31.82276488288654
       },
       "geometry": {
@@ -5515,6 +5592,7 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 84.4379594537693
       },
       "geometry": {
@@ -5540,428 +5618,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 156,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 402.89179789344223
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8228494,
-              21.0065707
-            ],
-            [
-              105.8227855,
-              21.0064161
-            ],
-            [
-              105.8226133,
-              21.0061085
-            ],
-            [
-              105.8225787,
-              21.0060721
-            ],
-            [
-              105.8224861,
-              21.0060116
-            ],
-            [
-              105.8223987,
-              21.0059759
-            ],
-            [
-              105.8223415,
-              21.0059793
-            ],
-            [
-              105.8222894,
-              21.005995
-            ],
-            [
-              105.822231,
-              21.0060308
-            ],
-            [
-              105.8220712,
-              21.0061945
-            ],
-            [
-              105.8219564,
-              21.0063172
-            ],
-            [
-              105.8218411,
-              21.0064406
-            ],
-            [
-              105.8217567,
-              21.0065514
-            ],
-            [
-              105.8216426,
-              21.0066955
-            ],
-            [
-              105.8214282,
-              21.0069435
-            ],
-            [
-              105.8213743,
-              21.0070161
-            ],
-            [
-              105.8212204,
-              21.0072235
-            ],
-            [
-              105.8211829,
-              21.0072741
-            ],
-            [
-              105.8205718,
-              21.0080258
-            ],
-            [
-              105.82045726411258,
-              21.008166703195908
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 157,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 9.28726862269432
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8224861,
-              21.0060116
-            ],
-            [
-              105.8225065,
-              21.005981
-            ],
-            [
-              105.8225335,
-              21.0059405
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 158,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 1061.459459656113
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8172527,
-              21.0117406
-            ],
-            [
-              105.8172735,
-              21.0117381
-            ],
-            [
-              105.8172942,
-              21.0117263
-            ],
-            [
-              105.8173137,
-              21.0117046
-            ],
-            [
-              105.8175407,
-              21.0114275
-            ],
-            [
-              105.8179102,
-              21.0109765
-            ],
-            [
-              105.81797,
-              21.010892
-            ],
-            [
-              105.818185,
-              21.0106546
-            ],
-            [
-              105.8182471,
-              21.0105799
-            ],
-            [
-              105.8183963,
-              21.0103911
-            ],
-            [
-              105.8185561,
-              21.0102143
-            ],
-            [
-              105.8186204,
-              21.0101292
-            ],
-            [
-              105.818864,
-              21.0098367
-            ],
-            [
-              105.818923,
-              21.0097615
-            ],
-            [
-              105.8189487,
-              21.0097288
-            ],
-            [
-              105.8192688,
-              21.009369
-            ],
-            [
-              105.8193051,
-              21.0093271
-            ],
-            [
-              105.8193427,
-              21.0092837
-            ],
-            [
-              105.8194448,
-              21.0091657
-            ],
-            [
-              105.8195168,
-              21.0090745
-            ],
-            [
-              105.8197725,
-              21.0087507
-            ],
-            [
-              105.8198275,
-              21.0086809
-            ],
-            [
-              105.8198374,
-              21.0086689
-            ],
-            [
-              105.8199852,
-              21.0084888
-            ],
-            [
-              105.8200534,
-              21.0084058
-            ],
-            [
-              105.8201903,
-              21.0082547
-            ],
-            [
-              105.8202601,
-              21.0081777
-            ],
-            [
-              105.8204245,
-              21.0079961
-            ],
-            [
-              105.8204653,
-              21.0079473
-            ],
-            [
-              105.8206864,
-              21.0076821
-            ],
-            [
-              105.8208017,
-              21.0075439
-            ],
-            [
-              105.8208778,
-              21.0074501
-            ],
-            [
-              105.8210083,
-              21.0072895
-            ],
-            [
-              105.8210812,
-              21.007197
-            ],
-            [
-              105.8211078,
-              21.0071632
-            ],
-            [
-              105.8211746,
-              21.0070785
-            ],
-            [
-              105.8212771,
-              21.006946
-            ],
-            [
-              105.8214147,
-              21.006768
-            ],
-            [
-              105.8214677,
-              21.0067068
-            ],
-            [
-              105.821659,
-              21.0064856
-            ],
-            [
-              105.8218145,
-              21.0063255
-            ],
-            [
-              105.8220048,
-              21.0061203
-            ],
-            [
-              105.8221654,
-              21.0059751
-            ],
-            [
-              105.8222384,
-              21.0058916
-            ],
-            [
-              105.8222842,
-              21.0058351
-            ],
-            [
-              105.8223119,
-              21.0057431
-            ],
-            [
-              105.8223364,
-              21.00563
-            ],
-            [
-              105.8223357,
-              21.005626
-            ],
-            [
-              105.8223292,
-              21.0055889
-            ],
-            [
-              105.8222943,
-              21.0055061
-            ],
-            [
-              105.8222175,
-              21.0053515
-            ],
-            [
-              105.8221134,
-              21.0051348
-            ],
-            [
-              105.8220725,
-              21.0050577
-            ],
-            [
-              105.8220405,
-              21.0049909
-            ],
-            [
-              105.8218917,
-              21.0047427
-            ],
-            [
-              105.8217675,
-              21.0045589
-            ],
-            [
-              105.8216974,
-              21.0044676
-            ],
-            [
-              105.8215963,
-              21.0043688
-            ],
-            [
-              105.8214863,
-              21.0042768
-            ],
-            [
-              105.8213109,
-              21.004143
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 159,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 5.727117703027798
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.822364,
-              21.0057599
-            ],
-            [
-              105.8223119,
-              21.0057431
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 162,
         "name": "Phố Tây Sơn",
         "highway": "primary",
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
+        "weight": 1,
         "length": 3.284061159465579
       },
       "geometry": {
@@ -5989,6 +5652,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 22.642761317858703
       },
       "geometry": {
@@ -6016,6 +5680,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 25.89323898155368
       },
       "geometry": {
@@ -6047,6 +5712,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 56.31795437299381
       },
       "geometry": {
@@ -6078,6 +5744,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 112.58460816870854
       },
       "geometry": {
@@ -6129,6 +5796,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 52.00119135859444
       },
       "geometry": {
@@ -6156,6 +5824,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 23.044108491712464
       },
       "geometry": {
@@ -6183,6 +5852,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 25.907925656180428
       },
       "geometry": {
@@ -6210,6 +5880,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 22.259475322998703
       },
       "geometry": {
@@ -6237,6 +5908,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 109.85119076994668
       },
       "geometry": {
@@ -6292,6 +5964,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 54.418058792439965
       },
       "geometry": {
@@ -6331,6 +6004,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 51.66051382297165
       },
       "geometry": {
@@ -6370,6 +6044,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 43.22637465428881
       },
       "geometry": {
@@ -6425,6 +6100,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 179.36343094792
       },
       "geometry": {
@@ -6476,6 +6152,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 55.011998784888334
       },
       "geometry": {
@@ -6507,6 +6184,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 47.89682654682834
       },
       "geometry": {
@@ -6546,6 +6224,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 42.62633218639642
       },
       "geometry": {
@@ -6581,6 +6260,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 6.865052983913127
       },
       "geometry": {
@@ -6608,6 +6288,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 29.643834700593587
       },
       "geometry": {
@@ -6635,6 +6316,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 43.89070115199052
       },
       "geometry": {
@@ -6662,6 +6344,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 98.70414169111716
       },
       "geometry": {
@@ -6693,6 +6376,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 64.60375246246453
       },
       "geometry": {
@@ -6728,6 +6412,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 34.98524286063876
       },
       "geometry": {
@@ -6759,6 +6444,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 27.826107944809234
       },
       "geometry": {
@@ -6786,6 +6472,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 21.19343419927308
       },
       "geometry": {
@@ -6813,6 +6500,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
+        "weight": 1,
         "length": 20.867822189937094
       },
       "geometry": {
@@ -6838,12 +6526,49 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 193,
+        "name": "Phố Thái Thịnh",
+        "highway": "tertiary",
+        "z_order": 4,
+        "oneway": null,
+        "lanes": "2",
+        "weight": 1,
+        "length": 38.21221183404377
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8225293,
+              21.0057479
+            ],
+            [
+              105.8224422,
+              21.0058186
+            ],
+            [
+              105.8222852,
+              21.0059295
+            ],
+            [
+              105.822243,
+              21.005964
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": 194,
         "name": "Đường Láng",
         "highway": "primary",
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
+        "weight": 1,
         "length": 76.80788175514421
       },
       "geometry": {
@@ -6879,6 +6604,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 6.345938791869565
       },
       "geometry": {
@@ -6900,744 +6626,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 206,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 220.17434650330782
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8213109,
-              21.004143
-            ],
-            [
-              105.821164,
-              21.0040325
-            ],
-            [
-              105.8210528,
-              21.0039493
-            ],
-            [
-              105.8209215,
-              21.0038514
-            ],
-            [
-              105.8207688,
-              21.0037448
-            ],
-            [
-              105.8206525,
-              21.0036558
-            ],
-            [
-              105.8206003,
-              21.0036166
-            ],
-            [
-              105.8205641,
-              21.0035927
-            ],
-            [
-              105.8204011,
-              21.0035673
-            ],
-            [
-              105.8202829,
-              21.0035402
-            ],
-            [
-              105.820056,
-              21.0035008
-            ],
-            [
-              105.8198001,
-              21.0034657
-            ],
-            [
-              105.8196826,
-              21.0034503
-            ],
-            [
-              105.8196159,
-              21.0034513
-            ],
-            [
-              105.8195548,
-              21.0034677
-            ],
-            [
-              105.8194147,
-              21.0034951
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 207,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 787.2540769036185
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8194147,
-              21.0034951
-            ],
-            [
-              105.8192004,
-              21.0035885
-            ],
-            [
-              105.8189981,
-              21.0037236
-            ],
-            [
-              105.818796,
-              21.0038619
-            ],
-            [
-              105.8186109,
-              21.0040094
-            ],
-            [
-              105.8182994,
-              21.0043195
-            ],
-            [
-              105.8181681,
-              21.0044429
-            ],
-            [
-              105.8181111,
-              21.0044762
-            ],
-            [
-              105.8178255,
-              21.004643
-            ],
-            [
-              105.8175753,
-              21.0047818
-            ],
-            [
-              105.8174868,
-              21.0048337
-            ],
-            [
-              105.8174419,
-              21.0048737
-            ],
-            [
-              105.8172191,
-              21.0051689
-            ],
-            [
-              105.8172081,
-              21.0051847
-            ],
-            [
-              105.8168067,
-              21.0057647
-            ],
-            [
-              105.8167957,
-              21.0057812
-            ],
-            [
-              105.8167619,
-              21.005832
-            ],
-            [
-              105.8167512,
-              21.0058481
-            ],
-            [
-              105.8167209,
-              21.0058937
-            ],
-            [
-              105.8166827,
-              21.0059511
-            ],
-            [
-              105.8165839,
-              21.0060996
-            ],
-            [
-              105.816322,
-              21.0064931
-            ],
-            [
-              105.816262,
-              21.0065891
-            ],
-            [
-              105.8159691,
-              21.0069844
-            ],
-            [
-              105.8157227,
-              21.0073406
-            ],
-            [
-              105.8156143,
-              21.0074972
-            ],
-            [
-              105.8154267,
-              21.0077237
-            ],
-            [
-              105.8153637,
-              21.0077986
-            ],
-            [
-              105.8152505,
-              21.0079337
-            ],
-            [
-              105.8150205,
-              21.0082082
-            ],
-            [
-              105.8148525,
-              21.0084084
-            ],
-            [
-              105.8148426,
-              21.0084203
-            ],
-            [
-              105.8146525,
-              21.0086469
-            ],
-            [
-              105.8146422,
-              21.0086681
-            ],
-            [
-              105.8146407,
-              21.0086857
-            ],
-            [
-              105.8146498,
-              21.0087054
-            ],
-            [
-              105.8146824,
-              21.008737
-            ],
-            [
-              105.8147361,
-              21.0087991
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 208,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 10.472251485000381
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8205641,
-              21.0035927
-            ],
-            [
-              105.8204784,
-              21.003543
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 209,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 4.827107825133644
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8197188,
-              21.003423
-            ],
-            [
-              105.8196826,
-              21.0034503
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 210,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 409.9464264041454
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8190812,
-              21.0025749
-            ],
-            [
-              105.8186428,
-              21.0022427
-            ],
-            [
-              105.8183505,
-              21.0020496
-            ],
-            [
-              105.818323,
-              21.0020405
-            ],
-            [
-              105.8182859,
-              21.0020312
-            ],
-            [
-              105.8182691,
-              21.0020411
-            ],
-            [
-              105.8181976,
-              21.0021396
-            ],
-            [
-              105.8180564,
-              21.002449
-            ],
-            [
-              105.8178489,
-              21.0029059
-            ],
-            [
-              105.817629,
-              21.0033667
-            ],
-            [
-              105.8175963,
-              21.0034578
-            ],
-            [
-              105.8174814,
-              21.0037773
-            ],
-            [
-              105.8173916,
-              21.0040014
-            ],
-            [
-              105.8173826,
-              21.0040249
-            ],
-            [
-              105.8172853,
-              21.0042787
-            ],
-            [
-              105.8172548,
-              21.0043583
-            ],
-            [
-              105.817173,
-              21.0045924
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 211,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 37.5844416866893
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8191768,
-              21.0028596
-            ],
-            [
-              105.81921,
-              21.0026898
-            ],
-            [
-              105.8190812,
-              21.0025749
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 212,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 263.0072460124142
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8173992,
-              21.0046249
-            ],
-            [
-              105.8175818,
-              21.0044896
-            ],
-            [
-              105.8176001,
-              21.0044761
-            ],
-            [
-              105.8178357,
-              21.0042703
-            ],
-            [
-              105.8179296,
-              21.0041636
-            ],
-            [
-              105.8181174,
-              21.0039501
-            ],
-            [
-              105.8183564,
-              21.0037141
-            ],
-            [
-              105.8186086,
-              21.0035215
-            ],
-            [
-              105.8186724,
-              21.0034729
-            ],
-            [
-              105.8190593,
-              21.0032256
-            ],
-            [
-              105.8190383,
-              21.0031804
-            ],
-            [
-              105.819044,
-              21.0030757
-            ],
-            [
-              105.819062,
-              21.0030046
-            ],
-            [
-              105.8190977,
-              21.0029778
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 213,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 54.47844296355498
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8192328,
-              21.0029862
-            ],
-            [
-              105.8192107,
-              21.0030039
-            ],
-            [
-              105.8191835,
-              21.0030136
-            ],
-            [
-              105.8191544,
-              21.003014
-            ],
-            [
-              105.8191269,
-              21.0030051
-            ],
-            [
-              105.8191043,
-              21.002988
-            ],
-            [
-              105.8190977,
-              21.0029778
-            ],
-            [
-              105.8190893,
-              21.0029647
-            ],
-            [
-              105.8190838,
-              21.0029406
-            ],
-            [
-              105.8190866,
-              21.0029162
-            ],
-            [
-              105.8190973,
-              21.0028937
-            ],
-            [
-              105.819115,
-              21.0028754
-            ],
-            [
-              105.8191379,
-              21.0028632
-            ],
-            [
-              105.8191637,
-              21.0028582
-            ],
-            [
-              105.8191768,
-              21.0028596
-            ],
-            [
-              105.8191899,
-              21.0028609
-            ],
-            [
-              105.8192139,
-              21.002871
-            ],
-            [
-              105.8192334,
-              21.0028876
-            ],
-            [
-              105.8192464,
-              21.002909
-            ],
-            [
-              105.8192517,
-              21.0029357
-            ],
-            [
-              105.8192485,
-              21.0029537
-            ],
-            [
-              105.819247,
-              21.0029625
-            ],
-            [
-              105.8192328,
-              21.0029862
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 214,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 8.066965622118241
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8190593,
-              21.0032256
-            ],
-            [
-              105.8191348,
-              21.0032424
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 215,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 6.412109105863035
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.81921,
-              21.0026898
-            ],
-            [
-              105.81927,
-              21.0026764
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 216,
-        "name": null,
-        "highway": "footway",
-        "z_order": 30,
-        "oneway": null,
-        "lanes": null,
-        "length": 71.94813829027984
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.816422,
-              21.0061041
-            ],
-            [
-              105.8164554,
-              21.0061247
-            ],
-            [
-              105.8166301,
-              21.0058388
-            ],
-            [
-              105.8168192,
-              21.0059485
-            ],
-            [
-              105.8168862,
-              21.0059874
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 218,
-        "name": null,
-        "highway": "footway",
-        "z_order": 20,
-        "oneway": null,
-        "lanes": null,
-        "length": 8.932896398150437
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8164375,
-              21.0056879
-            ],
-            [
-              105.8165106,
-              21.0057303
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 219,
         "name": null,
         "highway": "primary_link",
         "z_order": 7,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 17.945913249617753
       },
       "geometry": {
@@ -7665,6 +6660,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
+        "weight": 1,
         "length": 140.5107076348998
       },
       "geometry": {
@@ -7708,6 +6704,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 77.68519409814715
       },
       "geometry": {
@@ -7771,6 +6768,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 146.8412519078875
       },
       "geometry": {
@@ -7818,6 +6816,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 96.74601399326224
       },
       "geometry": {
@@ -7865,6 +6864,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 46.21929105836247
       },
       "geometry": {
@@ -7904,6 +6904,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 95.5759250737413
       },
       "geometry": {
@@ -7963,6 +6964,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 46.62804685562798
       },
       "geometry": {
@@ -7998,6 +7000,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 32.12066947037909
       },
       "geometry": {
@@ -8029,6 +7032,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 20.737094118662988
       },
       "geometry": {
@@ -8060,6 +7064,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 67.82012655774119
       },
       "geometry": {
@@ -8095,6 +7100,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 1.5319347822377956
       },
       "geometry": {
@@ -8122,6 +7128,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 1.6659057172064624
       },
       "geometry": {
@@ -8149,6 +7156,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 44.31957669186657
       },
       "geometry": {
@@ -8184,6 +7192,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 21.850275403089885
       },
       "geometry": {
@@ -8219,6 +7228,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 123.01606914093337
       },
       "geometry": {
@@ -8258,6 +7268,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 91.7977220544424
       },
       "geometry": {
@@ -8309,6 +7320,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 71.53484053633169
       },
       "geometry": {
@@ -8340,6 +7352,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 13.571352849526223
       },
       "geometry": {
@@ -8367,6 +7380,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 25.009430683057975
       },
       "geometry": {
@@ -8394,6 +7408,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 45.62222926525217
       },
       "geometry": {
@@ -8425,6 +7440,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 35.880261356823105
       },
       "geometry": {
@@ -8468,6 +7484,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 41.13464955033455
       },
       "geometry": {
@@ -8503,6 +7520,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 66.0286304637716
       },
       "geometry": {
@@ -8538,6 +7556,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 45.15959247298357
       },
       "geometry": {
@@ -8565,6 +7584,7 @@
         "z_order": -10,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 48.40850295183683
       },
       "geometry": {
@@ -8596,6 +7616,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 93.01255399091094
       },
       "geometry": {
@@ -8627,6 +7648,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 52.57664041810692
       },
       "geometry": {
@@ -8660,744 +7682,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 247,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 28.112439762699516
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8146824,
-              21.008737
-            ],
-            [
-              105.8145777,
-              21.008818
-            ],
-            [
-              105.81447248917843,
-              21.00889705184681
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 248,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 10.216308428323588
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8165106,
-              21.0057303
-            ],
-            [
-              105.8165951,
-              21.0057774
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 249,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 12.849948335476412
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.82289622533744,
-              21.006678105461454
-            ],
-            [
-              105.8228831,
-              21.0066491
-            ],
-            [
-              105.8228494,
-              21.0065707
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 250,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 6.740912490317479
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8193051,
-              21.0093271
-            ],
-            [
-              105.8193538,
-              21.0093637
-            ],
-            [
-              105.81935572292176,
-              21.009365143135778
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 251,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 7.934174158882164
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8198374,
-              21.0086689
-            ],
-            [
-              105.8198943,
-              21.0087156
-            ],
-            [
-              105.81989486042681,
-              21.008716060996246
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 252,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 7.224124317429154
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8201903,
-              21.0082547
-            ],
-            [
-              105.82024622511676,
-              21.008293424780163
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 253,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 13.589058655302743
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8210812,
-              21.007197
-            ],
-            [
-              105.8211332,
-              21.0072364
-            ],
-            [
-              105.8211829,
-              21.0072741
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 254,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 8.562976669345085
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.81711037526645,
-              21.012118534376036
-            ],
-            [
-              105.8170602,
-              21.0120572
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 255,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 40.36367062837073
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8170602,
-              21.0120572
-            ],
-            [
-              105.8170921,
-              21.0120048
-            ],
-            [
-              105.8171866,
-              21.0118493
-            ],
-            [
-              105.8172527,
-              21.0117406
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 256,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 11.30061817548479
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8172527,
-              21.0117406
-            ],
-            [
-              105.81731369148953,
-              21.011825085899996
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 257,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 371.3864438604438
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8170602,
-              21.0120572
-            ],
-            [
-              105.8170579,
-              21.0120396
-            ],
-            [
-              105.8170507,
-              21.0120185
-            ],
-            [
-              105.8166374,
-              21.0115049
-            ],
-            [
-              105.8165554,
-              21.0114029
-            ],
-            [
-              105.816364,
-              21.0111635
-            ],
-            [
-              105.816115,
-              21.0108519
-            ],
-            [
-              105.8160025,
-              21.0107111
-            ],
-            [
-              105.8159734,
-              21.010675
-            ],
-            [
-              105.8158483,
-              21.0105195
-            ],
-            [
-              105.8156478,
-              21.0102702
-            ],
-            [
-              105.8155521,
-              21.0101513
-            ],
-            [
-              105.81545,
-              21.0100209
-            ],
-            [
-              105.815421,
-              21.0099905
-            ],
-            [
-              105.8153529,
-              21.0099191
-            ],
-            [
-              105.8151869,
-              21.0097606
-            ],
-            [
-              105.8151438,
-              21.0097227
-            ],
-            [
-              105.8149544,
-              21.0095558
-            ],
-            [
-              105.8148541,
-              21.0094673
-            ],
-            [
-              105.81483313151101,
-              21.009448809504146
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 258,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 420.1716087865107
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8172527,
-              21.0117406
-            ],
-            [
-              105.8172284,
-              21.0117381
-            ],
-            [
-              105.8172034,
-              21.0117275
-            ],
-            [
-              105.8171791,
-              21.0117048
-            ],
-            [
-              105.8169303,
-              21.0114159
-            ],
-            [
-              105.8167523,
-              21.0111912
-            ],
-            [
-              105.8166955,
-              21.0111194
-            ],
-            [
-              105.8165747,
-              21.0109732
-            ],
-            [
-              105.8163221,
-              21.0107141
-            ],
-            [
-              105.816287,
-              21.0106718
-            ],
-            [
-              105.8162806,
-              21.0106641
-            ],
-            [
-              105.816243,
-              21.0105998
-            ],
-            [
-              105.8161734,
-              21.0104819
-            ],
-            [
-              105.8161307,
-              21.0104223
-            ],
-            [
-              105.8160763,
-              21.0103556
-            ],
-            [
-              105.8158345,
-              21.0100591
-            ],
-            [
-              105.8157907,
-              21.0100054
-            ],
-            [
-              105.8157091,
-              21.0099052
-            ],
-            [
-              105.8156308,
-              21.0098111
-            ],
-            [
-              105.8155607,
-              21.0097415
-            ],
-            [
-              105.8153727,
-              21.0095551
-            ],
-            [
-              105.8153165,
-              21.0095076
-            ],
-            [
-              105.8151856,
-              21.0093984
-            ],
-            [
-              105.8151566,
-              21.0093713
-            ],
-            [
-              105.8151223,
-              21.0093393
-            ],
-            [
-              105.8150643,
-              21.0092672
-            ],
-            [
-              105.8150168,
-              21.0092046
-            ],
-            [
-              105.814815,
-              21.0089213
-            ],
-            [
-              105.8147361,
-              21.0087991
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 259,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 350.0883850360604
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.81456594696245,
-              21.014110381484382
-            ],
-            [
-              105.814759,
-              21.0139679
-            ],
-            [
-              105.815533,
-              21.0134112
-            ],
-            [
-              105.8155996,
-              21.0133694
-            ],
-            [
-              105.8156307,
-              21.0133499
-            ],
-            [
-              105.8156379,
-              21.0133448
-            ],
-            [
-              105.8163945,
-              21.0128081
-            ],
-            [
-              105.8164127,
-              21.0127949
-            ],
-            [
-              105.8166649,
-              21.0126128
-            ],
-            [
-              105.8167261,
-              21.0125617
-            ],
-            [
-              105.8168012,
-              21.0124946
-            ],
-            [
-              105.8168709,
-              21.0124275
-            ],
-            [
-              105.8169203,
-              21.0123644
-            ],
-            [
-              105.8169718,
-              21.0122863
-            ],
-            [
-              105.8170426,
-              21.0121631
-            ],
-            [
-              105.8170597,
-              21.012111
-            ],
-            [
-              105.8170602,
-              21.0120572
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 260,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 2.100156270212066
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.81564930886016,
-              21.01336045401743
-            ],
-            [
-              105.8156379,
-              21.0133448
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 261,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 1.298268281503332
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.81641972701628,
-              21.012804593393994
-            ],
-            [
-              105.8164127,
-              21.0127949
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 262,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 474.5218453270468
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.81425259371417,
-              21.008671726238397
-            ],
-            [
-              105.814594,
-              21.0083241
-            ],
-            [
-              105.8148377,
-              21.0080549
-            ],
-            [
-              105.8150673,
-              21.0077786
-            ],
-            [
-              105.8154845,
-              21.0072426
-            ],
-            [
-              105.8155675,
-              21.0071223
-            ],
-            [
-              105.8157014,
-              21.0069174
-            ],
-            [
-              105.8165106,
-              21.0057303
-            ],
-            [
-              105.8166557,
-              21.0054967
-            ],
-            [
-              105.8168697,
-              21.0051722
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 266,
         "name": null,
         "highway": "service",
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 68.96005138502753
       },
       "geometry": {
@@ -9429,6 +7720,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 54.661210855273765
       },
       "geometry": {
@@ -9478,6 +7770,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 43.037742972405205
       },
       "geometry": {
@@ -9505,6 +7798,7 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 253.71996395308602
       },
       "geometry": {
@@ -9544,6 +7838,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 49.33771295056309
       },
       "geometry": {
@@ -9571,6 +7866,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 15.443776660726432
       },
       "geometry": {
@@ -9598,6 +7894,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 19.886777356089574
       },
       "geometry": {
@@ -9619,182 +7916,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 281,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 20.07410413618892
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8168862,
-              21.0059874
-            ],
-            [
-              105.8167209,
-              21.0058937
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 283,
-        "name": null,
-        "highway": "footway",
-        "z_order": 20,
-        "oneway": null,
-        "lanes": null,
-        "length": 2.677699429782227
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8169542,
-              21.0059689
-            ],
-            [
-              105.8169402,
-              21.0059892
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 284,
-        "name": null,
-        "highway": "footway",
-        "z_order": 20,
-        "oneway": null,
-        "lanes": null,
-        "length": 6.08237807148361
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.816819,
-              21.0059874
-            ],
-            [
-              105.8167992,
-              21.0059754
-            ],
-            [
-              105.8168192,
-              21.0059485
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 285,
-        "name": null,
-        "highway": "footway",
-        "z_order": 20,
-        "oneway": null,
-        "lanes": null,
-        "length": 5.8884113350309
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8168192,
-              21.0059485
-            ],
-            [
-              105.8168333,
-              21.0059282
-            ],
-            [
-              105.8168592,
-              21.0059439
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 286,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 2.8704818749481276
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8167064,
-              21.0059644
-            ],
-            [
-              105.8166827,
-              21.0059511
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 287,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 2.0486360758678033
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8167672,
-              21.0058589
-            ],
-            [
-              105.8167512,
-              21.0058481
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 288,
         "name": null,
         "highway": "service",
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 48.43393841269578
       },
       "geometry": {
@@ -9830,6 +7958,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 33.47021154270582
       },
       "geometry": {
@@ -9865,6 +7994,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 58.821981552274586
       },
       "geometry": {
@@ -9928,6 +8058,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 42.52119897749835
       },
       "geometry": {
@@ -9983,6 +8114,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 9.308193008984968
       },
       "geometry": {
@@ -10014,6 +8146,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 31.057354046057036
       },
       "geometry": {
@@ -10057,6 +8190,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 34.550424478653326
       },
       "geometry": {
@@ -10088,6 +8222,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
+        "weight": 1,
         "length": 62.47395341959427
       },
       "geometry": {
@@ -10125,39 +8260,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 301,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "length": 4.393497274669596
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.822364,
-              21.0057599
-            ],
-            [
-              105.822404,
-              21.0057727
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 302,
         "name": "Phố Tây Sơn",
         "highway": "primary",
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
+        "weight": 1,
         "length": 43.24050717640911
       },
       "geometry": {
@@ -10189,6 +8298,7 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 104.01985297817816
       },
       "geometry": {
@@ -10268,6 +8378,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 25.232606530006063
       },
       "geometry": {
@@ -10295,6 +8406,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 23.69697901574056
       },
       "geometry": {
@@ -10322,6 +8434,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
+        "weight": 1,
         "length": 84.31425059264278
       },
       "geometry": {
@@ -10357,6 +8470,7 @@
         "z_order": 3,
         "oneway": "yes",
         "lanes": null,
+        "weight": 1,
         "length": 1.1032418068033916
       },
       "geometry": {
@@ -10384,6 +8498,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 179.2363230574275
       },
       "geometry": {
@@ -10425,12 +8540,89 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 309,
+        "name": "Phố Thái Thịnh",
+        "highway": "tertiary",
+        "z_order": 4,
+        "oneway": null,
+        "lanes": "2",
+        "weight": 1,
+        "length": 13.226255588459207
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8187493,
+              21.0100776
+            ],
+            [
+              105.8186654,
+              21.0101674
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 310,
+        "name": "Phố Thái Thịnh",
+        "highway": "tertiary",
+        "z_order": 4,
+        "oneway": null,
+        "lanes": "2",
+        "weight": 1,
+        "length": 161.23210363223345
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8186654,
+              21.0101674
+            ],
+            [
+              105.8184378,
+              21.0104356
+            ],
+            [
+              105.8182224,
+              21.0106917
+            ],
+            [
+              105.8182123,
+              21.0107088
+            ],
+            [
+              105.8180256,
+              21.0109232
+            ],
+            [
+              105.8177405,
+              21.0112634
+            ],
+            [
+              105.81770408068161,
+              21.011309716123645
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": 311,
         "name": null,
         "highway": "service",
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 0.4955932046193458
       },
       "geometry": {
@@ -10458,6 +8650,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 85.88351097335521
       },
       "geometry": {
@@ -10505,6 +8698,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 10.965417476644294
       },
       "geometry": {
@@ -10532,6 +8726,7 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
+        "weight": 1,
         "length": 63.221497311590696
       },
       "geometry": {
@@ -10563,6 +8758,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 40.35848863159067
       },
       "geometry": {
@@ -10590,6 +8786,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 39.47372912068211
       },
       "geometry": {
@@ -10629,6 +8826,7 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 14.513227084861484
       },
       "geometry": {
@@ -10656,6 +8854,7 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
+        "weight": 1,
         "length": 24.308011451087573
       },
       "geometry": {

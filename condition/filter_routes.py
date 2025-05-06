@@ -1,3 +1,4 @@
+from flask import Blueprint 
 from utils.length import add_length_to_vhc_allowed
 from config import ROADS_FILE, VHC_ALLOWED_FILE, ALLOWED_HIGHWAYS
 import json
@@ -5,6 +6,9 @@ from utils.sync_geojson import sync_geojson_file
 from flask import request, jsonify
 from graph import build_graph_from_geojson
 
+filter_bp = Blueprint('filter_routes',__name__)
+
+@filter_bp.route('/filter_routes', methods=['POST'])
 def filter_routes():
     data = request.get_json()
     vehicle = data.get('vehicle')
@@ -13,7 +17,6 @@ def filter_routes():
     # Kiểm tra xem phương tiện có hợp lệ không
     if vehicle not in ALLOWED_HIGHWAYS:
         return jsonify({'status': 'error', 'message': 'Phương tiện không hợp lệ'}), 400
-    print(f"GeoJSON data: {geojson_data}")
 
     # Lọc các đoạn đường phù hợp với phương tiện
     with open(ROADS_FILE, 'r', encoding='utf-8') as f:
