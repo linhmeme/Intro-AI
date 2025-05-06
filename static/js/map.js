@@ -2,7 +2,6 @@ let startPoint = null;
 let endPoint = null;
 let routePolyline = null;
 let allowedLayer = null;
-let currentVehicle = 'car';  // mặc định ô tô
 
 let map = L.map("map").setView([21.0085, 105.8185], 15); // Tọa độ Thịnh Quang
 
@@ -92,6 +91,7 @@ fetch("/static/geojson/boundary.geojson")
     let startCoords = [startPoint.getLatLng().lat, startPoint.getLatLng().lng];
     let endCoords = [endPoint.getLatLng().lat, endPoint.getLatLng().lng];
     let algorithm = document.getElementById("algorithm").value;
+    let vehicle = document.getElementById("vehicle").value;
   
     fetch("/find_route", {
       method: "POST",
@@ -100,7 +100,7 @@ fetch("/static/geojson/boundary.geojson")
         start: startCoords,
         end: endCoords,
         algorithm: algorithm,
-        vehicle: currentVehicle,
+        vehicle: vehicle,
       }),
     })
       .then((response) => response.json())
@@ -178,8 +178,10 @@ fetch("/static/geojson/boundary.geojson")
   }
 
 document.addEventListener("DOMContentLoaded", function () {
+  const selected = document.getElementById("vehicle").value;
+  currentVehicle = selected;
   filterRoutesByVehicle();  // gọi lần đầu khi mở trang
   // 🔁 Gọi lại khi người dùng đổi phương tiện
   document.getElementById('vehicle').addEventListener('change', filterRoutesByVehicle);
 });
-console.log("Đang lọc cho vehicle:", selectedVehicle);
+console.log("Đang lọc cho vehicle:", currentVehicle);

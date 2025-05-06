@@ -1,4 +1,4 @@
-from config import WEIGHTS_FILE
+from config import VHC_ALLOWED_FILE
 import json
 import os
 from config import DEFAULT_SPEED_BY_VEHICLE, CONDITION_SPEED_FACTORS
@@ -9,9 +9,18 @@ def compute_weight(length, highway, vehicle, edge_id=None, condition_cache=None)
     - Nếu không có condition → mặc định "normal"
     - Nếu bị jam, flooded → giảm tốc độ theo hệ số
     """
+    with open(VHC_ALLOWED_FILE, 'r', encoding='utf-8') as f:
+        geojson_data = json.load(f)
+    length = None
+    for feature in geojson_data['features']:
+        props = feature['properties']
+        if str(props['id']) == edge_id:
+            length = props.get('length', 0)
+            break
     if not length or length <= 0:
         return float('inf')
 
+    highway = None
     base_speed = DEFAULT_SPEED_BY_VEHICLE.get(vehicle, {}).get(highway, 0)
     if base_speed <= 0:
         return float('inf')
@@ -24,23 +33,20 @@ def compute_weight(length, highway, vehicle, edge_id=None, condition_cache=None)
 
     # Lấy hệ số tốc độ tương ứng với điều kiện
     factor = CONDITION_SPEED_FACTORS.get(condition, 1.0)
-    adjusted_speed = base_speed * factor
+    speed_used = base_speed * factor
 
-    if adjusted_speed <= 0:
+    if speed_used <= 0:
         return float('inf')
 
-    travel_time = length / (adjusted_speed * 1000 / 3600)  # m / (m/s) = s
+    travel_time = length / (speed_used * 1000 / 3600)  # m / (m/s) = s
 
-    return round(travel_time, 2), round(adjusted_speed, 1), condition
+    return round(travel_time, 2), round(speed_used, 1), condition
 
-def update_weight_file(edge_id, length, condition, highway, vehicle, condition_cache):
+def update_weight_file(edge_id, length, condition, highway, vehicle, condition_cache, weights):
+    # Tính trọng số, tốc độ sử dụng và condition từ condition_cache
     weight, speed_used, condition = compute_weight(length, highway, vehicle, edge_id, condition_cache)
-    if not os.path.exists(WEIGHTS_FILE):
-        weights = {}
-    else:
-        with open(WEIGHTS_FILE, "r", encoding="utf-8") as f:
-            weights = json.load(f)
- 
+    
+    # Cập nhật trọng số và thông tin vào bộ nhớ tạm weights
     weights[edge_id] = {
         "vehicle": vehicle,
         "highway": highway,
@@ -49,6 +55,4 @@ def update_weight_file(edge_id, length, condition, highway, vehicle, condition_c
         "speed": speed_used,
         "weight": weight
     }
-
-    with open(WEIGHTS_FILE, "w", encoding="utf-8") as f:
-        json.dump(weights, f, indent=2, ensure_ascii=False)
+    return weights

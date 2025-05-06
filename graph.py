@@ -133,7 +133,3 @@ def get_nearest_node(G, lat, lon, direction_check=False, goal_lat=None, goal_lon
 
     return nearest_node
 
-
-G = build_graph_from_geojson(WEIGHTS_FILE)
-GRAPH_PATH.parent.mkdir(parents=True, exist_ok=True)
-save_graph(G, GRAPH_PATH)

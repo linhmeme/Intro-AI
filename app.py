@@ -9,7 +9,7 @@ def create_app():
     
     app.register_blueprint(map_bp)
     app.register_blueprint(algo_bp)
-    app.register_blueprint(condition_bp)
+    app.register_blueprint(condition_bp, url_prefix='/condition')
 
     return app
 
