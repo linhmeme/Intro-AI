@@ -3131,11 +3131,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 25.95,
+        "weight": 2595.23,
         "length": 144.17955208344736,
         "vehicle": "car",
-        "condition": "normal",
-        "speed": 20.0
+        "condition": "not allowed",
+        "speed": 0.2
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6565,11 +6565,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 32.29,
+        "weight": 161.43,
         "length": 179.36343094792,
         "vehicle": "car",
-        "condition": "normal",
-        "speed": 20.0
+        "condition": "flooded",
+        "speed": 4.0
       },
       "geometry": {
         "type": "MultiLineString",

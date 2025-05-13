@@ -33,8 +33,8 @@ def finalize_conditions():
         length = props.get('length', 0)
     
     # Lấy condition từ condition_cache, nếu không có thì mặc định là "normal"
-        condition = condition_cache.get(edge_id, "normal")
-        
+        condition = condition_cache.get(str(edge_id), "normal")
+        print(f"→ Edge {edge_id} | From cache: {condition_cache.get(edge_id)} | Applied: {condition}")
         weight, speed_used, condition = update_weight_file(edge_id, length, condition, highway, vehicle, condition_cache, weights)
 
         props.update({
@@ -44,7 +44,7 @@ def finalize_conditions():
             "weight": weight
         })
         updated_features.append(feature)
-    print(f"Updating edge_id={edge_id}, condition={condition}, weight={weight}")
+    
 
     with open(WEIGHTS_FILE, 'w', encoding='utf-8') as f:
         json.dump({

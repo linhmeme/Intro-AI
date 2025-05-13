@@ -63,7 +63,7 @@ function onEachFeature(feature, layer) {
           condition_cache[edge_id] = condition;
 
           // ✅ Gửi về backend để lưu tạm
-          updateCondition(edge_id, condition);
+          updateCondition(String(edge_id), condition);
 
             // dropdown.style.display = 'none';
 
