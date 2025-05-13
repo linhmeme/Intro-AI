@@ -44,6 +44,7 @@ def finalize_conditions():
             "weight": weight
         })
         updated_features.append(feature)
+    print(f"Updating edge_id={edge_id}, condition={condition}, weight={weight}")
 
     with open(WEIGHTS_FILE, 'w', encoding='utf-8') as f:
         json.dump({
@@ -60,7 +61,6 @@ def finalize_conditions():
     save_graph(G_new, GRAPH_PATH)
 
     # Đồng bộ file geojson sang static/
-    sync_geojson_file('weights.geojson')
-    print("[DEBUG] condition_cache hiện tại:", condition_cache)
+    sync_geojson_file('weights.geojson', force=True)
 
     return jsonify({"status": "success", "message": "Đã cập nhật xong weights.geojson"}), 200
