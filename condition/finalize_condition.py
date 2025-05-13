@@ -33,7 +33,7 @@ def finalize_conditions():
         length = props.get('length', 0)
     
     # Lấy condition từ condition_cache, nếu không có thì mặc định là "normal"
-        condition = condition_cache.get(edge_id, "normal")
+        condition = condition_cache.get(str(edge_id), "normal")
         
         weight, speed_used, condition = update_weight_file(edge_id, length, condition, highway, vehicle, condition_cache, weights)
 

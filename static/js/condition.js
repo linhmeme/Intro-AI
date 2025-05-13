@@ -60,7 +60,7 @@ function onEachFeature(feature, layer) {
           let edge_id = selectedFeature.properties.id;
 
           // ✅ Cập nhật vào biến toàn cục
-          condition_cache[edge_id] = condition;
+          condition_cache[String(edge_id)] = condition;
 
           // ✅ Gửi về backend để lưu tạm
           updateCondition(edge_id, condition);
