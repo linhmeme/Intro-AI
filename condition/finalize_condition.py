@@ -61,5 +61,6 @@ def finalize_conditions():
 
     # Đồng bộ file geojson sang static/
     sync_geojson_file('weights.geojson')
+    print("[DEBUG] condition_cache hiện tại:", condition_cache)
 
     return jsonify({"status": "success", "message": "Đã cập nhật xong weights.geojson"}), 200

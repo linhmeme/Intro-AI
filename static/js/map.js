@@ -1,8 +1,17 @@
 let startPoint = null;
 let endPoint = null;
 let routePolyline = null;
-
-let map = L.map("map").setView([21.0085, 105.8185], 15); // Tọa độ Thịnh Quang
+ // Tọa độ Thịnh Quang
+let map = L.map("map", {
+  maxZoom: 18,
+  minZoom: 15.4,
+  zoomControl: true,
+  maxBounds: [
+    [21.0020, 105.8120], // Góc dưới trái (SW)
+    [21.0150, 105.8250]  // Góc trên phải (NE)
+  ],
+  maxBoundsViscosity: 1.0 // Càng gần 1.0 thì càng khó kéo ra ngoài
+}).setView([21.0085, 105.8185], 15); // Tâm bản đồ Thịnh Quang
 
 // 🌍 Thêm lớp nền từ OpenStreetMap
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -16,10 +25,10 @@ fetch("/static/geojson/boundary.geojson")
   .then((data) => {
     L.geoJSON(data, {
       style: {
-        color: "red", // ✅ Màu vàng nổi bật
-        weight: 5, // ✅ Tăng độ dày
-        opacity: 0.5, // ✅ Đậm hoàn toàn
-        dashArray: "1", // ✅ Thêm nét đứt cho ranh giới nhìn khác biệt (tuỳ chọn)
+        color: "red", 
+        weight: 5, 
+        opacity: 0.5, 
+        dashArray: "1",
       },
     }).addTo(map);
   });
@@ -93,20 +102,18 @@ fetch("/static/geojson/boundary.geojson")
     visitedLayer = L.layerGroup().addTo(map);
     routeLayer = L.layerGroup().addTo(map);
     snapLayer = L.layerGroup().addTo(map);
-  
-    // ✅ Vẽ đoạn nối từ vị trí người dùng → node thực tế
+    // Vẽ đoạn nối từ vị trí người dùng → node thực tế
     if (startNode && userStart) {
       L.polyline([userStart, startNode], {
-        color: "yellow",
+        color: "red",
         weight: 4,
-        dashArray: "5,10",
+        //dashArray: "5,10",
       }).addTo(snapLayer);
-    }
-    if (endNode && userEnd) {
+
       L.polyline([userEnd, endNode], {
-        color: "yellow",
+        color: "red",
         weight: 4,
-        dashArray: "5,10",
+        //dashArray: "5,10",
       }).addTo(snapLayer);
     }
   
@@ -120,7 +127,7 @@ fetch("/static/geojson/boundary.geojson")
       }
   
       if (edgesBackward.length > 0 && j < edgesBackward.length) {
-        drawVisitedEdges([edgesBackward[j]], "#9c0b23");
+        drawVisitedEdges([edgesBackward[j]], "#0b209c");
         j++;
       }
   
@@ -136,7 +143,7 @@ fetch("/static/geojson/boundary.geojson")
   
   function drawFinalPath(path) {
     if (path.length > 1) {
-      L.polyline(path, { color: "green", weight: 5 }).addTo(routeLayer);
+      L.polyline(path, { color: "red", weight: 5 }).addTo(routeLayer);
     }
   }
 
