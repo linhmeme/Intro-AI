@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hệ thống tìm đường thông minh</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <div class="control-panel">
+      <div class="panel-header">
+        <h3>Chế độ sử dụng</h3>
+        <label class="toggle-switch">
+          <input type="checkbox" class="toggle-input" id="roleToggle" />
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <div class="guest-controls" id="guestControls">
+        <div class="panel-section">
+          <select id="algorithmSelect" class="algorithm-select">
+            <option value="Dijkstra">Dijkstra</option>
+            <option value="A*">A*</option>
+            <option value="BFS">BFS</option>
+            <option value="Bi-Dijkstra">Bi-Dijkstra</option>
+          </select>
+          <button class="btn btn-primary" id="toggleNodes">Hiện các node</button>
+          <button class="btn btn-secondary" id="togglePaths">Hiện đường đi</button>
+          <button class="btn btn-warning" id="guestResetButton">Reset</button>
+        </div>
+      </div>
+
+      <div class="admin-controls" id="adminControls">
+        <div class="control-group">
+          <button class="btn btn-danger" id="banEdgeBtn">Vẽ đường cấm</button>
+          <button class="btn btn-secondary" id="restoreBanBtn">Khôi phục đường cấm</button>
+        </div>
+
+        <div class="control-group">
+          <label for="trafficLevel">Mức độ tắc đường:</label>
+          <select id="trafficLevel" class="algorithm-select">
+            <option value="low">Ít</option>
+            <option value="medium">Vừa</option>
+            <option value="high">Nặng</option>
+          </select>
+          <button class="btn btn-warning" id="trafficBtn">Vẽ vùng tắc</button>
+        </div>
+
+        <div class="control-group">
+          <label for="obstacleRadius">Bán kính vật cản (m):</label>
+          <input
+            type="number"
+            id="obstacleRadius"
+            class="algorithm-select"
+            value="30"
+          />
+          <button class="btn btn-warning" id="placeObstacleBtn">Đặt vật cản</button>
+        </div>
+
+        <button class="btn btn-success" id="adminResetButton">Reset</button>
+      </div>
+    </div>
+
+    <!-- Truyền dữ liệu từ Flask vào biến toàn cục -->
+    <script>
+      window._nodes = {{ nodes | tojson | safe }};
+      window._adj_list_with_weights = {{ adj_list | tojson | safe }};
+    </script>
+
+    <!-- Script chính -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
+
+
+
