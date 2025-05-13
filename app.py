@@ -9,10 +9,10 @@ def create_app():
     sync_geojson_selected(['area.geojson', 'boundary.geojson'])
     
     app.register_blueprint(map_bp)
+    app.register_blueprint(algo_bp)
     app.register_blueprint(filter_bp)
     app.register_blueprint(update_bp)
     app.register_blueprint(final_bp)
-    app.register_blueprint(algo_bp)
 
     return app
 

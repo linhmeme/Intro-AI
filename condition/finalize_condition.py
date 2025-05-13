@@ -15,13 +15,16 @@ def build_new_graph_from_weights(weights_file):
 
 @final_bp.route('/finalize_conditions', methods=['POST'])
 def finalize_conditions():
+    data = request.get_json()
     vehicle = request.get_json().get("vehicle")
+    condition_cache= data.get("conditions", {}) # lấy từ client gửi lên
     if not vehicle:
         return jsonify({"status": "error", "message": "Thiếu phương tiện"}), 400
 
     with open(VHC_ALLOWED_FILE, 'r', encoding='utf-8') as f:
         geojson_data = json.load(f)
 
+    updated_features = []
     weights = {}
     for feature in geojson_data['features']:
         props = feature['properties']
@@ -32,10 +35,21 @@ def finalize_conditions():
     # Lấy condition từ condition_cache, nếu không có thì mặc định là "normal"
         condition = condition_cache.get(edge_id, "normal")
         
-        update_weight_file(edge_id, length, condition, highway, vehicle, condition_cache, weights)
+        weight, speed_used, condition = update_weight_file(edge_id, length, condition, highway, vehicle, condition_cache, weights)
+
+        props.update({
+            "vehicle": vehicle,
+            "condition": condition,
+            "speed": speed_used,
+            "weight": weight
+        })
+        updated_features.append(feature)
 
     with open(WEIGHTS_FILE, 'w', encoding='utf-8') as f:
-        json.dump(weights, f, indent=2, ensure_ascii=False)
+        json.dump({
+            "type": "FeatureCollection",
+            "features": updated_features
+        }, f, indent=2, ensure_ascii=False)
 
     print(f"[finalize_conditions] Ghi {len(weights)} dòng vào weights.geojson")
      # Xây dựng lại đồ thị từ weights.geojson
@@ -47,8 +61,5 @@ def finalize_conditions():
 
     # Đồng bộ file geojson sang static/
     sync_geojson_file('weights.geojson')
-
-    # Xóa condition cache sau khi hoàn tất
-    condition_cache.clear()
 
     return jsonify({"status": "success", "message": "Đã cập nhật xong weights.geojson"}), 200

@@ -8,7 +8,7 @@ def update_condition_temp():
     edge_id = data.get('edge_id')
     condition = data.get('condition')
     
-    if not edge_id or condition not in ["normal", "not allowed"]:
+    if not edge_id or condition not in ["normal", "jam", "flooded", "not allowed"]:
         return jsonify({"status": "error", "message": "Thông tin không hợp lệ"}), 400
 
     condition_cache[edge_id] = condition

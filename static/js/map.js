@@ -1,7 +1,6 @@
 let startPoint = null;
 let endPoint = null;
 let routePolyline = null;
-let allowedLayer = null;
 
 let map = L.map("map").setView([21.0085, 105.8185], 15); // Tọa độ Thịnh Quang
 
@@ -26,6 +25,7 @@ fetch("/static/geojson/boundary.geojson")
   });
 
   map.on("click", function (e) {
+    if (isAddingCondition) return;
     if (!startPoint) {
       startPoint = L.marker(e.latlng, { draggable: true })
         .addTo(map)
@@ -44,43 +44,6 @@ fetch("/static/geojson/boundary.geojson")
     routeLayer,
     visitedLayer = null;
   let snapLayer = null; // ✅ Thêm layer riêng cho snapping
-
-  function filterRoutesByVehicle() {
-    const selectedVehicle = document.getElementById('vehicle').value;
-    currentVehicle = selectedVehicle;
-
-    fetch('/filter_routes', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ vehicle: selectedVehicle })
-    })
-    .then(res => res.json())
-    .then(data => {
-      console.log(data.message);
-      updateAllowedRoutes(); // tải lại file vhc_allowed và hiển thị
-    })
-    .catch(err => console.error('Lỗi khi lọc các đoạn đường:', err));
-  }
-  
-  function updateAllowedRoutes() {
-    if (allowedLayer) map.removeLayer(allowedLayer);
-  
-    fetch('/static/geojson/vhc_allowed.geojson?ts='+Date.now())
-      .then(res => res.json())
-      .then(data => {
-        allowedLayer = L.geoJSON(data, {
-          style: {
-            color: "green",
-            weight: 3,
-            opacity: 0.9
-          },
-          onEachFeature: onEachFeature  // Giữ lại click thêm condition nếu muốn
-        }).addTo(map);
-      });
-  }
-  
 
   function findRoute() {
     if (!startPoint || !endPoint) {
@@ -177,11 +140,3 @@ fetch("/static/geojson/boundary.geojson")
     }
   }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const selected = document.getElementById("vehicle").value;
-  currentVehicle = selected;
-  filterRoutesByVehicle();  // gọi lần đầu khi mở trang
-  // 🔁 Gọi lại khi người dùng đổi phương tiện
-  document.getElementById('vehicle').addEventListener('change', filterRoutesByVehicle);
-});
-console.log("Đang lọc cho vehicle:", currentVehicle);

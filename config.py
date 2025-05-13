@@ -1,7 +1,9 @@
+from pathlib import Path
+
 ROADS_FILE = 'data/geojson/roads.geojson'  # sửa đường dẫn theo project bạn
 WEIGHTS_FILE = 'data/geojson/weights.geojson'
 VHC_ALLOWED_FILE = 'data/geojson/vhc_allowed.geojson'
-GRAPH_PATH = 'data/graph/graph_data.pkl'
+GRAPH_PATH = Path('data/graph/graph_data.pkl')
 
 DEFAULT_WEIGHT=1.0
 
