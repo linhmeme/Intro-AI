@@ -1,7 +1,7 @@
 let allowedLayer = null;
 let selectedFeature = null; // Biến lưu đoạn đường người dùng chọn
 let isAddingCondition = false;
-let condition_cache = {}; // dùng ở JS
+let condition_cache = {}; // Lưu condition cho từng edge_id phía frontend
 
 function filterRoutesByVehicle() {
     const selectedVehicle = document.getElementById('vehicle').value;
@@ -56,9 +56,14 @@ function onEachFeature(feature, layer) {
 
         // Cập nhật condition vào condition_cache khi người dùng chọn điều kiện
         dropdown.onchange = function () {
-            let condition = dropdown.value;
-            condition_cache[selectedFeature.properties.id] = condition;
-            updateCondition(selectedFeature.properties.id, condition);
+          let condition = dropdown.value;
+          let edge_id = selectedFeature.properties.id;
+
+          // ✅ Cập nhật vào biến toàn cục
+          condition_cache[edge_id] = condition;
+
+          // ✅ Gửi về backend để lưu tạm
+          updateCondition(edge_id, condition);
 
             // dropdown.style.display = 'none';
 
@@ -120,7 +125,7 @@ function finalizeCondition(){
       },
       body: JSON.stringify({
           vehicle: vehicle,
-          conditions: condition_cache  // Gửi toàn bộ điều kiện đã thay đổi
+          // conditions: condition_cache  // Gửi toàn bộ điều kiện đã thay đổi
       })
   })
   .then(response => response.json())

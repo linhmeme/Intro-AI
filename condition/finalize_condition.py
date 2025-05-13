@@ -16,8 +16,8 @@ def build_new_graph_from_weights(weights_file):
 @final_bp.route('/finalize_conditions', methods=['POST'])
 def finalize_conditions():
     data = request.get_json()
-    vehicle = request.get_json().get("vehicle")
-    condition_cache= data.get("conditions", {}) # lấy từ client gửi lên
+    vehicle = data.get("vehicle")
+
     if not vehicle:
         return jsonify({"status": "error", "message": "Thiếu phương tiện"}), 400
 
