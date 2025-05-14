@@ -4,7 +4,7 @@ let routePolyline = null;
  // Tọa độ Thịnh Quang
 let map = L.map("map", {
   maxZoom: 18,
-  minZoom: 15.4,
+  minZoom: 15.5,
   zoomControl: true,
   maxBounds: [
     [21.0020, 105.8120], // Góc dưới trái (SW)
@@ -122,12 +122,12 @@ fetch("/static/geojson/boundary.geojson")
   
     function drawVisited() {
       if (i < edgesForward.length) {
-        drawVisitedEdges([edgesForward[i]], "#0b209c");
+        drawVisitedEdges([edgesForward[i]], "green");
         i++;
       }
   
       if (edgesBackward.length > 0 && j < edgesBackward.length) {
-        drawVisitedEdges([edgesBackward[j]], "#0b209c");
+        drawVisitedEdges([edgesBackward[j]], "green");
         j++;
       }
   

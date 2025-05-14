@@ -30,7 +30,7 @@ function updateAllowedRoutes() {
       .then(data => {
         allowedLayer = L.geoJSON(data, {
           style: {
-            color: "green",
+            color: "#6EC2F7",
             weight: 3,
             opacity: 0.9
           },
@@ -45,32 +45,23 @@ function onEachFeature(feature, layer) {
         if (!isAddingCondition) return;
         selectedFeature = feature;  // Lưu lại feature (đoạn đường) người dùng chọn
 
-        // Hiển thị dropdown
-        let dropdown = document.getElementById('Condition');
-        dropdown.style.display = 'block';  // Hiển thị dropdown
-
-        // Đặt dropdown ở vị trí gần nơi người dùng nhấn trên bản đồ
-        dropdown.style.position = 'absolute';
-        dropdown.style.top = `${e.latlng.lat}px`;
-        dropdown.style.left = `${e.latlng.lng}px`;
-
-        // Cập nhật condition vào condition_cache khi người dùng chọn điều kiện
-        dropdown.onchange = function () {
-          let condition = dropdown.value;
-          let edge_id = selectedFeature.properties.id;
+        // Hiển thị bảng điều kiện
+      document.getElementById('conditionOptions').style.display = 'grid';
+        // Gán sự kiện click cho từng ô condition
+      document.querySelectorAll('.condition-box').forEach(box => {
+        box.onclick = function () {
+          const condition = this.dataset.condition;
+          const edge_id = String(selectedFeature.properties.id);  // Đảm bảo edge_id là string
 
           // ✅ Cập nhật vào biến toàn cục
           condition_cache[edge_id] = condition;
 
           // ✅ Gửi về backend để lưu tạm
           updateCondition(String(edge_id), condition);
-
-            // dropdown.style.display = 'none';
-
-            // // Reset lại chế độ
-            // isAddingCondition = false;
+          document.getElementById('conditionOptions').style.display = 'none';
         };
     });
+  });
 }
 
 // Gửi yêu cầu tới API để cập nhật điều kiện vào condition_cache

@@ -23,3 +23,32 @@ body, html {
     border-radius: 3px;
     border: 1px solid #ccc;
 }
+
+#conditionOptions {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 1000;
+  }
+  
+  .condition-box {
+    width: 120px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    user-select: none;
+  }
+  
+  .condition-box.normal { background-color: #4CAF50; }     /* Xanh lá */
+  .condition-box.jam { background-color: #FF9800; }         /* Cam */
+  .condition-box.flooded { background-color: #2196F3; }     /* Xanh dương */
+  .condition-box.not-allowed { background-color: #F44336; } /* Đỏ */
+  
+

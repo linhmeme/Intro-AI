@@ -59,6 +59,9 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
         if weight is None:
             continue  # Bỏ qua nếu không có trường length
 
+        if props.get("condition", "normal") == "not allowed":
+            continue 
+
         if geometry["type"] == "LineString":
             coords_list = [geometry["coordinates"]]
 
