@@ -2530,11 +2530,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 15.39,
+        "weight": 1538.58,
         "length": 85.47641131842906,
         "vehicle": "car",
-        "condition": "normal",
-        "speed": 20.0
+        "condition": "not allowed",
+        "speed": 0.2
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3131,11 +3131,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 2595.23,
+        "weight": 25.95,
         "length": 144.17955208344736,
         "vehicle": "car",
-        "condition": "not allowed",
-        "speed": 0.2
+        "condition": "normal",
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4086,11 +4086,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 13.49,
+        "weight": 44.98,
         "length": 74.96530874211743,
         "vehicle": "car",
-        "condition": "normal",
-        "speed": 20.0
+        "condition": "jam",
+        "speed": 6.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6565,11 +6565,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 161.43,
+        "weight": 32.29,
         "length": 179.36343094792,
         "vehicle": "car",
-        "condition": "flooded",
-        "speed": 4.0
+        "condition": "normal",
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
