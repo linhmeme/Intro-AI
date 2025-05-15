@@ -79,6 +79,24 @@ function updateCondition(edge_id, condition) {
     })
     .catch(err => console.error('Lỗi khi cập nhật điều kiện:', err));
 }
+// Bắt sự kiện khi người dùng click vào các condition-box
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.condition-box').forEach(box => {
+        box.addEventListener('click', function () {
+            const condition = box.dataset.condition;
+
+            if (selectedFeature) {
+                const edge_id = selectedFeature.properties.id;
+                condition_cache[edge_id] = condition;
+                updateCondition(edge_id, condition);
+                console.log(`Đã chọn điều kiện '${condition}' cho đoạn ${edge_id}`);
+            } else {
+                alert("Bạn cần nhấn vào đoạn đường trước khi chọn điều kiện.");
+            }
+        });
+    });
+});
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const selected = document.getElementById("vehicle").value;

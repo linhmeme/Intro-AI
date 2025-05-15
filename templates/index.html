@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Tìm đường đi trong phường Thịnh Quang</title>
-    <!-- Leaflet CSS cho bản đồ -->
+
+    <!-- Font chữ hiện đại -->
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+
+    <!-- Gắn style.css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Leaflet CSS & JS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-    <style>
-        #map { height: 500px; width: 100%; }
-    </style>
 </head>
+
 <body>
     <div id="controls">
         <p>Click vào bản đồ để chọn điểm xuất phát và điểm kết thúc.</p>
@@ -40,9 +44,10 @@
         <button id="addCondition" onclick="addCondition()">Thêm điều kiện</button>
         <button onclick="findRoute()">Tìm đường</button>
     </div>
+
     <div id="map"></div>
-    
-    <!-- Kết nối đến tệp JS để xử lý bản đồ -->
+
+    <!-- JS của bạn -->
     <script src="{{ url_for('static', filename='js/map.js') }}"></script>
     <script src="{{ url_for('static', filename='js/condition.js') }}"></script>
 </body>
