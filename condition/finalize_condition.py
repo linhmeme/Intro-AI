@@ -26,6 +26,8 @@ def finalize_conditions():
 
     updated_features = []
     weights = {}
+    total_travel_time = 0
+    total_length = 0
     for feature in geojson_data['features']:
         props = feature['properties']
         edge_id = str(props['id'])
@@ -35,7 +37,7 @@ def finalize_conditions():
     # Lấy condition từ condition_cache, nếu không có thì mặc định là "normal"
         condition = condition_cache.get(str(edge_id), "normal")
         print(f"→ Edge {edge_id} | From cache: {condition_cache.get(edge_id)} | Applied: {condition}")
-        weight, speed_used, condition = update_weight_file(edge_id, length, condition, highway, vehicle, condition_cache, weights)
+        weight, speed_used, condition, total_length = update_weight_file(edge_id, length, condition, highway, vehicle, condition_cache, weights)
 
         props.update({
             "vehicle": vehicle,
@@ -44,8 +46,11 @@ def finalize_conditions():
             "weight": weight
         })
         updated_features.append(feature)
-    
 
+        total_travel_time += weight
+
+    print(f"Tổng thời gian di chuyển: {total_travel_time} giờ")
+    print(f"Tổng chiều dài quãng đường: {total_length} mét")
     with open(WEIGHTS_FILE, 'w', encoding='utf-8') as f:
         json.dump({
             "type": "FeatureCollection",
@@ -63,4 +68,9 @@ def finalize_conditions():
     # Đồng bộ file geojson sang static/
     sync_geojson_file('weights.geojson', force=True)
 
-    return jsonify({"status": "success", "message": "Đã cập nhật xong weights.geojson"}), 200
+    return jsonify({
+        "status": "success", 
+        "message": "Đã cập nhật xong weights.geojson",
+        "total_travel_time": total_travel_time,  # Thời gian di chuyển tổng
+        "total_length": total_length  # Tổng chiều dài quãng đường
+    }), 200

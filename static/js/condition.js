@@ -38,7 +38,7 @@ function updateAllowedRoutes() {
         }).addTo(map);
       });
   }
-  
+
 // Hàm xử lý khi người dùng nhấn vào đoạn đường
 function onEachFeature(feature, layer) {
     layer.on('click', function (e) {
@@ -46,7 +46,7 @@ function onEachFeature(feature, layer) {
         selectedFeature = feature;  // Lưu lại feature (đoạn đường) người dùng chọn
 
         // Hiển thị bảng điều kiện
-      document.getElementById('conditionOptions').style.display = 'grid';
+      document.getElementById('conditionOptions').style.display = 'flex';
         // Gán sự kiện click cho từng ô condition
       document.querySelectorAll('.condition-box').forEach(box => {
         box.onclick = function () {
@@ -58,7 +58,6 @@ function onEachFeature(feature, layer) {
 
           // ✅ Gửi về backend để lưu tạm
           updateCondition(String(edge_id), condition);
-          document.getElementById('conditionOptions').style.display = 'none';
         };
     });
   });
@@ -122,8 +121,16 @@ function finalizeCondition(){
   .then(response => response.json())
   .then(data => {
       console.log(data.message);  // In thông báo từ server
+      const totalTravelTime = data.total_travel_time;  // Giả sử backend trả về tổng thời gian
+      const totalDistance = data.total_length;  // Giả sử backend trả về tổng chiều dài
+      displayResults(totalTravelTime, totalDistance);
   })
   .catch(error => {
       console.error('Lỗi khi gọi finalize_conditions:', error);
   });
+}
+
+function displayResults(totalTravelTime, totalDistance) {
+  document.getElementById('totalTravelTime').textContent = `Tổng thời gian di chuyển: ${totalTravelTime} giờ`;
+  document.getElementById('totalDistance').textContent = `Tổng chiều dài quãng đường: ${totalDistance} mét`;
 }
