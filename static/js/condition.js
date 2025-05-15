@@ -98,7 +98,7 @@ function addCondition() {
       document.getElementById('addCondition').innerText = "Tắt thêm điều kiện";
     } else {
       console.log("Chế độ thêm điều kiện đã tắt");
-      alert("Chế độ thêm điều kiện đã tắt. Bạn có thể chọn điểm xuất phát và điểm đến.");
+      alert("Chế độ thêm điều kiện đã tắt.");``
       document.getElementById('addCondition').innerText = "Thêm điều kiện";
   
       finalizeCondition();
@@ -121,16 +121,8 @@ function finalizeCondition(){
   .then(response => response.json())
   .then(data => {
       console.log(data.message);  // In thông báo từ server
-      const totalTravelTime = data.total_travel_time;  // Giả sử backend trả về tổng thời gian
-      const totalDistance = data.total_length;  // Giả sử backend trả về tổng chiều dài
-      displayResults(totalTravelTime, totalDistance);
   })
   .catch(error => {
       console.error('Lỗi khi gọi finalize_conditions:', error);
   });
-}
-
-function displayResults(totalTravelTime, totalDistance) {
-  document.getElementById('totalTravelTime').textContent = `Tổng thời gian di chuyển: ${totalTravelTime} giờ`;
-  document.getElementById('totalDistance').textContent = `Tổng chiều dài quãng đường: ${totalDistance} mét`;
 }
