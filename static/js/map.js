@@ -79,6 +79,7 @@ fetch("/static/geojson/boundary.geojson")
       .then((data) => {
         console.log("Dữ liệu trả về từ backend:", data);
         animateSearch(data, startCoords, endCoords);
+        displayRouteInfo(data);
       })
       .catch((error) => console.error("Lỗi:", error));
   }
@@ -149,3 +150,10 @@ fetch("/static/geojson/boundary.geojson")
       L.polyline(path, { color: "red", weight: 5 }).addTo(routeLayer);
     }
   }
+  function displayRouteInfo(result) {
+    document.getElementById("total_length").innerText =
+        "Tổng quãng đường: " + (result.total_length / 1000).toFixed(1) + " km";
+    document.getElementById("total_travel_time").innerText =
+        "Thời gian di chuyển: " + Math.round(result.total_travel_time * 60) + " phút";
+}
+
