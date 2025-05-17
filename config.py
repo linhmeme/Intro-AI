@@ -8,9 +8,9 @@ GRAPH_PATH = Path('data/graph/graph_data.pkl')
 DEFAULT_WEIGHT=1.0
 
 ALLOWED_HIGHWAYS = {
-    "motor": ["primary", "secondary", "residential", "service", "footway", "primary_link","secondary_link","cycleway", "tertitary"],  # Xe máy đi được tất cả
-    "car": ["secondary_link", "tertiary","residential", "service", "primary", "secondary", "primary_link"],  # Ô tô đi được motorway, primary, secondary
-    "foot": ["tertiary", "serive","cycleway", "steps","footway", "residential"]  # Đi bộ chỉ đi được footway và residential
+    "motor": ["primary", "secondary", "residential", "service", "footway", "primary_link","secondary_link","cycleway", "tertitary", "default"],  # Xe máy đi được tất cả
+    "car": ["secondary_link", "tertiary","residential", "service", "primary", "secondary", "primary_link", "default"],  # Ô tô đi được motorway, primary, secondary
+    "foot": ["tertiary", "serive","cycleway", "steps","footway", "residential", "default"]  # Đi bộ chỉ đi được footway và residential
 }
 
 CONDITION_SPEED_FACTORS= {
@@ -29,6 +29,7 @@ DEFAULT_SPEED_BY_VEHICLE = {
         "tertiary": 40,
         "residential": 30,
         "service": 20,
+        "default": 40
     },
     "motor": {
         "primary": 50,
@@ -38,13 +39,15 @@ DEFAULT_SPEED_BY_VEHICLE = {
         "tertiary": 35,
         "residential": 25,
         "service": 20,
-        "cycleway": 20
+        "cycleway": 20,
+        "default": 30
     },
     "foot": {
         "tertiary": 5,
         "residential": 5,
         "service": 5,
         "cycleway": 5,
-        "steps": 2
+        "steps": 2,
+        "default": 5
     }
 }
