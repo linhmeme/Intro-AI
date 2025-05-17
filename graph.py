@@ -3,7 +3,6 @@ import pickle
 import networkx as nx
 import numpy as np
 # from geopy.distance import geodesic
-from scipy.spatial import KDTree
 from pathlib import Path
 from config import WEIGHTS_FILE, GRAPH_PATH
 
@@ -15,49 +14,25 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
         data = json.load(f)
 
     G = nx.DiGraph()
-
-    coord_list = []
-    coord_to_node = {}
-    tree = None
-
-    def find_or_add_node(coord):
-        nonlocal coord_list, coord_to_node, tree
-        
-        lat, lon = coord[1], coord[0]
-
-        if tree is not None and len(coord_list) > 0:
-            dist_deg, idx = tree.query([lon, lat], distance_upper_bound=0.00015)
-
-            if dist_deg != float("inf") and idx < len(coord_list):
-                snapped_coord = coord_list[idx]
-                snapped_lat, snapped_lon = snapped_coord[1], snapped_coord[0]
-
-                # ✅ Dùng công thức nhanh thay vì geodesic
-                dist_m = np.linalg.norm([lat - snapped_lat, lon - snapped_lon]) * 111139
-
-                # dist_m = geodesic((lat, lon), (snapped_lat, snapped_lon)).meters
-
-                if dist_m < snap_threshold:
-                    return tuple(snapped_coord)
-
-    # 🚀 Nếu không snap được thì thêm node mới
-        coord_list.append(coord)
-        coord_to_node[tuple(coord)] = tuple(coord)
-
-        if len(coord_list) > 1:
-            tree = KDTree(coord_list)
-
-        return tuple(coord)
     
     print(f"Đang xử lý {len(data['features'])} feature từ GeoJSON")
     for feature in data["features"]:
         geometry = feature.get("geometry", {})
         props = feature.get("properties", {})
         weight = props.get("weight")  # 🔹 Lấy từ file weights.geojson
+        length = props.get("length")
+        edge_id = props.get("id")
+        highway = props.get("highway", "")
+        condition = props.get("condition", "normal")
+        speed = props.get("speed", None)
+        vehicle = props.get("vehicle", None)
         coords_list = []
 
-        if weight is None:
-            continue  # Bỏ qua nếu không có trường length
+        if weight is None or length is None or edge_id is None:
+            continue  
+
+        if condition == "not allowed":
+            continue 
 
         if geometry["type"] == "LineString":
             coords_list = [geometry["coordinates"]]
@@ -74,16 +49,21 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
                 x1, y1 = line[i]
                 x2, y2 = line[i + 1]
 
-                node1 = find_or_add_node([x1, y1])
-                node2 = find_or_add_node([x2, y2])
+                G.add_node((x1, y1), x=x1, y=y1)
+                G.add_node((x2, y2), x=x2, y=y2)
 
-                G.add_node(node1, x=node1[0], y=node1[1])
-                G.add_node(node2, x=node2[0], y=node2[1])
+                edge_attrs = {
+                    "weight": weight,
+                    "length": length,
+                    "id": edge_id,
+                    "highway": highway,
+                    "condition": condition,
+                    "speed": speed,
+                    "vehicle": vehicle
+                }
 
-                # dist = geodesic((node1[1], node1[0]), (node2[1], node2[0])).meters
-
-                G.add_edge(node1, node2, weight=weight)
-                G.add_edge(node2, node1, weight=weight)  # ✅ (2) Sửa: thêm chiều ngược lại để graph đi được 2 chiều
+                G.add_edge((x1, y1), (x2, y2), **edge_attrs)
+                G.add_edge((x2, y2), (x1, y1), **edge_attrs)  # ✅ (2) Sửa: thêm chiều ngược lại để graph đi được 2 chiều
 
     return G
 

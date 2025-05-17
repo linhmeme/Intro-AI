@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Tìm đường đi trong phường Thịnh Quang</title>
-    <!-- Leaflet CSS cho bản đồ -->
+
+    <!-- Font chữ hiện đại -->
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+
+    <!-- Gắn style.css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Leaflet CSS & JS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-    <style>
-        #map { height: 500px; width: 100%; }
-    </style>
 </head>
+
 <body>
     <div id="controls">
         <p>Click vào bản đồ để chọn điểm xuất phát và điểm kết thúc.</p>
@@ -22,27 +26,33 @@
             <option value="foot">Đi bộ</option>
         </select>
 
-        <select id="Condition">
-            <option value="normal" selected>Bình thường</option>
-            <option value="jam" selected>Tắc đường</option>
-            <option value="flooded" selected>Ngập lụt</option>
-            <option value="not allowed" selected>Cấm đường</option>
-        </select>
-
+        <div id="conditionOptions">
+            <div class="condition-box normal" data-condition="normal">Bình thường</div>
+            <div class="condition-box jam" data-condition="jam">Tắc đường</div>
+            <div class="condition-box flooded" data-condition="flooded">Ngập lụt</div>
+            <div class="condition-box not-allowed" data-condition="not allowed">Cấm đường</div>
+        </div>
+          
         <label for="algorithm">Thuật toán:</label>
         <select id="algorithm">
             <option value="dijkstra">Dijkstra</option>
             <option value="a_star">A*</option>
+            <option value="greedy">Greedy Best-First</option>
             <option value="bidirectional_dijkstra">Bidirectional Dijkstra</option>
             <option value="bfs">Breadth-First Search</option>
+            <option value="dfs">Depth-First Search</option>
         </select>
 
         <button id="addCondition" onclick="addCondition()">Thêm điều kiện</button>
         <button onclick="findRoute()">Tìm đường</button>
     </div>
+
     <div id="map"></div>
     
-    <!-- Kết nối đến tệp JS để xử lý bản đồ -->
+    <p id="total_travel_time"></p>
+    <p id="total_length"></p>
+
+    <!-- JS của bạn -->
     <script src="{{ url_for('static', filename='js/map.js') }}"></script>
     <script src="{{ url_for('static', filename='js/condition.js') }}"></script>
 </body>

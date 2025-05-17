@@ -33,8 +33,8 @@ def finalize_conditions():
         length = props.get('length', 0)
     
     # Lấy condition từ condition_cache, nếu không có thì mặc định là "normal"
-        condition = condition_cache.get(str(edge_id), "normal")
-        
+        condition = condition_cache.get(edge_id, "normal")
+        print(f"→ Edge {edge_id} | From cache: {condition_cache.get(edge_id)} | Applied: {condition}")
         weight, speed_used, condition = update_weight_file(edge_id, length, condition, highway, vehicle, condition_cache, weights)
 
         props.update({
@@ -60,7 +60,9 @@ def finalize_conditions():
     save_graph(G_new, GRAPH_PATH)
 
     # Đồng bộ file geojson sang static/
-    sync_geojson_file('weights.geojson')
-    print("[DEBUG] condition_cache hiện tại:", condition_cache)
+    sync_geojson_file('weights.geojson', force=True)
 
-    return jsonify({"status": "success", "message": "Đã cập nhật xong weights.geojson"}), 200
+    return jsonify({
+        "status": "success", 
+        "message": "Đã cập nhật xong weights.geojson",
+    }), 200

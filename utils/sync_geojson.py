@@ -12,7 +12,7 @@ def hash_file(path: Path) -> str:
     except FileNotFoundError:
         return ''
 
-def sync_geojson_file(filename: str):
+def sync_geojson_file(filename: str, force: bool = False):
     src = Path('data/geojson') / filename
     dst = Path('static/geojson') / filename
 
@@ -23,7 +23,7 @@ def sync_geojson_file(filename: str):
     src_hash = hash_file(src)
     dst_hash = hash_file(dst)
 
-    if src_hash != dst_hash:
+    if force or src_hash != dst_hash:
         dst.parent.mkdir(parents=True, exist_ok=True)
         try:
             shutil.copy(src, dst)

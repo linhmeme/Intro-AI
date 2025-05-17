@@ -3,15 +3,15 @@ let endPoint = null;
 let routePolyline = null;
  // Tọa độ Thịnh Quang
 let map = L.map("map", {
-  maxZoom: 18,
-  minZoom: 15.4,
+  maxZoom: 19,
+  minZoom: 16.45,
   zoomControl: true,
   maxBounds: [
     [21.0020, 105.8120], // Góc dưới trái (SW)
     [21.0150, 105.8250]  // Góc trên phải (NE)
   ],
   maxBoundsViscosity: 1.0 // Càng gần 1.0 thì càng khó kéo ra ngoài
-}).setView([21.0085, 105.8185], 15); // Tâm bản đồ Thịnh Quang
+}).setView([21.0085, 105.8185], 16.5); // Tâm bản đồ Thịnh Quang
 
 // 🌍 Thêm lớp nền từ OpenStreetMap
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -76,7 +76,10 @@ fetch("/static/geojson/boundary.geojson")
       }),
     })
       .then((response) => response.json())
-      .then((data) => animateSearch(data, startCoords, endCoords))
+      .then((data) => {
+        console.log("Dữ liệu trả về từ backend:", data);
+        animateSearch(data, startCoords, endCoords);
+      })
       .catch((error) => console.error("Lỗi:", error));
   }
   
@@ -122,12 +125,12 @@ fetch("/static/geojson/boundary.geojson")
   
     function drawVisited() {
       if (i < edgesForward.length) {
-        drawVisitedEdges([edgesForward[i]], "#0b209c");
+        drawVisitedEdges([edgesForward[i]], "green");
         i++;
       }
   
       if (edgesBackward.length > 0 && j < edgesBackward.length) {
-        drawVisitedEdges([edgesBackward[j]], "#0b209c");
+        drawVisitedEdges([edgesBackward[j]], "green");
         j++;
       }
   
@@ -146,4 +149,3 @@ fetch("/static/geojson/boundary.geojson")
       L.polyline(path, { color: "red", weight: 5 }).addTo(routeLayer);
     }
   }
-

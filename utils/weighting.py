@@ -18,11 +18,11 @@ def compute_weight(length, highway, vehicle, edge_id=None, condition_cache=None)
             length = props.get('length', 0)
             break
     if not length or length <= 0:
-        return float('inf')
+        return float('inf'), 0, "normal"
 
     base_speed = DEFAULT_SPEED_BY_VEHICLE.get(vehicle, {}).get(highway, 0)
     if base_speed <= 0:
-        return float('inf')
+        return float('inf'), 0, "normal"
 
     # Lấy condition từ cache hoặc mặc định
     if condition_cache and edge_id:
@@ -35,9 +35,9 @@ def compute_weight(length, highway, vehicle, edge_id=None, condition_cache=None)
     speed_used = base_speed * factor
 
     if speed_used <= 0:
-        return float('inf')
+        return float('inf'), 0, condition
 
-    travel_time = length / (speed_used * 1000 / 3600)  # m / (m/s) = s
+    travel_time = (length / 1000) / speed_used # km / (km/h) = h
 
     return round(travel_time, 2), round(speed_used, 1), condition
 
@@ -54,4 +54,4 @@ def update_weight_file(edge_id, length, condition, highway, vehicle, condition_c
         "weight": weight
     }
 
-    return weight, speed_used, condition 
+    return weight, speed_used, condition
