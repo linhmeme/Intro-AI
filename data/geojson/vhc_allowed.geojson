@@ -11,7 +11,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 400.3889150328046
+        "length": 400.3889150338657
       },
       "geometry": {
         "type": "MultiLineString",
@@ -83,7 +83,7 @@
         "oneway": "yes",
         "lanes": "2",
         "weight": 1,
-        "length": 394.66772110525943
+        "length": 394.66772110490746
       },
       "geometry": {
         "type": "MultiLineString",
@@ -151,7 +151,7 @@
         "oneway": "yes",
         "lanes": "2",
         "weight": 1,
-        "length": 184.14696634051012
+        "length": 184.1469663387447
       },
       "geometry": {
         "type": "MultiLineString",
@@ -219,7 +219,7 @@
         "oneway": "yes",
         "lanes": "3",
         "weight": 1,
-        "length": 334.36460414485975
+        "length": 334.36460414556916
       },
       "geometry": {
         "type": "MultiLineString",
@@ -279,7 +279,7 @@
         "oneway": null,
         "lanes": "2",
         "weight": 1,
-        "length": 582.8693825317407
+        "length": 582.8693825338627
       },
       "geometry": {
         "type": "MultiLineString",
@@ -395,7 +395,7 @@
         "oneway": "yes",
         "lanes": "2",
         "weight": 1,
-        "length": 395.56924411107053
+        "length": 395.56924411107326
       },
       "geometry": {
         "type": "MultiLineString",
@@ -455,7 +455,7 @@
         "oneway": "yes",
         "lanes": "2",
         "weight": 1,
-        "length": 206.39613213219857
+        "length": 206.39613213325597
       },
       "geometry": {
         "type": "MultiLineString",
@@ -511,7 +511,7 @@
         "oneway": "yes",
         "lanes": "4",
         "weight": 1,
-        "length": 182.29653919547314
+        "length": 182.2965391947688
       },
       "geometry": {
         "type": "MultiLineString",
@@ -591,7 +591,7 @@
         "oneway": "yes",
         "lanes": "3",
         "weight": 1,
-        "length": 375.42240800177314
+        "length": 375.422408001422
       },
       "geometry": {
         "type": "MultiLineString",
@@ -663,7 +663,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 237.61875054987595
+        "length": 237.61875055022884
       },
       "geometry": {
         "type": "MultiLineString",
@@ -707,7 +707,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 261.4432456718218
+        "length": 261.44324567252545
       },
       "geometry": {
         "type": "MultiLineString",
@@ -767,7 +767,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 44.23326815273313
+        "length": 44.23326815273381
       },
       "geometry": {
         "type": "MultiLineString",
@@ -803,7 +803,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 158.0951983710341
+        "length": 158.09519836997453
       },
       "geometry": {
         "type": "MultiLineString",
@@ -845,7 +845,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 153.35910704547473
+        "length": 153.3591070461817
       },
       "geometry": {
         "type": "MultiLineString",
@@ -889,7 +889,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 151.56806864903618
+        "length": 151.56806864691742
       },
       "geometry": {
         "type": "MultiLineString",
@@ -933,7 +933,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 87.45418923180412
+        "length": 87.45418923321617
       },
       "geometry": {
         "type": "MultiLineString",
@@ -965,7 +965,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 234.8223503104727
+        "length": 234.8223503101174
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1013,7 +1013,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 69.77722571055337
+        "length": 69.77722571020055
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1045,7 +1045,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 38.50230525945476
+        "length": 38.502305259455106
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1073,7 +1073,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 242.09046017448378
+        "length": 242.09046017377824
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1121,7 +1121,7 @@
         "oneway": "yes",
         "lanes": "4",
         "weight": 1,
-        "length": 33.763113915470186
+        "length": 33.76311391582418
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1149,7 +1149,7 @@
         "oneway": "yes",
         "lanes": "3",
         "weight": 1,
-        "length": 319.3682501036891
+        "length": 319.36825010262925
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1209,7 +1209,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 480.8806044607458
+        "length": 480.8806044596809
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1325,7 +1325,7 @@
         "oneway": null,
         "lanes": "2",
         "weight": 1,
-        "length": 14.40018763064338
+        "length": 14.400187630643023
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1357,7 +1357,7 @@
         "oneway": null,
         "lanes": "2",
         "weight": 1,
-        "length": 22.17085905843449
+        "length": 22.170859059140238
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1385,7 +1385,7 @@
         "oneway": "yes",
         "lanes": "1",
         "weight": 1,
-        "length": 19.825080284055563
+        "length": 19.825080285290802
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1457,7 +1457,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 76.65529276671813
+        "length": 76.65529276777613
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1501,7 +1501,7 @@
         "oneway": "yes",
         "lanes": "2",
         "weight": 1,
-        "length": 114.88528697649966
+        "length": 114.88528697588191
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1549,7 +1549,7 @@
         "oneway": "yes",
         "lanes": "2",
         "weight": 1,
-        "length": 69.0966109731004
+        "length": 69.09661097310351
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1685,7 +1685,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 31.61701713393942
+        "length": 31.617017133586742
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1713,7 +1713,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 41.46512906514285
+        "length": 41.465129064790105
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1745,7 +1745,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 209.8295177546302
+        "length": 209.82951775427802
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1809,7 +1809,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 110.09790574091568
+        "length": 110.09790574020843
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1849,7 +1849,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 36.60925209224426
+        "length": 36.60925209330315
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1877,7 +1877,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 102.42285710175734
+        "length": 102.42285710211158
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1957,7 +1957,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 87.89160540998377
+        "length": 87.89160540963039
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1989,7 +1989,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 164.50205907220874
+        "length": 164.50205907326665
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2057,7 +2057,7 @@
         "oneway": "yes",
         "lanes": null,
         "weight": 1,
-        "length": 85.80658865353878
+        "length": 85.80658865283185
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2157,7 +2157,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 46.97112308414189
+        "length": 46.97112308378785
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2241,7 +2241,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 39.055406518006706
+        "length": 39.05540651729967
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2301,7 +2301,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 84.8611357165056
+        "length": 84.86113571650559
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2337,7 +2337,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 105.79073475287245
+        "length": 105.7907347535785
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2381,7 +2381,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 85.47641131842906
+        "length": 85.4764113173677
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2425,7 +2425,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 249.37049110096203
+        "length": 249.37049110060912
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2477,7 +2477,7 @@
         "oneway": "yes",
         "lanes": "2",
         "weight": 1,
-        "length": 275.2584965336427
+        "length": 275.2584965332908
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2549,7 +2549,7 @@
         "oneway": "yes",
         "lanes": "3",
         "weight": 1,
-        "length": 14.469916461373943
+        "length": 14.469916461373632
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2637,7 +2637,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 317.3289244557328
+        "length": 317.32892445537794
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2693,7 +2693,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 166.42656944138096
+        "length": 166.42656944138025
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2733,7 +2733,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 70.01379014928591
+        "length": 70.01379014999262
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2765,7 +2765,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 36.85679858320776
+        "length": 36.856798582854566
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2793,7 +2793,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 38.18461977821637
+        "length": 38.18461977821604
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2849,7 +2849,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 282.36553352992246
+        "length": 282.3655335309833
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2909,7 +2909,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 35.75441504046879
+        "length": 35.75441504011591
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2937,7 +2937,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 144.17955208344736
+        "length": 144.17955208379948
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2985,7 +2985,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 41.3789540591053
+        "length": 41.37895405910564
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3025,7 +3025,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 149.51650078316342
+        "length": 149.5165007824557
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3101,7 +3101,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 31.254715182041295
+        "length": 31.254715181689903
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3137,7 +3137,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 119.47456257788721
+        "length": 119.47456257859415
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3169,7 +3169,7 @@
         "oneway": "yes",
         "lanes": "1",
         "weight": 1,
-        "length": 53.62534696713774
+        "length": 53.62534696607788
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3217,7 +3217,7 @@
         "oneway": "yes",
         "lanes": "1",
         "weight": 1,
-        "length": 42.28963809803501
+        "length": 42.289638098034324
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3249,7 +3249,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 84.3301499891347
+        "length": 84.33014998984135
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3313,7 +3313,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 69.25608608909047
+        "length": 69.25608608944263
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3377,7 +3377,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 61.66238339052226
+        "length": 61.66238339016911
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3409,7 +3409,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 61.9827108058109
+        "length": 61.9827108061648
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3441,7 +3441,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 78.02923189811051
+        "length": 78.02923189846395
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3505,7 +3505,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 59.1651009345902
+        "length": 59.1651009356494
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3537,7 +3537,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 66.77859815214089
+        "length": 66.77859815319977
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3573,7 +3573,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 151.63109301181765
+        "length": 151.63109301146315
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3657,7 +3657,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 55.317422322557434
+        "length": 55.31742232291084
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3753,7 +3753,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 18.498398863707237
+        "length": 18.498398863352968
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3785,7 +3785,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 72.47220143276667
+        "length": 72.47220143241314
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3817,7 +3817,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 74.96530874211743
+        "length": 74.96530874388252
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3853,7 +3853,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 151.25250817530184
+        "length": 151.252508174949
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3889,7 +3889,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 59.38954645275342
+        "length": 59.389546453108025
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3981,7 +3981,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 155.65147155286633
+        "length": 155.6514715532187
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4025,7 +4025,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 114.07321564641559
+        "length": 114.07321564570886
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4073,7 +4073,7 @@
         "oneway": "yes",
         "lanes": null,
         "weight": 1,
-        "length": 210.08244735276452
+        "length": 210.08244735417273
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4141,7 +4141,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 33.822261260840804
+        "length": 33.82226126048792
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4173,7 +4173,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 162.56067546515916
+        "length": 162.56067546657064
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4237,7 +4237,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 37.28574634528682
+        "length": 37.28574634528751
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4265,7 +4265,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 52.585730855731434
+        "length": 52.58573085573102
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4337,7 +4337,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 25.61014184112546
+        "length": 25.610141841478153
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4369,7 +4369,7 @@
         "oneway": "yes",
         "lanes": "3",
         "weight": 1,
-        "length": 3.7080690111436057
+        "length": 3.7080690118489894
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4397,7 +4397,7 @@
         "oneway": "yes",
         "lanes": "4",
         "weight": 1,
-        "length": 50.385149252861055
+        "length": 50.385149252862696
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4429,7 +4429,7 @@
         "oneway": "yes",
         "lanes": "3",
         "weight": 1,
-        "length": 49.693102678090135
+        "length": 49.69310267844442
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4457,7 +4457,7 @@
         "oneway": "yes",
         "lanes": "4",
         "weight": 1,
-        "length": 50.31252809026828
+        "length": 50.312528090623246
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4493,7 +4493,7 @@
         "oneway": "yes",
         "lanes": "2",
         "weight": 1,
-        "length": 42.963751455084655
+        "length": 42.96375145473279
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4549,7 +4549,7 @@
         "oneway": "yes",
         "lanes": "3",
         "weight": 1,
-        "length": 173.5638162374829
+        "length": 173.5638162367783
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4589,7 +4589,7 @@
         "oneway": "yes",
         "lanes": "3",
         "weight": 1,
-        "length": 8.386586444044497
+        "length": 8.386586443337553
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4610,34 +4610,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 124,
-        "name": null,
-        "highway": "secondary_link",
-        "z_order": 6,
-        "oneway": null,
-        "lanes": "2",
-        "weight": 1,
-        "length": 17.498695357957498
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8160708,
-              21.0104471
-            ],
-            [
-              105.8159375,
-              21.0105436
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 126,
         "name": "Ngõ 142 Phố Yên Lãng",
         "highway": "service",
@@ -4645,7 +4617,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 74.54190317011363
+        "length": 74.54190317081697
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4689,7 +4661,7 @@
         "oneway": "yes",
         "lanes": "3",
         "weight": 1,
-        "length": 36.842152542740344
+        "length": 36.84215254309293
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4721,7 +4693,7 @@
         "oneway": "yes",
         "lanes": "2",
         "weight": 1,
-        "length": 18.69169956015714
+        "length": 18.691699559804675
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4753,7 +4725,7 @@
         "oneway": "yes",
         "lanes": "1",
         "weight": 1,
-        "length": 15.654857433047098
+        "length": 15.654857433045198
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4825,7 +4797,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 0.6630757192347485
+        "length": 0.6630757192361282
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4909,7 +4881,7 @@
         "oneway": "yes",
         "lanes": "3",
         "weight": 1,
-        "length": 28.397969720564056
+        "length": 28.397969721314553
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4949,7 +4921,7 @@
         "oneway": "yes",
         "lanes": "2",
         "weight": 1,
-        "length": 49.6976123976897
+        "length": 49.69761239733675
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4985,7 +4957,7 @@
         "oneway": null,
         "lanes": "2",
         "weight": 1,
-        "length": 12.42550610616062
+        "length": 12.425506106159975
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5013,7 +4985,7 @@
         "oneway": "yes",
         "lanes": "3",
         "weight": 1,
-        "length": 79.13818994823222
+        "length": 79.13818994964393
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5089,7 +5061,7 @@
         "oneway": "yes",
         "lanes": null,
         "weight": 1,
-        "length": 238.9600396960154
+        "length": 238.960039696373
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5161,7 +5133,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 37.5942662140806
+        "length": 37.59426621478709
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5193,7 +5165,7 @@
         "oneway": "yes",
         "lanes": "3",
         "weight": 1,
-        "length": 29.24880565313254
+        "length": 29.248805653132543
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5221,7 +5193,7 @@
         "oneway": "yes",
         "lanes": "3",
         "weight": 1,
-        "length": 63.7228000696
+        "length": 63.72280006960034
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5257,7 +5229,7 @@
         "oneway": "yes",
         "lanes": "2",
         "weight": 1,
-        "length": 64.97336058941514
+        "length": 64.97336058941583
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5313,7 +5285,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 44.980320260989686
+        "length": 44.98032026240157
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5341,7 +5313,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 70.89036781423471
+        "length": 70.89036781388111
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5373,7 +5345,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 97.50703276121085
+        "length": 97.50703276015267
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5413,7 +5385,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 46.71189348697245
+        "length": 46.71189348838427
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5441,7 +5413,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 71.29330642915644
+        "length": 71.29330642950967
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5473,7 +5445,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 36.66688143589511
+        "length": 36.6668814358958
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5501,7 +5473,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 37.46717574361642
+        "length": 37.46717574361573
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5529,7 +5501,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 72.06718413207128
+        "length": 72.06718413207093
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5593,7 +5565,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 84.4379594537693
+        "length": 84.43795945376964
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5610,6 +5582,166 @@
             [
               105.8196644,
               21.0077541
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 160,
+        "name": null,
+        "highway": "default",
+        "z_order": 0,
+        "oneway": null,
+        "lanes": null,
+        "weight": 1,
+        "length": 94.19837452329486
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8219106,
+              21.0054277
+            ],
+            [
+              105.8220722,
+              21.005561
+            ],
+            [
+              105.8221544,
+              21.0054742
+            ],
+            [
+              105.8221427,
+              21.0054482
+            ],
+            [
+              105.8221282,
+              21.0054277
+            ],
+            [
+              105.8221065,
+              21.0053961
+            ],
+            [
+              105.8220604,
+              21.005343
+            ],
+            [
+              105.8219574,
+              21.0052539
+            ],
+            [
+              105.8218448,
+              21.0053771
+            ],
+            [
+              105.8219106,
+              21.0054277
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 161,
+        "name": null,
+        "highway": "default",
+        "z_order": 0,
+        "oneway": null,
+        "lanes": null,
+        "weight": 1,
+        "length": 37.87771978896161
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8221131,
+              21.0054371
+            ],
+            [
+              105.8221235,
+              21.0054519
+            ],
+            [
+              105.8221282,
+              21.005469
+            ],
+            [
+              105.8221269,
+              21.0054866
+            ],
+            [
+              105.8221196,
+              21.0055029
+            ],
+            [
+              105.8221071,
+              21.0055161
+            ],
+            [
+              105.8220907,
+              21.005525
+            ],
+            [
+              105.8220715,
+              21.0055285
+            ],
+            [
+              105.8220521,
+              21.0055258
+            ],
+            [
+              105.8220347,
+              21.0055174
+            ],
+            [
+              105.8220214,
+              21.0055041
+            ],
+            [
+              105.8220134,
+              21.0054873
+            ],
+            [
+              105.8220119,
+              21.0054691
+            ],
+            [
+              105.8220168,
+              21.0054514
+            ],
+            [
+              105.8220278,
+              21.0054363
+            ],
+            [
+              105.8220435,
+              21.0054254
+            ],
+            [
+              105.8220615,
+              21.00542
+            ],
+            [
+              105.8220804,
+              21.0054203
+            ],
+            [
+              105.8220983,
+              21.0054262
+            ],
+            [
+              105.8221131,
+              21.0054371
             ]
           ]
         ]
@@ -5653,7 +5785,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 22.642761317858703
+        "length": 22.642761318211807
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5681,7 +5813,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 25.89323898155368
+        "length": 25.893238981199552
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5713,7 +5845,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 56.31795437299381
+        "length": 56.31795437264033
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5745,7 +5877,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 112.58460816870854
+        "length": 112.5846081690642
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5825,7 +5957,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 23.044108491712464
+        "length": 23.044108491359115
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5853,7 +5985,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 25.907925656180428
+        "length": 25.90792565582769
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5881,7 +6013,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 22.259475322998703
+        "length": 22.259475322644633
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5909,7 +6041,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 109.85119076994668
+        "length": 109.851190771357
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5965,7 +6097,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 54.418058792439965
+        "length": 54.418058791732456
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6005,7 +6137,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 51.66051382297165
+        "length": 51.66051382297131
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6045,7 +6177,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 43.22637465428881
+        "length": 43.22637465322871
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6101,7 +6233,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 179.36343094792
+        "length": 179.3634309475685
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6153,7 +6285,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 55.011998784888334
+        "length": 55.0119987852397
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6185,7 +6317,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 47.89682654682834
+        "length": 47.89682654682747
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6225,7 +6357,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 42.62633218639642
+        "length": 42.62633218674969
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6289,7 +6421,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 29.643834700593587
+        "length": 29.64383470094717
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6317,7 +6449,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 43.89070115199052
+        "length": 43.890701151990605
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6377,7 +6509,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 64.60375246246453
+        "length": 64.60375246281738
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6413,7 +6545,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 34.98524286063876
+        "length": 34.985242860284856
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6445,7 +6577,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 27.826107944809234
+        "length": 27.826107944809927
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6466,6 +6598,440 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 186,
+        "name": null,
+        "highway": "default",
+        "z_order": 0,
+        "oneway": null,
+        "lanes": null,
+        "weight": 1,
+        "length": 273.9003645195936
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8202057,
+              21.003109
+            ],
+            [
+              105.8198965,
+              21.0028819
+            ]
+          ],
+          [
+            [
+              105.8198965,
+              21.0028819
+            ],
+            [
+              105.8181305,
+              21.001585
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 187,
+        "name": null,
+        "highway": "default",
+        "z_order": 0,
+        "oneway": null,
+        "lanes": null,
+        "weight": 1,
+        "length": 1300.4367327629366
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.820392,
+              21.0081182
+            ],
+            [
+              105.8207152,
+              21.007738
+            ],
+            [
+              105.8201076,
+              21.0072381
+            ],
+            [
+              105.8206595,
+              21.0065697
+            ],
+            [
+              105.8201231,
+              21.0061551
+            ],
+            [
+              105.8213003,
+              21.0047554
+            ],
+            [
+              105.8211101,
+              21.0046134
+            ],
+            [
+              105.8208338,
+              21.0043965
+            ],
+            [
+              105.8209662,
+              21.0042663
+            ],
+            [
+              105.8208351,
+              21.0040812
+            ],
+            [
+              105.8206815,
+              21.0039425
+            ],
+            [
+              105.8207005,
+              21.0038837
+            ],
+            [
+              105.8205948,
+              21.003788
+            ],
+            [
+              105.8207194,
+              21.0035747
+            ],
+            [
+              105.8201108,
+              21.0031454
+            ],
+            [
+              105.8199226,
+              21.0031857
+            ],
+            [
+              105.8195948,
+              21.0032907
+            ],
+            [
+              105.8192999,
+              21.003363
+            ],
+            [
+              105.8190045,
+              21.0035085
+            ],
+            [
+              105.8191287,
+              21.0038619
+            ],
+            [
+              105.8190182,
+              21.0039652
+            ],
+            [
+              105.8193096,
+              21.0041519
+            ],
+            [
+              105.8189377,
+              21.0046508
+            ],
+            [
+              105.8185659,
+              21.0044886
+            ],
+            [
+              105.8184338,
+              21.0046553
+            ],
+            [
+              105.8179781,
+              21.0043615
+            ],
+            [
+              105.8174441,
+              21.0047425
+            ],
+            [
+              105.8168836,
+              21.0044842
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 188,
+        "name": null,
+        "highway": "default",
+        "z_order": 0,
+        "oneway": null,
+        "lanes": null,
+        "weight": 1,
+        "length": 302.6462254293208
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8158997,
+              21.0063725
+            ],
+            [
+              105.815194,
+              21.0073639
+            ]
+          ],
+          [
+            [
+              105.815194,
+              21.0073639
+            ],
+            [
+              105.8149192,
+              21.007683
+            ]
+          ],
+          [
+            [
+              105.8149192,
+              21.007683
+            ],
+            [
+              105.8146406,
+              21.0079628
+            ]
+          ],
+          [
+            [
+              105.8146406,
+              21.0079628
+            ],
+            [
+              105.8140488,
+              21.0084629
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 189,
+        "name": null,
+        "highway": "default",
+        "z_order": 0,
+        "oneway": null,
+        "lanes": null,
+        "weight": 1,
+        "length": 499.0277312574184
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8230473,
+              21.0066172
+            ],
+            [
+              105.8221364,
+              21.0048286
+            ]
+          ],
+          [
+            [
+              105.8221364,
+              21.0048286
+            ],
+            [
+              105.8220784,
+              21.004718
+            ]
+          ],
+          [
+            [
+              105.8220784,
+              21.004718
+            ],
+            [
+              105.8220135,
+              21.0046109
+            ]
+          ],
+          [
+            [
+              105.8220135,
+              21.0046109
+            ],
+            [
+              105.8219417,
+              21.0045076
+            ]
+          ],
+          [
+            [
+              105.8219417,
+              21.0045076
+            ],
+            [
+              105.8218635,
+              21.0044085
+            ]
+          ],
+          [
+            [
+              105.8218635,
+              21.0044085
+            ],
+            [
+              105.8217861,
+              21.0043215
+            ]
+          ],
+          [
+            [
+              105.8217861,
+              21.0043215
+            ],
+            [
+              105.8217037,
+              21.0042386
+            ]
+          ],
+          [
+            [
+              105.8217037,
+              21.0042386
+            ],
+            [
+              105.8216165,
+              21.0041601
+            ]
+          ],
+          [
+            [
+              105.8216165,
+              21.0041601
+            ],
+            [
+              105.8215249,
+              21.0040861
+            ]
+          ],
+          [
+            [
+              105.8215249,
+              21.0040861
+            ],
+            [
+              105.8202057,
+              21.003109
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 190,
+        "name": null,
+        "highway": "default",
+        "z_order": 0,
+        "oneway": null,
+        "lanes": null,
+        "weight": 1,
+        "length": 932.6925453447274
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8171959,
+              21.011993
+            ],
+            [
+              105.817547,
+              21.0114925
+            ]
+          ],
+          [
+            [
+              105.817547,
+              21.0114925
+            ],
+            [
+              105.8187931,
+              21.0100425
+            ]
+          ],
+          [
+            [
+              105.8187931,
+              21.0100425
+            ],
+            [
+              105.820046,
+              21.0085341
+            ]
+          ],
+          [
+            [
+              105.820046,
+              21.0085341
+            ],
+            [
+              105.820392,
+              21.0081182
+            ]
+          ],
+          [
+            [
+              105.820392,
+              21.0081182
+            ],
+            [
+              105.8210228,
+              21.008587
+            ]
+          ],
+          [
+            [
+              105.8210228,
+              21.008587
+            ],
+            [
+              105.822736,
+              21.0067427
+            ]
+          ],
+          [
+            [
+              105.822736,
+              21.0067427
+            ],
+            [
+              105.8230473,
+              21.0066172
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": 191,
         "name": null,
         "highway": "service",
@@ -6473,7 +7039,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 21.19343419927308
+        "length": 21.193434199273042
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6533,7 +7099,7 @@
         "oneway": null,
         "lanes": "2",
         "weight": 1,
-        "length": 38.21221183404377
+        "length": 38.21221183404445
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6569,7 +7135,7 @@
         "oneway": "yes",
         "lanes": "2",
         "weight": 1,
-        "length": 76.80788175514421
+        "length": 76.8078817547914
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6605,7 +7171,7 @@
         "oneway": "yes",
         "lanes": "3",
         "weight": 1,
-        "length": 6.345938791869565
+        "length": 6.345938791869909
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6633,7 +7199,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 17.945913249617753
+        "length": 17.945913248911715
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6661,7 +7227,7 @@
         "oneway": "yes",
         "lanes": "2",
         "weight": 1,
-        "length": 140.5107076348998
+        "length": 140.51070763525198
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6705,7 +7271,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 77.68519409814715
+        "length": 77.68519409743931
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6769,7 +7335,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 146.8412519078875
+        "length": 146.84125190647376
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6817,7 +7383,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 96.74601399326224
+        "length": 96.74601399290907
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6865,7 +7431,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 46.21929105836247
+        "length": 46.21929105871517
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6905,7 +7471,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 95.5759250737413
+        "length": 95.57592507391657
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6965,7 +7531,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 46.62804685562798
+        "length": 46.62804685598208
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7001,7 +7567,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 32.12066947037909
+        "length": 32.12066947037979
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7033,7 +7599,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 20.737094118662988
+        "length": 20.737094118663716
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7065,7 +7631,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 67.82012655774119
+        "length": 67.82012655809362
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7101,7 +7667,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 1.5319347822377956
+        "length": 1.5319347825924523
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7129,7 +7695,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 1.6659057172064624
+        "length": 1.6659057168525317
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7157,7 +7723,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 44.31957669186657
+        "length": 44.3195766922193
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7193,7 +7759,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 21.850275403089885
+        "length": 21.85027540167796
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7229,7 +7795,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 123.01606914093337
+        "length": 123.01606914022163
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7269,7 +7835,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 91.7977220544424
+        "length": 91.79772205479648
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7321,7 +7887,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 71.53484053633169
+        "length": 71.53484053633234
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7353,7 +7919,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 13.571352849526223
+        "length": 13.571352849349749
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7409,7 +7975,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 45.62222926525217
+        "length": 45.62222926454587
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7441,7 +8007,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 35.880261356823105
+        "length": 35.88026135682114
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7485,7 +8051,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 41.13464955033455
+        "length": 41.13464955033473
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7521,7 +8087,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 66.0286304637716
+        "length": 66.02863046518408
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7557,7 +8123,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 45.15959247298357
+        "length": 45.1595924736901
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7585,7 +8151,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 48.40850295183683
+        "length": 48.40850295166036
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7649,7 +8215,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 52.57664041810692
+        "length": 52.57664041881284
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7682,6 +8248,134 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 263,
+        "name": null,
+        "highway": "default",
+        "z_order": 0,
+        "oneway": null,
+        "lanes": null,
+        "weight": 1,
+        "length": 1212.6814003771071
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8140488,
+              21.0084629
+            ],
+            [
+              105.8149154,
+              21.0093509
+            ]
+          ],
+          [
+            [
+              105.8149154,
+              21.0093509
+            ],
+            [
+              105.8142574,
+              21.010134
+            ]
+          ],
+          [
+            [
+              105.8142574,
+              21.010134
+            ],
+            [
+              105.8143147,
+              21.0103286
+            ]
+          ],
+          [
+            [
+              105.8143147,
+              21.0103286
+            ],
+            [
+              105.8140989,
+              21.0105402
+            ]
+          ],
+          [
+            [
+              105.8140989,
+              21.0105402
+            ],
+            [
+              105.8152095,
+              21.0119403
+            ]
+          ],
+          [
+            [
+              105.8152095,
+              21.0119403
+            ],
+            [
+              105.8144302,
+              21.0124944
+            ]
+          ],
+          [
+            [
+              105.8144302,
+              21.0124944
+            ],
+            [
+              105.8146061,
+              21.0127625
+            ]
+          ],
+          [
+            [
+              105.8146061,
+              21.0127625
+            ],
+            [
+              105.8138595,
+              21.0131508
+            ]
+          ],
+          [
+            [
+              105.8138595,
+              21.0131508
+            ],
+            [
+              105.8145812,
+              21.0141311
+            ]
+          ],
+          [
+            [
+              105.8145812,
+              21.0141311
+            ],
+            [
+              105.8168588,
+              21.0124878
+            ]
+          ],
+          [
+            [
+              105.8168588,
+              21.0124878
+            ],
+            [
+              105.8171959,
+              21.011993
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": 266,
         "name": null,
         "highway": "service",
@@ -7689,7 +8383,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 68.96005138502753
+        "length": 68.96005138502647
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7714,6 +8408,134 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 267,
+        "name": null,
+        "highway": "default",
+        "z_order": 0,
+        "oneway": null,
+        "lanes": null,
+        "weight": 1,
+        "length": 80.44561511591445
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8147245,
+              21.0083418
+            ],
+            [
+              105.8149454,
+              21.0080913
+            ],
+            [
+              105.81521,
+              21.0077761
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 268,
+        "name": null,
+        "highway": "default",
+        "z_order": 0,
+        "oneway": null,
+        "lanes": null,
+        "weight": 1,
+        "length": 139.7566311660924
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8173948,
+              21.0047652
+            ],
+            [
+              105.8173163,
+              21.0048538
+            ],
+            [
+              105.8171393,
+              21.0050975
+            ],
+            [
+              105.8169714,
+              21.0053122
+            ],
+            [
+              105.8166337,
+              21.0058046
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 269,
+        "name": null,
+        "highway": "default",
+        "z_order": 0,
+        "oneway": null,
+        "lanes": null,
+        "weight": 1,
+        "length": 189.12661336116008
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8180811,
+              21.0042609
+            ],
+            [
+              105.8182545,
+              21.0040854
+            ],
+            [
+              105.8183677,
+              21.0039576
+            ],
+            [
+              105.8185173,
+              21.003811
+            ],
+            [
+              105.8187455,
+              21.0036338
+            ],
+            [
+              105.8189919,
+              21.0034873
+            ],
+            [
+              105.8191124,
+              21.0034276
+            ],
+            [
+              105.8193097,
+              21.0033469
+            ],
+            [
+              105.8195322,
+              21.0032862
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": 270,
         "name": "Ngõ 154 Phố Yên Lãng",
         "highway": "service",
@@ -7721,7 +8543,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 54.661210855273765
+        "length": 54.66121085209717
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7771,7 +8593,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 43.037742972405205
+        "length": 43.03774297275778
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7799,7 +8621,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 253.71996395308602
+        "length": 253.719963953792
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7839,7 +8661,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 49.33771295056309
+        "length": 49.33771295091556
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7852,6 +8674,64 @@
             [
               105.8195665,
               21.006773
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 276,
+        "name": null,
+        "highway": "default",
+        "z_order": 0,
+        "oneway": null,
+        "lanes": null,
+        "weight": 1,
+        "length": 579.3803262573721
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8181305,
+              21.001585
+            ],
+            [
+              105.817116,
+              21.0038899
+            ]
+          ],
+          [
+            [
+              105.817116,
+              21.0038899
+            ],
+            [
+              105.8168836,
+              21.0044842
+            ]
+          ],
+          [
+            [
+              105.8168836,
+              21.0044842
+            ],
+            [
+              105.8166057,
+              21.0051511
+            ]
+          ],
+          [
+            [
+              105.8166057,
+              21.0051511
+            ],
+            [
+              105.8158997,
+              21.0063725
             ]
           ]
         ]
@@ -7923,7 +8803,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 48.43393841269578
+        "length": 48.433938413049205
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7959,7 +8839,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 33.47021154270582
+        "length": 33.47021154058758
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7995,7 +8875,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 58.821981552274586
+        "length": 58.821981550158235
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8059,7 +8939,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 42.52119897749835
+        "length": 42.5211989803225
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8115,7 +8995,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 9.308193008984968
+        "length": 9.308193008630878
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8147,7 +9027,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 31.057354046057036
+        "length": 31.057354046764118
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8191,7 +9071,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 34.550424478653326
+        "length": 34.55042447865455
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8216,6 +9096,58 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 295,
+        "name": null,
+        "highway": "default",
+        "z_order": 0,
+        "oneway": null,
+        "lanes": null,
+        "weight": 1,
+        "length": 119.76833803270124
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              105.8221544,
+              21.0054742
+            ],
+            [
+              105.8221681,
+              21.0055079
+            ],
+            [
+              105.8221792,
+              21.0055362
+            ],
+            [
+              105.822003,
+              21.0057308
+            ],
+            [
+              105.8217864,
+              21.0055599
+            ],
+            [
+              105.8219106,
+              21.0054277
+            ],
+            [
+              105.8220722,
+              21.005561
+            ],
+            [
+              105.8221544,
+              21.0054742
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": 296,
         "name": "Đường Trường Chinh",
         "highway": "primary",
@@ -8223,7 +9155,7 @@
         "oneway": "yes",
         "lanes": "3",
         "weight": 1,
-        "length": 62.47395341959427
+        "length": 62.47395342074162
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8267,7 +9199,7 @@
         "oneway": "yes",
         "lanes": "4",
         "weight": 1,
-        "length": 43.24050717640911
+        "length": 43.24050717640792
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8299,7 +9231,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 104.01985297817816
+        "length": 104.01985298153224
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8379,7 +9311,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 25.232606530006063
+        "length": 25.232606530004684
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8407,7 +9339,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 23.69697901574056
+        "length": 23.69697901609401
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8435,7 +9367,7 @@
         "oneway": "yes",
         "lanes": "4",
         "weight": 1,
-        "length": 84.31425059264278
+        "length": 84.31425059193741
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8471,7 +9403,7 @@
         "oneway": "yes",
         "lanes": null,
         "weight": 1,
-        "length": 1.1032418068033916
+        "length": 1.1032418053922286
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8499,7 +9431,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 179.2363230574275
+        "length": 179.23632305813365
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8575,7 +9507,7 @@
         "oneway": null,
         "lanes": "2",
         "weight": 1,
-        "length": 161.23210363223345
+        "length": 161.2321036322341
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8651,7 +9583,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 85.88351097335521
+        "length": 85.88351097229562
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8699,7 +9631,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 10.965417476644294
+        "length": 10.965417476997764
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8727,7 +9659,7 @@
         "oneway": "yes",
         "lanes": "4",
         "weight": 1,
-        "length": 63.221497311590696
+        "length": 63.22149731194391
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8787,7 +9719,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 39.47372912068211
+        "length": 39.473729121034864
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8855,7 +9787,7 @@
         "oneway": null,
         "lanes": null,
         "weight": 1,
-        "length": 24.308011451087573
+        "length": 24.308011451087925
       },
       "geometry": {
         "type": "MultiLineString",
