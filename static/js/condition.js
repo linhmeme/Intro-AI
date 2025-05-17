@@ -1,5 +1,6 @@
 let allowedLayer = null;
-let selectedFeature = null; // Biến lưu đoạn đường người dùng chọn
+let selectedFeature = null;
+let currentVehicle = null; // Biến lưu đoạn đường người dùng chọn
 let isAddingCondition = false;
 let condition_cache = {}; // Lưu condition cho từng edge_id phía frontend
 
@@ -41,26 +42,27 @@ function updateAllowedRoutes() {
 
 // Hàm xử lý khi người dùng nhấn vào đoạn đường
 function onEachFeature(feature, layer) {
-    layer.on('click', function (e) {
-        if (!isAddingCondition) return;
-        selectedFeature = feature;  // Lưu lại feature (đoạn đường) người dùng chọn
+  layer.on('click', function (e) {
+      if (!isAddingCondition) return;
+      selectedFeature = feature;  // Lưu lại feature (đoạn đường) người dùng chọn
 
-        // Hiển thị bảng điều kiện
-      document.getElementById('conditionOptions').style.display = 'flex';
-        // Gán sự kiện click cho từng ô condition
-      document.querySelectorAll('.condition-box').forEach(box => {
-        box.onclick = function () {
-          const condition = this.dataset.condition;
-          const edge_id = String(selectedFeature.properties.id);  // Đảm bảo edge_id là string
+      // Hiển thị bảng điều kiện
+    document.getElementById('conditionOptions').style.display = 'grid';
+      // Gán sự kiện click cho từng ô condition
+    document.querySelectorAll('.condition-box').forEach(box => {
+      box.onclick = function () {
+        const condition = this.dataset.condition;
+        const edge_id = String(selectedFeature.properties.id);  // Đảm bảo edge_id là string
 
-          // ✅ Cập nhật vào biến toàn cục
-          condition_cache[edge_id] = condition;
+        // ✅ Cập nhật vào biến toàn cục
+        condition_cache[edge_id] = condition;
 
-          // ✅ Gửi về backend để lưu tạm
-          updateCondition(String(edge_id), condition);
-        };
-    });
+        // ✅ Gửi về backend để lưu tạm
+        updateCondition(String(edge_id), condition);
+        document.getElementById('conditionOptions').style.display = 'none';
+      };
   });
+});
 }
 
 // Gửi yêu cầu tới API để cập nhật điều kiện vào condition_cache
@@ -78,6 +80,7 @@ function updateCondition(edge_id, condition) {
     })
     .catch(err => console.error('Lỗi khi cập nhật điều kiện:', err));
 }
+
 // Bắt sự kiện khi người dùng click vào các condition-box
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('.condition-box').forEach(box => {
@@ -95,7 +98,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
 
 document.addEventListener("DOMContentLoaded", function () {
     const selected = document.getElementById("vehicle").value;
@@ -116,7 +118,7 @@ function addCondition() {
       document.getElementById('addCondition').innerText = "Tắt thêm điều kiện";
     } else {
       console.log("Chế độ thêm điều kiện đã tắt");
-      alert("Chế độ thêm điều kiện đã tắt.");``
+      alert("Chế độ thêm điều kiện đã tắt.");
       document.getElementById('addCondition').innerText = "Thêm điều kiện";
   
       finalizeCondition();
@@ -133,14 +135,25 @@ function finalizeCondition(){
       },
       body: JSON.stringify({
           vehicle: vehicle,
-          // conditions: condition_cache  // Gửi toàn bộ điều kiện đã thay đổi
+          conditions: condition_cache  // Gửi toàn bộ điều kiện đã thay đổi
       })
   })
   .then(response => response.json())
   .then(data => {
       console.log(data.message);  // In thông báo từ server
+      const totalTravelTime = data.total_travel_time;
+      const totalLength = data.total_length;
+      displayResults(totalTravelTime, totalLength);
   })
   .catch(error => {
       console.error('Lỗi khi gọi finalize_conditions:', error);
   });
+}
+
+function displayResults(total_travel_time, total_length) {
+  const timeElem = document.getElementById('total_travel_time');
+  const lengthElem = document.getElementById('total_length');
+
+  if (timeElem) timeElem.textContent = `Tổng thời gian di chuyển: ${total_travel_time} giờ`;
+  if (lengthElem) lengthElem.textContent = `Tổng chiều dài quãng đường: ${total_length} mét`;
 }

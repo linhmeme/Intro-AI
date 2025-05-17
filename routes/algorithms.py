@@ -2,8 +2,33 @@ from flask import Blueprint, request, jsonify
 from config import GRAPH_PATH
 from graph import get_nearest_node, load_graph
 from algorithms import find_shortest_path
+from cache.condition_cache import condition_cache
 
 algo_bp = Blueprint("algorithms", __name__)
+
+def route_calculation(path, condition_cache, G):
+    total_travel_time = 0  
+    total_length = 0 
+
+    for i in range(len(path) - 1):
+        u, v = path[i], path[i + 1]
+
+        if G.has_edge(u, v):
+            edge_data = G[u][v]
+
+            edge_id = edge_data.get('id')
+            length = edge_data.get('length', 0)
+            travel_time = edge_data.get('weight')
+
+        if travel_time == float("inf") or travel_time is None:
+            travel_time = 0
+
+        total_travel_time += travel_time
+        total_length += length
+
+        print(f"✔ Edge {u}->{v} | length={length:.1f} | travelTime={travel_time:.2f}")
+
+    return round(total_travel_time,1), round(total_length,2)
 
 @algo_bp.route("/find_route", methods=["POST"])
 def find_route():
@@ -27,6 +52,8 @@ def find_route():
 
     path, visited_forward, edges_forward, visited_backward, edges_backward = result
 
+    total_travel_time, total_length = route_calculation(path, condition_cache, G)
+
     def convert_edges_to_coords(edge_list):
         coords = []
         for u, v in edge_list:
@@ -44,5 +71,8 @@ def find_route():
         "edges_forward": convert_edges_to_coords(edges_forward),
         "edges_backward": convert_edges_to_coords(edges_backward),
         "start_node": [orig_node[1], orig_node[0]],  # (lat, lon)
-        "end_node": [dest_node[1], dest_node[0]]     # (lat, lon)
+        "end_node": [dest_node[1], dest_node[0]],    # (lat, lon)
+        "total_travel_time": total_travel_time,
+        "total_length": total_length
     })
+

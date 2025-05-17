@@ -20,12 +20,18 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
         geometry = feature.get("geometry", {})
         props = feature.get("properties", {})
         weight = props.get("weight")  # 🔹 Lấy từ file weights.geojson
+        length = props.get("length")
+        edge_id = props.get("id")
+        highway = props.get("highway", "")
+        condition = props.get("condition", "normal")
+        speed = props.get("speed", None)
+        vehicle = props.get("vehicle", None)
         coords_list = []
 
-        if weight is None:
-            continue  # Bỏ qua nếu không có trường length
+        if weight is None or length is None or edge_id is None:
+            continue  
 
-        if props.get("condition", "normal") == "not allowed":
+        if condition == "not allowed":
             continue 
 
         if geometry["type"] == "LineString":
@@ -46,10 +52,18 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
                 G.add_node((x1, y1), x=x1, y=y1)
                 G.add_node((x2, y2), x=x2, y=y2)
 
-                # dist = geodesic((node1[1], node1[0]), (node2[1], node2[0])).meters
+                edge_attrs = {
+                    "weight": weight,
+                    "length": length,
+                    "id": edge_id,
+                    "highway": highway,
+                    "condition": condition,
+                    "speed": speed,
+                    "vehicle": vehicle
+                }
 
-                G.add_edge((x1, y1), (x2, y2), weight=weight)
-                G.add_edge((x2, y2), (x1, y1), weight=weight)  # ✅ (2) Sửa: thêm chiều ngược lại để graph đi được 2 chiều
+                G.add_edge((x1, y1), (x2, y2), **edge_attrs)
+                G.add_edge((x2, y2), (x1, y1), **edge_attrs)  # ✅ (2) Sửa: thêm chiều ngược lại để graph đi được 2 chiều
 
     return G
 

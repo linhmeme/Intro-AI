@@ -1,6 +1,5 @@
 from flask import Blueprint, request, jsonify
 from cache.condition_cache import condition_cache
-import json
 
 update_bp = Blueprint('update_condition_temp',__name__)
 @update_bp.route('/update_condition_temp', methods=['POST'])

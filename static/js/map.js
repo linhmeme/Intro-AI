@@ -76,7 +76,10 @@ fetch("/static/geojson/boundary.geojson")
       }),
     })
       .then((response) => response.json())
-      .then((data) => animateSearch(data, startCoords, endCoords))
+      .then((data) => {
+        console.log("Dữ liệu trả về từ backend:", data);
+        animateSearch(data, startCoords, endCoords);
+      })
       .catch((error) => console.error("Lỗi:", error));
   }
   
