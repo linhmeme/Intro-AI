@@ -9,26 +9,25 @@ algo_bp = Blueprint("algorithms", __name__)
 def route_calculation(path, condition_cache, G):
     total_travel_time = 0  
     total_length = 0 
+    seen_edges = set()  # track các edge_id đã cộng rồi
 
     for i in range(len(path) - 1):
         u, v = path[i], path[i + 1]
 
         if G.has_edge(u, v):
             edge_data = G[u][v]
-
             edge_id = edge_data.get('id')
-            length = edge_data.get('length', 0)
-            travel_time = edge_data.get('weight')
+            if edge_id not in seen_edges:
+                length = edge_data.get('length', 0)
+                travel_time = edge_data.get('weight', 0)
+                total_length += length
+                total_travel_time += 0 if travel_time in [None, float("inf")] else travel_time
 
-        if travel_time == float("inf") or travel_time is None:
-            travel_time = 0
+                seen_edges.add(edge_id)
 
-        total_travel_time += travel_time
-        total_length += length
+                print(f"✔ Edge {u}->{v} | length={length:.1f} | travelTime={travel_time:.2f}")
 
-        print(f"✔ Edge {u}->{v} | length={length:.1f} | travelTime={travel_time:.2f}")
-
-    return round(total_travel_time,1), round(total_length,2)
+    return round(total_travel_time,2), round(total_length,2)
 
 @algo_bp.route("/find_route", methods=["POST"])
 def find_route():

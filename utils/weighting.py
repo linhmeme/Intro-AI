@@ -39,7 +39,7 @@ def compute_weight(length, highway, vehicle, edge_id=None, condition_cache=None)
 
     travel_time = (length / 1000) / speed_used # km / (km/h) = h
 
-    return round(travel_time, 2), round(speed_used, 1), condition
+    return round(travel_time, 5), round(speed_used, 1), condition
 
 def update_weight_file(edge_id, length, condition, highway, vehicle, condition_cache, weights):
     # Tính trọng số, tốc độ sử dụng và condition từ condition_cache
