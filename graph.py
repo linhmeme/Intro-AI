@@ -14,6 +14,7 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
         data = json.load(f)
 
     G = nx.DiGraph()
+    banned_nodes = set()
     
     print(f"Đang xử lý {len(data['features'])} feature từ GeoJSON")
     for feature in data["features"]:
@@ -31,9 +32,6 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
         if weight is None or length is None or edge_id is None:
             continue  
 
-        if condition == "not allowed":
-            continue 
-
         if geometry["type"] == "LineString":
             coords_list = [geometry["coordinates"]]
 
@@ -45,6 +43,13 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
             continue
 
         for line in coords_list:
+            # Nếu là đường bị cấm, chỉ đánh dấu các node ở giữa (trừ đầu/cuối)
+            if condition == "not allowed":
+                if len(line) > 2:
+                    for pt in line[1:-1]:  # Bỏ node đầu và cuối
+                        banned_nodes.add(tuple(pt))
+                continue
+
             for i in range(len(line) - 1):
                 x1, y1 = line[i]
                 x2, y2 = line[i + 1]
@@ -64,6 +69,8 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
 
                 G.add_edge((x1, y1), (x2, y2), **edge_attrs)
                 G.add_edge((x2, y2), (x1, y1), **edge_attrs)  # ✅ (2) Sửa: thêm chiều ngược lại để graph đi được 2 chiều
+    
+    G.remove_nodes_from(banned_nodes)
 
     return G
 
