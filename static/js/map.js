@@ -143,9 +143,54 @@ fetch("/static/geojson/boundary.geojson")
   
     drawVisited();
   }
+
+  function animateCarOnRoute(path) {
+    if (!path || path.length < 2) return;
+
+    if (window.carMarker) {
+        map.removeLayer(window.carMarker);
+        window.carMarker = null;
+    }
+
+    const vehicle = document.getElementById("vehicle").value;
+
+    let iconUrl = "";
+    if (vehicle === "car") {
+        iconUrl = "https://cdn-icons-png.flaticon.com/512/744/744465.png"; // Ã´ tÃ´
+    } else if (vehicle === "motor") {
+        iconUrl = "https://cdn-icons-png.flaticon.com/512/7910/7910762.png"; // xe mÃ¡y vespa
+    } else if (vehicle === "foot") {
+        iconUrl = "https://cdn-icons-png.flaticon.com/512/1668/1668531.png"; // ngÆ°á»i cháº¡y
+    }
+
+    const vehicleIcon = L.icon({
+        iconUrl: iconUrl,
+        iconSize: [32, 32],
+        iconAnchor: [16, 16]
+    });
+
+    let i = 0;
+    window.carMarker = L.marker(path[0], {icon: vehicleIcon}).addTo(map);
+
+    function moveCar() {
+        if (i < path.length) {
+            window.carMarker.setLatLng(path[i]);
+            i++;
+            window.carTimer = setTimeout(moveCar, 200);
+        }
+    }
+    moveCar();
+}
   
   function drawFinalPath(path) {
     if (path.length > 1) {
       L.polyline(path, { color: "red", weight: 5 }).addTo(routeLayer);
     }
   }
+
+  function displayRouteInfo(result) {
+    document.getElementById("total_length").innerText =
+        "Tổng quãng đường: " + (result.total_length / 1000).toFixed(1) + " km";
+    document.getElementById("total_travel_time").innerText =
+        "Thời gian di chuyển: " + Math.round(result.total_travel_time * 60) + " phút";
+}
