@@ -148,8 +148,52 @@ fetch("/static/geojson/boundary.geojson")
   function drawFinalPath(path) {
     if (path.length > 1) {
       L.polyline(path, { color: "red", weight: 5 }).addTo(routeLayer);
+      animateCarOnRoute(path); // <-- Thêm dòng này
     }
   }
+
+  // Hàm tạo hiệu ứng ô tô chạy trên đường đi
+  function animateCarOnRoute(path) {
+    if (!path || path.length < 2) return;
+
+    // Nếu đã có marker thì xóa đi
+    if (window.carMarker) {
+        map.removeLayer(window.carMarker);
+        window.carMarker = null;
+    }
+
+    // Lấy loại phương tiện đang chọn
+    const vehicle = document.getElementById("vehicle").value;
+
+    // Chọn icon theo phương tiện
+    let iconUrl = "";
+    if (vehicle === "car") {
+        iconUrl = "https://cdn-icons-png.flaticon.com/512/744/744465.png"; // ô tô
+    } else if (vehicle === "motor") {
+        iconUrl = "https://cdn-icons-png.flaticon.com/512/7910/7910762.png"; // xe máy vespa
+    } else if (vehicle === "foot") {
+        iconUrl = "https://cdn-icons-png.flaticon.com/512/1668/1668531.png"; // người chạy
+    }
+
+    const vehicleIcon = L.icon({
+        iconUrl: iconUrl,
+        iconSize: [32, 32],
+        iconAnchor: [16, 16]
+    });
+
+    let i = 0;
+    window.carMarker = L.marker(path[0], {icon: vehicleIcon}).addTo(map);
+
+    function moveCar() {
+        if (i < path.length) {
+            window.carMarker.setLatLng(path[i]);
+            i++;
+            window.carTimer = setTimeout(moveCar, 200);
+        }
+    }
+    moveCar();
+}
+
   function displayRouteInfo(result) {
     document.getElementById("total_length").innerText =
         "Tổng quãng đường: " + (result.total_length / 1000).toFixed(1) + " km";

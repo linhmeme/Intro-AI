@@ -47,22 +47,32 @@ function onEachFeature(feature, layer) {
       selectedFeature = feature;  // Lưu lại feature (đoạn đường) người dùng chọn
 
       // Hiển thị bảng điều kiện
-    document.getElementById('conditionOptions').style.display = 'grid';
+      document.getElementById('conditionOptions').style.display = 'grid';
       // Gán sự kiện click cho từng ô condition
-    document.querySelectorAll('.condition-box').forEach(box => {
-      box.onclick = function () {
-        const condition = this.dataset.condition;
-        const edge_id = String(selectedFeature.properties.id);  // Đảm bảo edge_id là string
+      document.querySelectorAll('.condition-box').forEach(box => {
+        box.onclick = function () {
+          const condition = this.dataset.condition;
+          const edge_id = String(selectedFeature.properties.id);
 
-        // ✅ Cập nhật vào biến toàn cục
-        condition_cache[edge_id] = condition;
+          // ✅ Cập nhật vào biến toàn cục
+          condition_cache[edge_id] = condition;
 
-        // ✅ Gửi về backend để lưu tạm
-        updateCondition(String(edge_id), condition);
-        document.getElementById('conditionOptions').style.display = 'none';
-      };
+          // ✅ Gửi về backend để lưu tạm
+          updateCondition(String(edge_id), condition);
+
+          // Đổi màu đoạn đường theo điều kiện
+          let color = "#00FF00"; // Mặc định: xanh lá (bình thường)
+          if (condition === "normal") color = "#00FF00";         // Xanh lá
+          else if (condition === "jam") color = "#FF0000";       // Đỏ
+          else if (condition === "flooded") color = "#0099FF";   // Xanh nước biển
+          else if (condition === "not allowed") color = "#FFD700"; // Vàng
+
+          layer.setStyle({ color: color, weight: 5, opacity: 1 });
+
+          document.getElementById('conditionOptions').style.display = 'none';
+        };
+      });
   });
-});
 }
 
 // Gửi yêu cầu tới API để cập nhật điều kiện vào condition_cache
@@ -111,17 +121,19 @@ document.addEventListener("DOMContentLoaded", function () {
 function addCondition() {
     console.log("Hàm addCondition được gọi");
     isAddingCondition = !isAddingCondition;
-    
+
+    const conditionBox = document.getElementById('conditionOptions');
     if (isAddingCondition) {
-      console.log("Chế độ thêm điều kiện đã bật");
-      alert("Nhấn vào đoạn đường để thêm điều kiện.");
-      document.getElementById('addCondition').innerText = "Tắt thêm điều kiện";
+        console.log("Chế độ thêm điều kiện đã bật");
+        alert("Nhấn vào đoạn đường để thêm điều kiện.");
+        document.getElementById('addCondition').innerText = "Tắt thêm điều kiện";
+        conditionBox.style.display = "grid"; // Hiện khung điều kiện
     } else {
-      console.log("Chế độ thêm điều kiện đã tắt");
-      alert("Chế độ thêm điều kiện đã tắt.");
-      document.getElementById('addCondition').innerText = "Thêm điều kiện";
-  
-      finalizeCondition();
+        console.log("Chế độ thêm điều kiện đã tắt");
+        alert("Chế độ thêm điều kiện đã tắt.");
+        document.getElementById('addCondition').innerText = "Thêm điều kiện";
+        conditionBox.style.display = "none"; // Ẩn khung điều kiện
+        finalizeCondition();
     }
 }
 
