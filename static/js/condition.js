@@ -59,6 +59,13 @@ function onEachFeature(feature, layer) {
 
         // ✅ Gửi về backend để lưu tạm
         updateCondition(String(edge_id), condition);
+        let color = "#00FF00";
+        if (condition === "normal") color = "#00FF00"; 
+        else if (condition === "jam") color = "#FF0000";
+        else if (condition === "flooded") color = "#0099FF";
+        else if (condition === "not allowed") color = "#FFD700";
+        layer.setStyle({ color: color, weight: 5, opacity: 1 });
+
         document.getElementById('conditionOptions').style.display = 'none';
       };
   });
@@ -104,7 +111,12 @@ document.addEventListener("DOMContentLoaded", function () {
     currentVehicle = selected;
     filterRoutesByVehicle();  // gọi lần đầu khi mở trang
     // 🔁 Gọi lại khi người dùng đổi phương tiện
-    document.getElementById('vehicle').addEventListener('change', filterRoutesByVehicle);
+    document.getElementById('vehicle').addEventListener('change', () => {
+      filterRoutesByVehicle();
+      setTimeout(() => {
+        finalizeCondition();
+      }, 500);
+    });
   });
   console.log("Đang lọc cho vehicle:", currentVehicle);
 
