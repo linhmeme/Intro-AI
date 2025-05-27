@@ -131,7 +131,7 @@ fetch("/static/geojson/boundary.geojson")
       }
   
       if (edgesBackward.length > 0 && j < edgesBackward.length) {
-        drawVisitedEdges([edgesBackward[j]], "green");
+        drawVisitedEdges([edgesBackward[j]], "purple");
         j++;
       }
   
