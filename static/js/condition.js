@@ -61,7 +61,7 @@ function onEachFeature(feature, layer) {
         updateCondition(String(edge_id), condition);
         let color = "#00FF00";
         if (condition === "normal") color = "#00FF00"; 
-        else if (condition === "jam") color = "#FF0000";
+        else if (condition === "jam") color = "#FF6666";
         else if (condition === "flooded") color = "#0099FF";
         else if (condition === "not allowed") color = "#FFD700";
         layer.setStyle({ color: color, weight: 5, opacity: 1 });

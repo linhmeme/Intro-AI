@@ -131,7 +131,7 @@ fetch("/static/geojson/boundary.geojson")
       }
   
       if (edgesBackward.length > 0 && j < edgesBackward.length) {
-        drawVisitedEdges([edgesBackward[j]], "green");
+        drawVisitedEdges([edgesBackward[j]], "purple");
         j++;
       }
   
@@ -143,12 +143,6 @@ fetch("/static/geojson/boundary.geojson")
     }
   
     drawVisited();
-  }
-  
-  function drawFinalPath(path) {
-    if (path.length > 1) {
-      L.polyline(path, { color: "red", weight: 5 }).addTo(routeLayer);
-    }
   }
 
   function animateCarOnRoute(path) {
@@ -163,11 +157,11 @@ fetch("/static/geojson/boundary.geojson")
 
     let iconUrl = "";
     if (vehicle === "car") {
-        iconUrl = "https://cdn-icons-png.flaticon.com/512/744/744465.png"; // Ã´ tÃ´
+        iconUrl = "https://cdn-icons-png.flaticon.com/512/744/744465.png"; 
     } else if (vehicle === "motor") {
-        iconUrl = "https://cdn-icons-png.flaticon.com/512/7910/7910762.png"; // xe mÃ¡y vespa
+        iconUrl = "https://cdn-icons-png.flaticon.com/512/7910/7910762.png"; 
     } else if (vehicle === "foot") {
-        iconUrl = "https://cdn-icons-png.flaticon.com/512/1668/1668531.png"; // ngÆ°á»i cháº¡y
+        iconUrl = "https://cdn-icons-png.flaticon.com/512/1668/1668531.png"; 
     }
 
     const vehicleIcon = L.icon({
@@ -188,11 +182,18 @@ fetch("/static/geojson/boundary.geojson")
     }
     moveCar();
 }
+  
+  function drawFinalPath(path) {
+    if (path.length > 1) {
+      L.polyline(path, { color: "red", weight: 5 }).addTo(routeLayer);
+    } else{
+      alert("Không tìm thấy tuyến đường hợp lệ!");
+    }
+  }
 
-  function displayRouteInfo(result) {
-    document.getElementById("total_length").innerText =
-        "Tổng quãng đường: " + (result.total_length / 1000).toFixed(1) + " km";
-    document.getElementById("total_travel_time").innerText =
-        "Thời gian di chuyển: " + Math.round(result.total_travel_time * 60) + " phút";
+function displayRouteInfo(result) {
+  document.getElementById("total_length").innerText =
+      "Tổng quãng đường: " + (result.total_length / 1000).toFixed(1) + " km";
+  document.getElementById("total_travel_time").innerText =
+      "Thời gian di chuyển: " + Math.round(result.total_travel_time * 60) + " phút";
 }
-

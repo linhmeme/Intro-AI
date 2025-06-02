@@ -10,11 +10,11 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
-        "weight": 0.08008,
+        "weight": 0.01335,
         "length": 400.3889150328046,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 30.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -85,11 +85,11 @@
         "z_order": 6,
         "oneway": "yes",
         "lanes": "2",
-        "weight": 0.09867,
+        "weight": 0.00789,
         "length": 394.66772110525943,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 50.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -156,11 +156,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
-        "weight": 0.04604,
+        "weight": 0.00307,
         "length": 184.14696634051012,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -227,11 +227,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.08359,
+        "weight": 0.00557,
         "length": 334.36460414485975,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -290,11 +290,11 @@
         "z_order": 4,
         "oneway": null,
         "lanes": "2",
-        "weight": 0.11657,
+        "weight": 0.01457,
         "length": 582.8693825317407,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -409,11 +409,11 @@
         "z_order": 27,
         "oneway": "yes",
         "lanes": "2",
-        "weight": 0.09889,
+        "weight": 0.00659,
         "length": 395.56924411107053,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -472,11 +472,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
-        "weight": 0.0516,
+        "weight": 0.00344,
         "length": 206.39613213219857,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -531,11 +531,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
-        "weight": 0.04557,
+        "weight": 0.00304,
         "length": 182.29653919547314,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -586,11 +586,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.01172,
+        "weight": 0.00078,
         "length": 46.862434197812014,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -617,11 +617,11 @@
         "z_order": 6,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.09386,
+        "weight": 0.00751,
         "length": 375.42240800177314,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 50.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -692,11 +692,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.04752,
+        "weight": 0.01188,
         "length": 237.61875054987595,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -739,11 +739,11 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
-        "weight": 0.05229,
+        "weight": 0.00871,
         "length": 261.4432456718218,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 30.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -802,11 +802,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00885,
+        "weight": 0.00221,
         "length": 44.23326815273313,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -841,11 +841,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.03162,
+        "weight": 0.0079,
         "length": 158.0951983710341,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -886,11 +886,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.03067,
+        "weight": 0.00767,
         "length": 153.35910704547473,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -933,11 +933,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.03031,
+        "weight": 0.00758,
         "length": 151.56806864903618,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -980,11 +980,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01749,
+        "weight": 0.00437,
         "length": 87.45418923180412,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1015,11 +1015,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.04696,
+        "weight": 0.01174,
         "length": 234.8223503104727,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1066,11 +1066,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01396,
+        "weight": 0.00349,
         "length": 69.77722571055337,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1101,11 +1101,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.0077,
+        "weight": 0.00193,
         "length": 38.50230525945476,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1132,11 +1132,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.04842,
+        "weight": 0.0121,
         "length": 242.09046017448378,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1183,11 +1183,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
-        "weight": 0.00844,
+        "weight": 0.00056,
         "length": 33.763113915470186,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1214,11 +1214,11 @@
         "z_order": 6,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.07984,
+        "weight": 0.00639,
         "length": 319.3682501036891,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 50.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1271,196 +1271,17 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 24,
-        "name": "Hầm đường bộ Ngã Tư Sở",
-        "highway": "footway",
-        "z_order": -20,
-        "oneway": "no",
-        "lanes": null,
-        "weight": 0.02138,
-        "length": 106.88936103091945,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8204427,
-              21.0034471
-            ],
-            [
-              105.8202251,
-              21.0033581
-            ],
-            [
-              105.8200972,
-              21.003308
-            ],
-            [
-              105.8200166,
-              21.0032751
-            ],
-            [
-              105.8194944,
-              21.0030743
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 25,
-        "name": null,
-        "highway": "steps",
-        "z_order": 0,
-        "oneway": "yes",
-        "lanes": null,
-        "weight": 0.00908,
-        "length": 18.150162375563994,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 2.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8194112,
-              21.0027728
-            ],
-            [
-              105.81927,
-              21.0026764
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 26,
-        "name": null,
-        "highway": "steps",
-        "z_order": 0,
-        "oneway": "yes",
-        "lanes": null,
-        "weight": 0.01193,
-        "length": 23.858671193710876,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 2.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8191348,
-              21.0032424
-            ],
-            [
-              105.8193447,
-              21.0031553
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 27,
-        "name": "Hầm đường bộ Ngã Tư Sở",
-        "highway": "footway",
-        "z_order": -20,
-        "oneway": "no",
-        "lanes": null,
-        "weight": 0.0086,
-        "length": 43.02425133464256,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8194944,
-              21.0030743
-            ],
-            [
-              105.8195112,
-              21.0030565
-            ],
-            [
-              105.8195663,
-              21.0030047
-            ],
-            [
-              105.8196399,
-              21.0029375
-            ],
-            [
-              105.81979443289275,
-              21.002806944829338
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 28,
-        "name": "Hầm đường bộ Ngã Tư Sở",
-        "highway": "footway",
-        "z_order": -20,
-        "oneway": "no",
-        "lanes": null,
-        "weight": 0.00287,
-        "length": 14.334057483409063,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.82054501531452,
-              21.003360322766692
-            ],
-            [
-              105.8204427,
-              21.0034471
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 30,
         "name": "Ngõ Thịnh Quang",
         "highway": "service",
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.09618,
+        "weight": 0.02404,
         "length": 480.8806044607458,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1575,11 +1396,11 @@
         "z_order": 6,
         "oneway": null,
         "lanes": "2",
-        "weight": 0.0036,
+        "weight": 0.00029,
         "length": 14.40018763064338,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 50.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1610,11 +1431,11 @@
         "z_order": 26,
         "oneway": null,
         "lanes": "2",
-        "weight": 0.00554,
+        "weight": 0.00044,
         "length": 22.17085905843449,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 50.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1641,11 +1462,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "1",
-        "weight": 0.00661,
+        "weight": 0.0005,
         "length": 19.825080284055563,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 3.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1688,11 +1509,11 @@
         "z_order": 4,
         "oneway": null,
         "lanes": "2",
-        "weight": 0.00143,
+        "weight": 0.00018,
         "length": 7.164387196594863,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1719,11 +1540,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01533,
+        "weight": 0.00383,
         "length": 76.65529276671813,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1766,11 +1587,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
-        "weight": 0.0383,
+        "weight": 0.00287,
         "length": 114.88528697649966,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 3.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1817,11 +1638,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
-        "weight": 0.02303,
+        "weight": 0.00173,
         "length": 69.0966109731004,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 3.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1864,11 +1685,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.02525,
+        "weight": 0.00631,
         "length": 126.23449586841267,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1903,11 +1724,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01316,
+        "weight": 0.00329,
         "length": 65.80658237635095,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1934,11 +1755,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00927,
+        "weight": 0.00232,
         "length": 46.33791817938128,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1965,11 +1786,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00632,
+        "weight": 0.00158,
         "length": 31.61701713393942,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1996,11 +1817,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00829,
+        "weight": 0.00207,
         "length": 41.46512906514285,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2031,11 +1852,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 4196590.35509,
+        "weight": 0.01049,
         "length": 209.8295177546302,
-        "vehicle": "foot",
-        "condition": "not allowed",
-        "speed": 0.0
+        "vehicle": "car",
+        "condition": "normal",
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2098,11 +1919,11 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
-        "weight": 0.02202,
+        "weight": 0.00367,
         "length": 110.09790574091568,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 30.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2141,11 +1962,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00732,
+        "weight": 0.00183,
         "length": 36.60925209224426,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2172,11 +1993,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.02048,
+        "weight": 0.00512,
         "length": 102.42285710175734,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2255,11 +2076,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01758,
+        "weight": 0.00439,
         "length": 87.89160540998377,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2290,11 +2111,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.0329,
+        "weight": 0.00823,
         "length": 164.50205907220874,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2361,11 +2182,11 @@
         "z_order": 0,
         "oneway": "yes",
         "lanes": null,
-        "weight": 0.01716,
+        "weight": 0.00429,
         "length": 85.80658865353878,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2464,11 +2285,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00939,
+        "weight": 0.00235,
         "length": 46.97112308414189,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2495,11 +2316,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00863,
+        "weight": 0.00216,
         "length": 43.13228740526301,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2526,11 +2347,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00965,
+        "weight": 0.00241,
         "length": 48.237911859540446,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2551,52 +2372,17 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 53,
-        "name": null,
-        "highway": "path",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.02132,
-        "length": 85.29405214104767,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 4.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8198815,
-              21.0074937
-            ],
-            [
-              105.8204653,
-              21.0079473
-            ],
-            [
-              105.8205136,
-              21.0079848
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 54,
         "name": null,
         "highway": "service",
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00781,
+        "weight": 0.00195,
         "length": 39.055406518006706,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2627,11 +2413,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01374,
+        "weight": 0.00344,
         "length": 68.70826504592776,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2658,11 +2444,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01697,
+        "weight": 0.00424,
         "length": 84.8611357165056,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2697,11 +2483,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.02116,
+        "weight": 0.00529,
         "length": 105.79073475287245,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2744,11 +2530,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.0171,
+        "weight": 0.00427,
         "length": 85.47641131842906,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2791,11 +2577,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.04987,
+        "weight": 0.01247,
         "length": 249.37049110096203,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2846,11 +2632,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
-        "weight": 0.06881,
+        "weight": 0.00459,
         "length": 275.2584965336427,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2893,11 +2679,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
-        "weight": 0.00358,
+        "weight": 0.00024,
         "length": 14.314483135073983,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2924,11 +2710,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.00362,
+        "weight": 0.00024,
         "length": 14.469916461373943,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2955,11 +2741,11 @@
         "z_order": 6,
         "oneway": "yes",
         "lanes": "4",
-        "weight": 0.00322,
+        "weight": 0.00026,
         "length": 12.86160587952372,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 50.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2986,11 +2772,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00416,
+        "weight": 0.00104,
         "length": 20.806082441681752,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3021,11 +2807,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.06347,
+        "weight": 0.01587,
         "length": 317.3289244557328,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3080,11 +2866,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.03329,
+        "weight": 0.00832,
         "length": 166.42656944138096,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3123,11 +2909,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.014,
+        "weight": 0.0035,
         "length": 70.01379014928591,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3158,11 +2944,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00737,
+        "weight": 0.00184,
         "length": 36.85679858320776,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3189,11 +2975,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00764,
+        "weight": 0.00191,
         "length": 38.18461977821637,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3220,11 +3006,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00676,
+        "weight": 0.00169,
         "length": 33.79062808920931,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3251,11 +3037,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.28237,
+        "weight": 0.01412,
         "length": 282.36553352992246,
-        "vehicle": "foot",
-        "condition": "flooded",
-        "speed": 1.0
+        "vehicle": "car",
+        "condition": "normal",
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3314,11 +3100,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00715,
+        "weight": 0.00179,
         "length": 35.75441504046879,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3345,11 +3131,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.02884,
+        "weight": 0.00721,
         "length": 144.17955208344736,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3396,11 +3182,11 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00828,
+        "weight": 0.00138,
         "length": 41.3789540591053,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 30.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3439,11 +3225,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.0299,
+        "weight": 0.00748,
         "length": 149.51650078316342,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3490,11 +3276,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00018,
+        "weight": 4e-05,
         "length": 0.8818470913712431,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3521,11 +3307,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00625,
+        "weight": 0.00156,
         "length": 31.254715182041295,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3560,11 +3346,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.02389,
+        "weight": 0.00597,
         "length": 119.47456257788721,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3595,11 +3381,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "1",
-        "weight": 0.01788,
+        "weight": 0.00134,
         "length": 53.62534696713774,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 3.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3646,11 +3432,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "1",
-        "weight": 0.0141,
+        "weight": 0.00106,
         "length": 42.28963809803501,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 3.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3681,11 +3467,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01687,
+        "weight": 0.00422,
         "length": 84.3301499891347,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3716,11 +3502,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00962,
+        "weight": 0.0024,
         "length": 48.09443042417778,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3751,11 +3537,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01385,
+        "weight": 0.00346,
         "length": 69.25608608909047,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3786,11 +3572,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01442,
+        "weight": 0.00361,
         "length": 72.12257975055324,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3821,11 +3607,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01233,
+        "weight": 0.00308,
         "length": 61.66238339052226,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3856,11 +3642,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.0124,
+        "weight": 0.0031,
         "length": 61.9827108058109,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3891,11 +3677,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01561,
+        "weight": 0.0039,
         "length": 78.02923189811051,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3926,11 +3712,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01618,
+        "weight": 0.00404,
         "length": 80.89970792450693,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3961,11 +3747,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01183,
+        "weight": 0.00296,
         "length": 59.1651009345902,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3996,11 +3782,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01336,
+        "weight": 0.00334,
         "length": 66.77859815214089,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4035,11 +3821,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.03033,
+        "weight": 0.00758,
         "length": 151.63109301181765,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4082,11 +3868,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.0255,
+        "weight": 0.00638,
         "length": 127.51322655156719,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4125,11 +3911,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01106,
+        "weight": 0.00277,
         "length": 55.317422322557434,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4160,11 +3946,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
-        "weight": 0.02517,
+        "weight": 0.00168,
         "length": 100.68243571974921,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4199,11 +3985,11 @@
         "z_order": 27,
         "oneway": "yes",
         "lanes": "4",
-        "weight": 0.0045,
+        "weight": 0.0003,
         "length": 18.013926306638382,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4230,11 +4016,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.0037,
+        "weight": 0.00092,
         "length": 18.498398863707237,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4265,11 +4051,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01449,
+        "weight": 0.00362,
         "length": 72.47220143276667,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4300,11 +4086,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 1499306.17484,
+        "weight": 0.00375,
         "length": 74.96530874211743,
-        "vehicle": "foot",
-        "condition": "not allowed",
-        "speed": 0.0
+        "vehicle": "car",
+        "condition": "normal",
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4339,11 +4125,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.03025,
+        "weight": 756262.54088,
         "length": 151.25250817530184,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
+        "vehicle": "car",
+        "condition": "not allowed",
+        "speed": 0.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4378,11 +4164,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01188,
+        "weight": 0.00297,
         "length": 59.38954645275342,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4417,11 +4203,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00623,
+        "weight": 0.00156,
         "length": 31.163032857906572,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4448,11 +4234,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00977,
+        "weight": 0.00244,
         "length": 48.86029937063553,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4479,11 +4265,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.03113,
+        "weight": 0.00778,
         "length": 155.65147155286633,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4526,11 +4312,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.02281,
+        "weight": 0.0057,
         "length": 114.07321564641559,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4577,11 +4363,11 @@
         "z_order": 3,
         "oneway": "yes",
         "lanes": null,
-        "weight": 0.04202,
+        "weight": 0.007,
         "length": 210.08244735276452,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 30.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4648,11 +4434,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00676,
+        "weight": 0.00169,
         "length": 33.822261260840804,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4683,11 +4469,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.03251,
+        "weight": 0.00813,
         "length": 162.56067546515916,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4750,11 +4536,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00746,
+        "weight": 0.00186,
         "length": 37.28574634528682,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4781,11 +4567,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01052,
+        "weight": 0.00263,
         "length": 52.585730855731434,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4824,11 +4610,11 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00699,
+        "weight": 0.00117,
         "length": 34.96179435614762,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 30.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4859,11 +4645,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00512,
+        "weight": 0.00128,
         "length": 25.61014184112546,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4894,11 +4680,11 @@
         "z_order": 6,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.00093,
+        "weight": 7e-05,
         "length": 3.7080690111436057,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 50.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4925,11 +4711,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
-        "weight": 0.0126,
+        "weight": 0.00084,
         "length": 50.385149252861055,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4960,11 +4746,11 @@
         "z_order": 6,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.01242,
+        "weight": 0.00099,
         "length": 49.693102678090135,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 50.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4991,11 +4777,11 @@
         "z_order": 6,
         "oneway": "yes",
         "lanes": "4",
-        "weight": 0.01258,
+        "weight": 0.00101,
         "length": 50.31252809026828,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 50.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5030,11 +4816,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
-        "weight": 0.01074,
+        "weight": 0.00072,
         "length": 42.963751455084655,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5061,11 +4847,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.00146,
+        "weight": 0.0001,
         "length": 5.858902547350388,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5092,11 +4878,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.04339,
+        "weight": 0.00289,
         "length": 173.5638162374829,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5135,11 +4921,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.0021,
+        "weight": 0.00014,
         "length": 8.386586444044497,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5160,126 +4946,17 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 122,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00317,
-        "length": 15.867525520409517,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8225335,
-              21.0059405
-            ],
-            [
-              105.8226109,
-              21.0059065
-            ],
-            [
-              105.82267177571241,
-              21.00587983833484
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 123,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00388,
-        "length": 19.396444359536602,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8225039414569,
-              21.00555028695775
-            ],
-            [
-              105.8224433,
-              21.0055776
-            ],
-            [
-              105.8223357,
-              21.005626
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 125,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00597,
-        "length": 29.852275718746373,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8158483,
-              21.0105195
-            ],
-            [
-              105.8158918,
-              21.0104883
-            ],
-            [
-              105.8160258,
-              21.010392
-            ],
-            [
-              105.8160763,
-              21.0103556
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 126,
         "name": "Ngõ 142 Phố Yên Lãng",
         "highway": "service",
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01491,
+        "weight": 0.00373,
         "length": 74.54190317011363,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5322,11 +4999,11 @@
         "z_order": 6,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.00921,
+        "weight": 0.00074,
         "length": 36.842152542740344,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 50.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5351,52 +5028,17 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 128,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00459,
-        "length": 22.9498243364403,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.822404,
-              21.0057727
-            ],
-            [
-              105.8224422,
-              21.0058186
-            ],
-            [
-              105.8225335,
-              21.0059405
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 129,
         "name": "Phố Tây Sơn",
         "highway": "primary",
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
-        "weight": 0.00467,
+        "weight": 0.00031,
         "length": 18.69169956015714,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5427,11 +5069,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "1",
-        "weight": 0.00522,
+        "weight": 0.00039,
         "length": 15.654857433047098,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 3.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5470,11 +5112,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
-        "weight": 0.00991,
+        "weight": 0.00066,
         "length": 39.62151241003495,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5505,11 +5147,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00013,
+        "weight": 3e-05,
         "length": 0.6630757192347485,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5536,11 +5178,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.01199,
+        "weight": 0.0008,
         "length": 47.979668968402926,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5567,11 +5209,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
-        "weight": 0.00422,
+        "weight": 0.00028,
         "length": 16.889362444705167,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5598,11 +5240,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.0071,
+        "weight": 0.00047,
         "length": 28.397969720564056,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5641,11 +5283,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
-        "weight": 0.01242,
+        "weight": 0.00083,
         "length": 49.6976123976897,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5680,11 +5322,11 @@
         "z_order": 7,
         "oneway": null,
         "lanes": "2",
-        "weight": 0.00414,
+        "weight": 0.00031,
         "length": 12.42550610616062,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 3.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5711,11 +5353,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.01978,
+        "weight": 0.00132,
         "length": 79.13818994823222,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5750,11 +5392,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.0136,
+        "weight": 0.0034,
         "length": 67.9844425945457,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5793,11 +5435,11 @@
         "z_order": 3,
         "oneway": "yes",
         "lanes": null,
-        "weight": 0.04779,
+        "weight": 0.00797,
         "length": 238.9600396960154,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 30.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5868,11 +5510,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00752,
+        "weight": 0.00188,
         "length": 37.5942662140806,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5903,11 +5545,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.00731,
+        "weight": 0.00049,
         "length": 29.24880565313254,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5934,11 +5576,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.01593,
+        "weight": 0.00106,
         "length": 63.7228000696,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5973,11 +5615,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
-        "weight": 0.01624,
+        "weight": 0.00108,
         "length": 64.97336058941514,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6004,11 +5646,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
-        "weight": 0.01152,
+        "weight": 0.00077,
         "length": 46.09246712694045,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6035,11 +5677,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.009,
+        "weight": 0.00225,
         "length": 44.980320260989686,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6066,11 +5708,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01418,
+        "weight": 0.00354,
         "length": 70.89036781423471,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6101,11 +5743,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.0195,
+        "weight": 0.00488,
         "length": 97.50703276121085,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6144,11 +5786,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00934,
+        "weight": 0.00234,
         "length": 46.71189348697245,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6175,11 +5817,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01426,
+        "weight": 0.00356,
         "length": 71.29330642915644,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6210,11 +5852,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00733,
+        "weight": 0.00183,
         "length": 36.66688143589511,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6241,11 +5883,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00749,
+        "weight": 0.00187,
         "length": 37.46717574361642,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6272,11 +5914,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01441,
+        "weight": 0.0036,
         "length": 72.06718413207128,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6311,11 +5953,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00636,
+        "weight": 0.00159,
         "length": 31.82276488288654,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6342,11 +5984,11 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01689,
+        "weight": 0.00281,
         "length": 84.4379594537693,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 30.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6371,449 +6013,17 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 156,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.08058,
-        "length": 402.89179789344223,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8228494,
-              21.0065707
-            ],
-            [
-              105.8227855,
-              21.0064161
-            ],
-            [
-              105.8226133,
-              21.0061085
-            ],
-            [
-              105.8225787,
-              21.0060721
-            ],
-            [
-              105.8224861,
-              21.0060116
-            ],
-            [
-              105.8223987,
-              21.0059759
-            ],
-            [
-              105.8223415,
-              21.0059793
-            ],
-            [
-              105.8222894,
-              21.005995
-            ],
-            [
-              105.822231,
-              21.0060308
-            ],
-            [
-              105.8220712,
-              21.0061945
-            ],
-            [
-              105.8219564,
-              21.0063172
-            ],
-            [
-              105.8218411,
-              21.0064406
-            ],
-            [
-              105.8217567,
-              21.0065514
-            ],
-            [
-              105.8216426,
-              21.0066955
-            ],
-            [
-              105.8214282,
-              21.0069435
-            ],
-            [
-              105.8213743,
-              21.0070161
-            ],
-            [
-              105.8212204,
-              21.0072235
-            ],
-            [
-              105.8211829,
-              21.0072741
-            ],
-            [
-              105.8205718,
-              21.0080258
-            ],
-            [
-              105.82045726411258,
-              21.008166703195908
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 157,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00186,
-        "length": 9.28726862269432,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8224861,
-              21.0060116
-            ],
-            [
-              105.8225065,
-              21.005981
-            ],
-            [
-              105.8225335,
-              21.0059405
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 158,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.21229,
-        "length": 1061.459459656113,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8172527,
-              21.0117406
-            ],
-            [
-              105.8172735,
-              21.0117381
-            ],
-            [
-              105.8172942,
-              21.0117263
-            ],
-            [
-              105.8173137,
-              21.0117046
-            ],
-            [
-              105.8175407,
-              21.0114275
-            ],
-            [
-              105.8179102,
-              21.0109765
-            ],
-            [
-              105.81797,
-              21.010892
-            ],
-            [
-              105.818185,
-              21.0106546
-            ],
-            [
-              105.8182471,
-              21.0105799
-            ],
-            [
-              105.8183963,
-              21.0103911
-            ],
-            [
-              105.8185561,
-              21.0102143
-            ],
-            [
-              105.8186204,
-              21.0101292
-            ],
-            [
-              105.818864,
-              21.0098367
-            ],
-            [
-              105.818923,
-              21.0097615
-            ],
-            [
-              105.8189487,
-              21.0097288
-            ],
-            [
-              105.8192688,
-              21.009369
-            ],
-            [
-              105.8193051,
-              21.0093271
-            ],
-            [
-              105.8193427,
-              21.0092837
-            ],
-            [
-              105.8194448,
-              21.0091657
-            ],
-            [
-              105.8195168,
-              21.0090745
-            ],
-            [
-              105.8197725,
-              21.0087507
-            ],
-            [
-              105.8198275,
-              21.0086809
-            ],
-            [
-              105.8198374,
-              21.0086689
-            ],
-            [
-              105.8199852,
-              21.0084888
-            ],
-            [
-              105.8200534,
-              21.0084058
-            ],
-            [
-              105.8201903,
-              21.0082547
-            ],
-            [
-              105.8202601,
-              21.0081777
-            ],
-            [
-              105.8204245,
-              21.0079961
-            ],
-            [
-              105.8204653,
-              21.0079473
-            ],
-            [
-              105.8206864,
-              21.0076821
-            ],
-            [
-              105.8208017,
-              21.0075439
-            ],
-            [
-              105.8208778,
-              21.0074501
-            ],
-            [
-              105.8210083,
-              21.0072895
-            ],
-            [
-              105.8210812,
-              21.007197
-            ],
-            [
-              105.8211078,
-              21.0071632
-            ],
-            [
-              105.8211746,
-              21.0070785
-            ],
-            [
-              105.8212771,
-              21.006946
-            ],
-            [
-              105.8214147,
-              21.006768
-            ],
-            [
-              105.8214677,
-              21.0067068
-            ],
-            [
-              105.821659,
-              21.0064856
-            ],
-            [
-              105.8218145,
-              21.0063255
-            ],
-            [
-              105.8220048,
-              21.0061203
-            ],
-            [
-              105.8221654,
-              21.0059751
-            ],
-            [
-              105.8222384,
-              21.0058916
-            ],
-            [
-              105.8222842,
-              21.0058351
-            ],
-            [
-              105.8223119,
-              21.0057431
-            ],
-            [
-              105.8223364,
-              21.00563
-            ],
-            [
-              105.8223357,
-              21.005626
-            ],
-            [
-              105.8223292,
-              21.0055889
-            ],
-            [
-              105.8222943,
-              21.0055061
-            ],
-            [
-              105.8222175,
-              21.0053515
-            ],
-            [
-              105.8221134,
-              21.0051348
-            ],
-            [
-              105.8220725,
-              21.0050577
-            ],
-            [
-              105.8220405,
-              21.0049909
-            ],
-            [
-              105.8218917,
-              21.0047427
-            ],
-            [
-              105.8217675,
-              21.0045589
-            ],
-            [
-              105.8216974,
-              21.0044676
-            ],
-            [
-              105.8215963,
-              21.0043688
-            ],
-            [
-              105.8214863,
-              21.0042768
-            ],
-            [
-              105.8213109,
-              21.004143
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 159,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00115,
-        "length": 5.727117703027798,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.822364,
-              21.0057599
-            ],
-            [
-              105.8223119,
-              21.0057431
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 160,
         "name": null,
         "highway": "default",
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01884,
+        "weight": 0.00235,
         "length": 94.19837452259016,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6872,11 +6082,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00758,
+        "weight": 0.00095,
         "length": 37.87771979002045,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -6975,11 +6185,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
-        "weight": 0.00082,
+        "weight": 5e-05,
         "length": 3.284061159465579,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7006,11 +6216,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00453,
+        "weight": 0.00113,
         "length": 22.642761317858703,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7037,11 +6247,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00518,
+        "weight": 0.00129,
         "length": 25.89323898155368,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7072,11 +6282,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01126,
+        "weight": 0.00282,
         "length": 56.31795437299381,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7107,11 +6317,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.02252,
+        "weight": 0.00563,
         "length": 112.58460816870854,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7162,11 +6372,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.0104,
+        "weight": 0.0026,
         "length": 52.00119135859444,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7193,11 +6403,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00461,
+        "weight": 0.00115,
         "length": 23.044108491712464,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7224,11 +6434,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00518,
+        "weight": 0.0013,
         "length": 25.907925656180428,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7255,11 +6465,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00445,
+        "weight": 0.00111,
         "length": 22.259475322998703,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7286,11 +6496,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.02197,
+        "weight": 0.00549,
         "length": 109.85119076994668,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7345,11 +6555,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01088,
+        "weight": 0.00272,
         "length": 54.418058792439965,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7388,11 +6598,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01033,
+        "weight": 0.00258,
         "length": 51.66051382297165,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7431,11 +6641,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00865,
+        "weight": 0.00216,
         "length": 43.22637465428881,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7490,11 +6700,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.03587,
+        "weight": 0.00897,
         "length": 179.36343094792,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7545,11 +6755,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.011,
+        "weight": 0.00275,
         "length": 55.011998784888334,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7580,11 +6790,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00958,
+        "weight": 0.00239,
         "length": 47.89682654682834,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7623,11 +6833,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00853,
+        "weight": 0.00213,
         "length": 42.62633218639642,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7662,11 +6872,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.00172,
+        "weight": 0.00011,
         "length": 6.865052983913127,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7693,11 +6903,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00593,
+        "weight": 0.00148,
         "length": 29.643834700593587,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7724,11 +6934,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00878,
+        "weight": 0.00219,
         "length": 43.89070115199052,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7755,11 +6965,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01974,
+        "weight": 0.00494,
         "length": 98.70414169111716,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7790,11 +7000,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01292,
+        "weight": 0.00323,
         "length": 64.60375246246453,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7829,11 +7039,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.007,
+        "weight": 0.00175,
         "length": 34.98524286063876,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7864,11 +7074,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00557,
+        "weight": 0.00139,
         "length": 27.826107944809234,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7895,11 +7105,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.05478,
+        "weight": 0.00685,
         "length": 273.9003645195946,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7936,11 +7146,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.26009,
+        "weight": 0.03251,
         "length": 1300.436732762932,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8071,11 +7281,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.06053,
+        "weight": 0.00757,
         "length": 302.6462254289671,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8132,11 +7342,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.09981,
+        "weight": 0.01248,
         "length": 499.0277312574175,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8253,11 +7463,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.18654,
+        "weight": 0.02332,
         "length": 932.6925453454347,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8344,11 +7554,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00424,
+        "weight": 0.00106,
         "length": 21.19343419927308,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8375,11 +7585,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
-        "weight": 0.00522,
+        "weight": 0.00035,
         "length": 20.867822189937094,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8410,11 +7620,11 @@
         "z_order": 4,
         "oneway": null,
         "lanes": "2",
-        "weight": 0.00764,
+        "weight": 0.00096,
         "length": 38.21221183404377,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8449,11 +7659,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
-        "weight": 0.0192,
+        "weight": 0.00128,
         "length": 76.80788175514421,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8488,11 +7698,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.00159,
+        "weight": 0.00011,
         "length": 6.345938791869565,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8513,1154 +7723,17 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 196,
-        "name": null,
-        "highway": "steps",
-        "z_order": -10,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00987,
-        "length": 19.730296589048898,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 2.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8193792,
-              21.0029749
-            ],
-            [
-              105.8195663,
-              21.0030047
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 197,
-        "name": null,
-        "highway": "steps",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00535,
-        "length": 10.694754617248154,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 2.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.820056,
-              21.0035008
-            ],
-            [
-              105.8200768,
-              21.0034062
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 198,
-        "name": null,
-        "highway": "steps",
-        "z_order": -20,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00554,
-        "length": 11.077358056857655,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 2.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8200768,
-              21.0034062
-            ],
-            [
-              105.8200972,
-              21.003308
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 199,
-        "name": null,
-        "highway": "steps",
-        "z_order": 0,
-        "oneway": "yes",
-        "lanes": null,
-        "weight": 0.00933,
-        "length": 18.658960064010902,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 2.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8204784,
-              21.003543
-            ],
-            [
-              105.8203026,
-              21.0035091
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 200,
-        "name": null,
-        "highway": "steps",
-        "z_order": 0,
-        "oneway": "yes",
-        "lanes": null,
-        "weight": 0.00707,
-        "length": 14.147606895041081,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 2.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8198529,
-              21.0034447
-            ],
-            [
-              105.8197188,
-              21.003423
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 201,
-        "name": null,
-        "highway": "steps",
-        "z_order": -20,
-        "oneway": "yes",
-        "lanes": null,
-        "weight": 0.01286,
-        "length": 25.71818809066219,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 2.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8200166,
-              21.0032751
-            ],
-            [
-              105.8199719,
-              21.0033443
-            ],
-            [
-              105.8199315,
-              21.0033905
-            ],
-            [
-              105.8198529,
-              21.0034447
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 202,
-        "name": null,
-        "highway": "steps",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00689,
-        "length": 13.789892013133839,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 2.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8192485,
-              21.0029537
-            ],
-            [
-              105.8193792,
-              21.0029749
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 203,
-        "name": null,
-        "highway": "steps",
-        "z_order": -20,
-        "oneway": "yes",
-        "lanes": null,
-        "weight": 0.01024,
-        "length": 20.477284140383215,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 2.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8193447,
-              21.0031553
-            ],
-            [
-              105.8195112,
-              21.0030565
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 204,
-        "name": null,
-        "highway": "steps",
-        "z_order": -20,
-        "oneway": "yes",
-        "lanes": null,
-        "weight": 0.01143,
-        "length": 22.863442963511204,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 2.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8203026,
-              21.0035091
-            ],
-            [
-              105.8202294,
-              21.0034838
-            ],
-            [
-              105.820206,
-              21.0034444
-            ],
-            [
-              105.8202251,
-              21.0033581
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 205,
-        "name": null,
-        "highway": "steps",
-        "z_order": -20,
-        "oneway": "yes",
-        "lanes": null,
-        "weight": 0.01498,
-        "length": 29.96484828400991,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 2.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8196399,
-              21.0029375
-            ],
-            [
-              105.8194112,
-              21.0027728
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 206,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.04403,
-        "length": 220.17434650330782,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8213109,
-              21.004143
-            ],
-            [
-              105.821164,
-              21.0040325
-            ],
-            [
-              105.8210528,
-              21.0039493
-            ],
-            [
-              105.8209215,
-              21.0038514
-            ],
-            [
-              105.8207688,
-              21.0037448
-            ],
-            [
-              105.8206525,
-              21.0036558
-            ],
-            [
-              105.8206003,
-              21.0036166
-            ],
-            [
-              105.8205641,
-              21.0035927
-            ],
-            [
-              105.8204011,
-              21.0035673
-            ],
-            [
-              105.8202829,
-              21.0035402
-            ],
-            [
-              105.820056,
-              21.0035008
-            ],
-            [
-              105.8198001,
-              21.0034657
-            ],
-            [
-              105.8196826,
-              21.0034503
-            ],
-            [
-              105.8196159,
-              21.0034513
-            ],
-            [
-              105.8195548,
-              21.0034677
-            ],
-            [
-              105.8194147,
-              21.0034951
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 207,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.15745,
-        "length": 787.2540769036185,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8194147,
-              21.0034951
-            ],
-            [
-              105.8192004,
-              21.0035885
-            ],
-            [
-              105.8189981,
-              21.0037236
-            ],
-            [
-              105.818796,
-              21.0038619
-            ],
-            [
-              105.8186109,
-              21.0040094
-            ],
-            [
-              105.8182994,
-              21.0043195
-            ],
-            [
-              105.8181681,
-              21.0044429
-            ],
-            [
-              105.8181111,
-              21.0044762
-            ],
-            [
-              105.8178255,
-              21.004643
-            ],
-            [
-              105.8175753,
-              21.0047818
-            ],
-            [
-              105.8174868,
-              21.0048337
-            ],
-            [
-              105.8174419,
-              21.0048737
-            ],
-            [
-              105.8172191,
-              21.0051689
-            ],
-            [
-              105.8172081,
-              21.0051847
-            ],
-            [
-              105.8168067,
-              21.0057647
-            ],
-            [
-              105.8167957,
-              21.0057812
-            ],
-            [
-              105.8167619,
-              21.005832
-            ],
-            [
-              105.8167512,
-              21.0058481
-            ],
-            [
-              105.8167209,
-              21.0058937
-            ],
-            [
-              105.8166827,
-              21.0059511
-            ],
-            [
-              105.8165839,
-              21.0060996
-            ],
-            [
-              105.816322,
-              21.0064931
-            ],
-            [
-              105.816262,
-              21.0065891
-            ],
-            [
-              105.8159691,
-              21.0069844
-            ],
-            [
-              105.8157227,
-              21.0073406
-            ],
-            [
-              105.8156143,
-              21.0074972
-            ],
-            [
-              105.8154267,
-              21.0077237
-            ],
-            [
-              105.8153637,
-              21.0077986
-            ],
-            [
-              105.8152505,
-              21.0079337
-            ],
-            [
-              105.8150205,
-              21.0082082
-            ],
-            [
-              105.8148525,
-              21.0084084
-            ],
-            [
-              105.8148426,
-              21.0084203
-            ],
-            [
-              105.8146525,
-              21.0086469
-            ],
-            [
-              105.8146422,
-              21.0086681
-            ],
-            [
-              105.8146407,
-              21.0086857
-            ],
-            [
-              105.8146498,
-              21.0087054
-            ],
-            [
-              105.8146824,
-              21.008737
-            ],
-            [
-              105.8147361,
-              21.0087991
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 208,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00209,
-        "length": 10.472251485000381,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8205641,
-              21.0035927
-            ],
-            [
-              105.8204784,
-              21.003543
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 209,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00097,
-        "length": 4.827107825133644,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8197188,
-              21.003423
-            ],
-            [
-              105.8196826,
-              21.0034503
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 210,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.08199,
-        "length": 409.9464264041454,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8190812,
-              21.0025749
-            ],
-            [
-              105.8186428,
-              21.0022427
-            ],
-            [
-              105.8183505,
-              21.0020496
-            ],
-            [
-              105.818323,
-              21.0020405
-            ],
-            [
-              105.8182859,
-              21.0020312
-            ],
-            [
-              105.8182691,
-              21.0020411
-            ],
-            [
-              105.8181976,
-              21.0021396
-            ],
-            [
-              105.8180564,
-              21.002449
-            ],
-            [
-              105.8178489,
-              21.0029059
-            ],
-            [
-              105.817629,
-              21.0033667
-            ],
-            [
-              105.8175963,
-              21.0034578
-            ],
-            [
-              105.8174814,
-              21.0037773
-            ],
-            [
-              105.8173916,
-              21.0040014
-            ],
-            [
-              105.8173826,
-              21.0040249
-            ],
-            [
-              105.8172853,
-              21.0042787
-            ],
-            [
-              105.8172548,
-              21.0043583
-            ],
-            [
-              105.817173,
-              21.0045924
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 211,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00752,
-        "length": 37.5844416866893,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8191768,
-              21.0028596
-            ],
-            [
-              105.81921,
-              21.0026898
-            ],
-            [
-              105.8190812,
-              21.0025749
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 212,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.0526,
-        "length": 263.0072460124142,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8173992,
-              21.0046249
-            ],
-            [
-              105.8175818,
-              21.0044896
-            ],
-            [
-              105.8176001,
-              21.0044761
-            ],
-            [
-              105.8178357,
-              21.0042703
-            ],
-            [
-              105.8179296,
-              21.0041636
-            ],
-            [
-              105.8181174,
-              21.0039501
-            ],
-            [
-              105.8183564,
-              21.0037141
-            ],
-            [
-              105.8186086,
-              21.0035215
-            ],
-            [
-              105.8186724,
-              21.0034729
-            ],
-            [
-              105.8190593,
-              21.0032256
-            ],
-            [
-              105.8190383,
-              21.0031804
-            ],
-            [
-              105.819044,
-              21.0030757
-            ],
-            [
-              105.819062,
-              21.0030046
-            ],
-            [
-              105.8190977,
-              21.0029778
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 213,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.0109,
-        "length": 54.47844296355498,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8192328,
-              21.0029862
-            ],
-            [
-              105.8192107,
-              21.0030039
-            ],
-            [
-              105.8191835,
-              21.0030136
-            ],
-            [
-              105.8191544,
-              21.003014
-            ],
-            [
-              105.8191269,
-              21.0030051
-            ],
-            [
-              105.8191043,
-              21.002988
-            ],
-            [
-              105.8190977,
-              21.0029778
-            ],
-            [
-              105.8190893,
-              21.0029647
-            ],
-            [
-              105.8190838,
-              21.0029406
-            ],
-            [
-              105.8190866,
-              21.0029162
-            ],
-            [
-              105.8190973,
-              21.0028937
-            ],
-            [
-              105.819115,
-              21.0028754
-            ],
-            [
-              105.8191379,
-              21.0028632
-            ],
-            [
-              105.8191637,
-              21.0028582
-            ],
-            [
-              105.8191768,
-              21.0028596
-            ],
-            [
-              105.8191899,
-              21.0028609
-            ],
-            [
-              105.8192139,
-              21.002871
-            ],
-            [
-              105.8192334,
-              21.0028876
-            ],
-            [
-              105.8192464,
-              21.002909
-            ],
-            [
-              105.8192517,
-              21.0029357
-            ],
-            [
-              105.8192485,
-              21.0029537
-            ],
-            [
-              105.819247,
-              21.0029625
-            ],
-            [
-              105.8192328,
-              21.0029862
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 214,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00161,
-        "length": 8.066965622118241,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8190593,
-              21.0032256
-            ],
-            [
-              105.8191348,
-              21.0032424
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 215,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00128,
-        "length": 6.412109105863035,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.81921,
-              21.0026898
-            ],
-            [
-              105.81927,
-              21.0026764
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 216,
-        "name": null,
-        "highway": "footway",
-        "z_order": 30,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.01439,
-        "length": 71.94813829027984,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.816422,
-              21.0061041
-            ],
-            [
-              105.8164554,
-              21.0061247
-            ],
-            [
-              105.8166301,
-              21.0058388
-            ],
-            [
-              105.8168192,
-              21.0059485
-            ],
-            [
-              105.8168862,
-              21.0059874
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 217,
-        "name": null,
-        "highway": "steps",
-        "z_order": 20,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.01361,
-        "length": 27.215004175257224,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 2.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8164375,
-              21.0056879
-            ],
-            [
-              105.8162965,
-              21.005895
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 218,
-        "name": null,
-        "highway": "footway",
-        "z_order": 20,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00179,
-        "length": 8.932896398150437,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8164375,
-              21.0056879
-            ],
-            [
-              105.8165106,
-              21.0057303
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 219,
         "name": null,
         "highway": "primary_link",
         "z_order": 7,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00598,
+        "weight": 0.00045,
         "length": 17.945913249617753,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 3.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -9687,11 +7760,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "2",
-        "weight": 0.03513,
+        "weight": 0.00234,
         "length": 140.5107076348998,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -9734,11 +7807,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01554,
+        "weight": 0.00388,
         "length": 77.68519409814715,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -9801,11 +7874,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.02937,
+        "weight": 0.00734,
         "length": 146.8412519078875,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -9852,11 +7925,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01935,
+        "weight": 483730.06997,
         "length": 96.74601399326224,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
+        "vehicle": "car",
+        "condition": "not allowed",
+        "speed": 0.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -9903,11 +7976,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00924,
+        "weight": 0.00231,
         "length": 46.21929105836247,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -9946,11 +8019,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01912,
+        "weight": 0.00478,
         "length": 95.5759250737413,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10009,11 +8082,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00933,
+        "weight": 0.00233,
         "length": 46.62804685562798,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10048,11 +8121,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00642,
+        "weight": 0.00161,
         "length": 32.12066947037909,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10083,11 +8156,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00415,
+        "weight": 0.00104,
         "length": 20.737094118662988,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10118,11 +8191,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01356,
+        "weight": 0.00339,
         "length": 67.82012655774119,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10157,11 +8230,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00031,
+        "weight": 8e-05,
         "length": 1.5319347822377956,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10188,11 +8261,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00033,
+        "weight": 8e-05,
         "length": 1.6659057172064624,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10219,11 +8292,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00886,
+        "weight": 0.00222,
         "length": 44.31957669186657,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10258,11 +8331,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00437,
+        "weight": 0.00109,
         "length": 21.850275403089885,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10297,11 +8370,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.0246,
+        "weight": 0.00615,
         "length": 123.01606914093337,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10340,11 +8413,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01836,
+        "weight": 0.00459,
         "length": 91.7977220544424,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10395,11 +8468,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01431,
+        "weight": 0.00358,
         "length": 71.53484053633169,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10430,11 +8503,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00271,
+        "weight": 0.00068,
         "length": 13.571352849526223,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10461,11 +8534,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.005,
+        "weight": 0.00125,
         "length": 25.009430683057975,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10492,11 +8565,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00912,
+        "weight": 0.00228,
         "length": 45.62222926525217,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10527,11 +8600,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00718,
+        "weight": 0.00179,
         "length": 35.880261356823105,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10574,11 +8647,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00823,
+        "weight": 0.00206,
         "length": 41.13464955033455,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10613,11 +8686,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01321,
+        "weight": 0.0033,
         "length": 66.0286304637716,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10652,11 +8725,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00903,
+        "weight": 0.00226,
         "length": 45.15959247298357,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10683,11 +8756,11 @@
         "z_order": -10,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00968,
+        "weight": 0.00242,
         "length": 48.40850295183683,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10718,11 +8791,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.0186,
+        "weight": 0.00465,
         "length": 93.01255399091094,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10753,11 +8826,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01052,
+        "weight": 0.00263,
         "length": 52.57664041810692,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10790,813 +8863,17 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 247,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00562,
-        "length": 28.112439762699516,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8146824,
-              21.008737
-            ],
-            [
-              105.8145777,
-              21.008818
-            ],
-            [
-              105.81447248917843,
-              21.00889705184681
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 248,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00204,
-        "length": 10.216308428323588,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8165106,
-              21.0057303
-            ],
-            [
-              105.8165951,
-              21.0057774
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 249,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00257,
-        "length": 12.849948335476412,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.82289622533744,
-              21.006678105461454
-            ],
-            [
-              105.8228831,
-              21.0066491
-            ],
-            [
-              105.8228494,
-              21.0065707
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 250,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00135,
-        "length": 6.740912490317479,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8193051,
-              21.0093271
-            ],
-            [
-              105.8193538,
-              21.0093637
-            ],
-            [
-              105.81935572292176,
-              21.009365143135778
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 251,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00159,
-        "length": 7.934174158882164,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8198374,
-              21.0086689
-            ],
-            [
-              105.8198943,
-              21.0087156
-            ],
-            [
-              105.81989486042681,
-              21.008716060996246
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 252,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00144,
-        "length": 7.224124317429154,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8201903,
-              21.0082547
-            ],
-            [
-              105.82024622511676,
-              21.008293424780163
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 253,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00272,
-        "length": 13.589058655302743,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8210812,
-              21.007197
-            ],
-            [
-              105.8211332,
-              21.0072364
-            ],
-            [
-              105.8211829,
-              21.0072741
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 254,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00171,
-        "length": 8.562976669345085,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.81711037526645,
-              21.012118534376036
-            ],
-            [
-              105.8170602,
-              21.0120572
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 255,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00807,
-        "length": 40.36367062837073,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8170602,
-              21.0120572
-            ],
-            [
-              105.8170921,
-              21.0120048
-            ],
-            [
-              105.8171866,
-              21.0118493
-            ],
-            [
-              105.8172527,
-              21.0117406
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 256,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00226,
-        "length": 11.30061817548479,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8172527,
-              21.0117406
-            ],
-            [
-              105.81731369148953,
-              21.011825085899996
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 257,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.07428,
-        "length": 371.3864438604438,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8170602,
-              21.0120572
-            ],
-            [
-              105.8170579,
-              21.0120396
-            ],
-            [
-              105.8170507,
-              21.0120185
-            ],
-            [
-              105.8166374,
-              21.0115049
-            ],
-            [
-              105.8165554,
-              21.0114029
-            ],
-            [
-              105.816364,
-              21.0111635
-            ],
-            [
-              105.816115,
-              21.0108519
-            ],
-            [
-              105.8160025,
-              21.0107111
-            ],
-            [
-              105.8159734,
-              21.010675
-            ],
-            [
-              105.8158483,
-              21.0105195
-            ],
-            [
-              105.8156478,
-              21.0102702
-            ],
-            [
-              105.8155521,
-              21.0101513
-            ],
-            [
-              105.81545,
-              21.0100209
-            ],
-            [
-              105.815421,
-              21.0099905
-            ],
-            [
-              105.8153529,
-              21.0099191
-            ],
-            [
-              105.8151869,
-              21.0097606
-            ],
-            [
-              105.8151438,
-              21.0097227
-            ],
-            [
-              105.8149544,
-              21.0095558
-            ],
-            [
-              105.8148541,
-              21.0094673
-            ],
-            [
-              105.81483313151101,
-              21.009448809504146
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 258,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.08403,
-        "length": 420.1716087865107,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8172527,
-              21.0117406
-            ],
-            [
-              105.8172284,
-              21.0117381
-            ],
-            [
-              105.8172034,
-              21.0117275
-            ],
-            [
-              105.8171791,
-              21.0117048
-            ],
-            [
-              105.8169303,
-              21.0114159
-            ],
-            [
-              105.8167523,
-              21.0111912
-            ],
-            [
-              105.8166955,
-              21.0111194
-            ],
-            [
-              105.8165747,
-              21.0109732
-            ],
-            [
-              105.8163221,
-              21.0107141
-            ],
-            [
-              105.816287,
-              21.0106718
-            ],
-            [
-              105.8162806,
-              21.0106641
-            ],
-            [
-              105.816243,
-              21.0105998
-            ],
-            [
-              105.8161734,
-              21.0104819
-            ],
-            [
-              105.8161307,
-              21.0104223
-            ],
-            [
-              105.8160763,
-              21.0103556
-            ],
-            [
-              105.8158345,
-              21.0100591
-            ],
-            [
-              105.8157907,
-              21.0100054
-            ],
-            [
-              105.8157091,
-              21.0099052
-            ],
-            [
-              105.8156308,
-              21.0098111
-            ],
-            [
-              105.8155607,
-              21.0097415
-            ],
-            [
-              105.8153727,
-              21.0095551
-            ],
-            [
-              105.8153165,
-              21.0095076
-            ],
-            [
-              105.8151856,
-              21.0093984
-            ],
-            [
-              105.8151566,
-              21.0093713
-            ],
-            [
-              105.8151223,
-              21.0093393
-            ],
-            [
-              105.8150643,
-              21.0092672
-            ],
-            [
-              105.8150168,
-              21.0092046
-            ],
-            [
-              105.814815,
-              21.0089213
-            ],
-            [
-              105.8147361,
-              21.0087991
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 259,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.07002,
-        "length": 350.0883850360604,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.81456594696245,
-              21.014110381484382
-            ],
-            [
-              105.814759,
-              21.0139679
-            ],
-            [
-              105.815533,
-              21.0134112
-            ],
-            [
-              105.8155996,
-              21.0133694
-            ],
-            [
-              105.8156307,
-              21.0133499
-            ],
-            [
-              105.8156379,
-              21.0133448
-            ],
-            [
-              105.8163945,
-              21.0128081
-            ],
-            [
-              105.8164127,
-              21.0127949
-            ],
-            [
-              105.8166649,
-              21.0126128
-            ],
-            [
-              105.8167261,
-              21.0125617
-            ],
-            [
-              105.8168012,
-              21.0124946
-            ],
-            [
-              105.8168709,
-              21.0124275
-            ],
-            [
-              105.8169203,
-              21.0123644
-            ],
-            [
-              105.8169718,
-              21.0122863
-            ],
-            [
-              105.8170426,
-              21.0121631
-            ],
-            [
-              105.8170597,
-              21.012111
-            ],
-            [
-              105.8170602,
-              21.0120572
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 260,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00042,
-        "length": 2.100156270212066,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.81564930886016,
-              21.01336045401743
-            ],
-            [
-              105.8156379,
-              21.0133448
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 261,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00026,
-        "length": 1.298268281503332,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.81641972701628,
-              21.012804593393994
-            ],
-            [
-              105.8164127,
-              21.0127949
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 262,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.0949,
-        "length": 474.5218453270468,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.81425259371417,
-              21.008671726238397
-            ],
-            [
-              105.814594,
-              21.0083241
-            ],
-            [
-              105.8148377,
-              21.0080549
-            ],
-            [
-              105.8150673,
-              21.0077786
-            ],
-            [
-              105.8154845,
-              21.0072426
-            ],
-            [
-              105.8155675,
-              21.0071223
-            ],
-            [
-              105.8157014,
-              21.0069174
-            ],
-            [
-              105.8165106,
-              21.0057303
-            ],
-            [
-              105.8166557,
-              21.0054967
-            ],
-            [
-              105.8168697,
-              21.0051722
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 263,
         "name": null,
         "highway": "default",
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.24254,
+        "weight": 0.03032,
         "length": 1212.681400375696,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -11723,11 +9000,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01379,
+        "weight": 0.00345,
         "length": 68.96005138502753,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -11758,11 +9035,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01609,
+        "weight": 0.00201,
         "length": 80.44561511591377,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -11793,11 +9070,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.02795,
+        "weight": 0.00349,
         "length": 139.7566311650328,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -11836,11 +9113,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.03783,
+        "weight": 0.00473,
         "length": 189.12661336151314,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -11895,11 +9172,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01093,
+        "weight": 0.00273,
         "length": 54.661210855273765,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -11948,11 +9225,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00861,
+        "weight": 0.00215,
         "length": 43.037742972405205,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -11979,11 +9256,11 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
-        "weight": 0.05074,
+        "weight": 0.00846,
         "length": 253.71996395308602,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 30.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -12022,11 +9299,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00987,
+        "weight": 0.00247,
         "length": 49.33771295056309,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -12053,11 +9330,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.11588,
+        "weight": 0.01448,
         "length": 579.38032625702,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -12114,11 +9391,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00309,
+        "weight": 0.00077,
         "length": 15.443776660726432,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -12145,11 +9422,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00398,
+        "weight": 0.00099,
         "length": 19.886777356089574,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -12170,312 +9447,17 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 279,
-        "name": null,
-        "highway": "steps",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.01773,
-        "length": 35.45471260661897,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 2.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8167064,
-              21.0059644
-            ],
-            [
-              105.8168879,
-              21.0060618
-            ],
-            [
-              105.8169045,
-              21.0060362
-            ],
-            [
-              105.816819,
-              21.0059874
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 280,
-        "name": null,
-        "highway": "steps",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.01147,
-        "length": 22.9413342522585,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 2.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8167672,
-              21.0058589
-            ],
-            [
-              105.8169542,
-              21.0059689
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 281,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00401,
-        "length": 20.07410413618892,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8168862,
-              21.0059874
-            ],
-            [
-              105.8167209,
-              21.0058937
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 282,
-        "name": null,
-        "highway": "steps",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.0049,
-        "length": 9.801675329935447,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 2.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8169402,
-              21.0059892
-            ],
-            [
-              105.8168592,
-              21.0059439
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 283,
-        "name": null,
-        "highway": "footway",
-        "z_order": 20,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00054,
-        "length": 2.677699429782227,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8169542,
-              21.0059689
-            ],
-            [
-              105.8169402,
-              21.0059892
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 284,
-        "name": null,
-        "highway": "footway",
-        "z_order": 20,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00122,
-        "length": 6.08237807148361,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.816819,
-              21.0059874
-            ],
-            [
-              105.8167992,
-              21.0059754
-            ],
-            [
-              105.8168192,
-              21.0059485
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 285,
-        "name": null,
-        "highway": "footway",
-        "z_order": 20,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00118,
-        "length": 5.8884113350309,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8168192,
-              21.0059485
-            ],
-            [
-              105.8168333,
-              21.0059282
-            ],
-            [
-              105.8168592,
-              21.0059439
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 286,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00057,
-        "length": 2.8704818749481276,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8167064,
-              21.0059644
-            ],
-            [
-              105.8166827,
-              21.0059511
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 287,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00041,
-        "length": 2.0486360758678033,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8167672,
-              21.0058589
-            ],
-            [
-              105.8167512,
-              21.0058481
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 288,
         "name": null,
         "highway": "service",
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00969,
+        "weight": 0.00242,
         "length": 48.43393841269578,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -12510,11 +9492,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00669,
+        "weight": 0.00167,
         "length": 33.47021154270582,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -12549,11 +9531,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.01176,
+        "weight": 0.00294,
         "length": 58.821981552274586,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -12616,11 +9598,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.0085,
+        "weight": 0.00213,
         "length": 42.52119897749835,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -12675,11 +9657,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00186,
+        "weight": 0.00047,
         "length": 9.308193008984968,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -12710,11 +9692,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00621,
+        "weight": 0.00155,
         "length": 31.057354046057036,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -12757,11 +9739,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00691,
+        "weight": 0.00173,
         "length": 34.550424478653326,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -12792,11 +9774,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.02395,
+        "weight": 0.00299,
         "length": 119.76833803234841,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -12847,11 +9829,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "3",
-        "weight": 0.01562,
+        "weight": 0.00104,
         "length": 62.47395341959427,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -12888,172 +9870,17 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 297,
-        "name": null,
-        "highway": "cycleway",
-        "z_order": 0,
-        "oneway": "yes",
-        "lanes": null,
-        "weight": 0.00284,
-        "length": 14.224381964842747,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8206148,
-              21.003553
-            ],
-            [
-              105.8204784,
-              21.003543
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 298,
-        "name": null,
-        "highway": "cycleway",
-        "z_order": 0,
-        "oneway": "yes",
-        "lanes": null,
-        "weight": 0.00253,
-        "length": 12.666393358868438,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8197188,
-              21.003423
-            ],
-            [
-              105.8195974,
-              21.0034134
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 299,
-        "name": null,
-        "highway": "cycleway",
-        "z_order": 0,
-        "oneway": "yes",
-        "lanes": null,
-        "weight": 0.00371,
-        "length": 18.527942661375928,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.8190292,
-              21.0033772
-            ],
-            [
-              105.8191348,
-              21.0032424
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 300,
-        "name": null,
-        "highway": "cycleway",
-        "z_order": 0,
-        "oneway": "yes",
-        "lanes": null,
-        "weight": 0.00376,
-        "length": 18.809239936698265,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.81927,
-              21.0026764
-            ],
-            [
-              105.8191784,
-              21.0025299
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 301,
-        "name": null,
-        "highway": "footway",
-        "z_order": 0,
-        "oneway": null,
-        "lanes": null,
-        "weight": 0.00088,
-        "length": 4.393497274669596,
-        "vehicle": "foot",
-        "condition": "normal",
-        "speed": 5.0
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              105.822364,
-              21.0057599
-            ],
-            [
-              105.822404,
-              21.0057727
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 302,
         "name": "Phố Tây Sơn",
         "highway": "primary",
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
-        "weight": 0.01081,
+        "weight": 0.00072,
         "length": 43.24050717640911,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13084,11 +9911,11 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
-        "weight": 0.0208,
+        "weight": 0.00347,
         "length": 104.01985297817816,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 30.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13167,11 +9994,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00505,
+        "weight": 0.00126,
         "length": 25.232606530006063,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13198,11 +10025,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00474,
+        "weight": 0.00118,
         "length": 23.69697901574056,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13229,11 +10056,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
-        "weight": 0.02108,
+        "weight": 0.00141,
         "length": 84.31425059264278,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13268,11 +10095,11 @@
         "z_order": 3,
         "oneway": "yes",
         "lanes": null,
-        "weight": 0.00022,
+        "weight": 4e-05,
         "length": 1.1032418068033916,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 30.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13299,11 +10126,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.03585,
+        "weight": 0.00896,
         "length": 179.2363230574275,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13350,11 +10177,11 @@
         "z_order": 4,
         "oneway": null,
         "lanes": "2",
-        "weight": 0.00265,
+        "weight": 0.00033,
         "length": 13.226255588459207,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13381,11 +10208,11 @@
         "z_order": 4,
         "oneway": null,
         "lanes": "2",
-        "weight": 0.03225,
+        "weight": 0.00403,
         "length": 161.23210363223345,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 40.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13432,11 +10259,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.0001,
+        "weight": 2e-05,
         "length": 0.4955932046193458,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13463,11 +10290,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.08588,
+        "weight": 0.00429,
         "length": 85.88351097335521,
-        "vehicle": "foot",
-        "condition": "flooded",
-        "speed": 1.0
+        "vehicle": "car",
+        "condition": "normal",
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13514,11 +10341,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00219,
+        "weight": 0.00055,
         "length": 10.965417476644294,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13545,11 +10372,11 @@
         "z_order": 7,
         "oneway": "yes",
         "lanes": "4",
-        "weight": 0.01581,
+        "weight": 0.00105,
         "length": 63.221497311590696,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 4.0
+        "speed": 60.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13580,11 +10407,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00807,
+        "weight": 0.00202,
         "length": 40.35848863159067,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13611,11 +10438,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00789,
+        "weight": 0.00197,
         "length": 39.47372912068211,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13654,11 +10481,11 @@
         "z_order": 3,
         "oneway": null,
         "lanes": null,
-        "weight": 0.0029,
+        "weight": 0.00048,
         "length": 14.513227084861484,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 30.0
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13685,11 +10512,11 @@
         "z_order": 0,
         "oneway": null,
         "lanes": null,
-        "weight": 0.00486,
+        "weight": 0.00122,
         "length": 24.308011451087573,
-        "vehicle": "foot",
+        "vehicle": "car",
         "condition": "normal",
-        "speed": 5.0
+        "speed": 20.0
       },
       "geometry": {
         "type": "MultiLineString",
