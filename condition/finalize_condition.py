@@ -15,7 +15,7 @@ def calculate_distance(p1, p2):
     return geodesic((p1[1], p1[0]), (p2[1], p2[0])).meters
 
 def build_new_graph_from_weights(weights_file):
-    return build_graph_from_geojson(weights_file, snap_threshold=1)
+    return build_graph_from_geojson(weights_file)
 
 @final_bp.route('/finalize_conditions', methods=['POST'])
 def finalize_conditions():

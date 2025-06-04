@@ -3,17 +3,69 @@ import pickle
 import networkx as nx
 import numpy as np
 from geopy.distance import geodesic
-from pathlib import Path
-from config import WEIGHTS_FILE, GRAPH_PATH
+from shapely.geometry import LineString, Point
 from utils.weighting import compute_weight
 
-def build_graph_from_geojson(geojson_file, snap_threshold=1):
+def insert_existing_nodes_into_linestring(line_coords, existing_nodes, tolerance=1e-6):
+    line = LineString(line_coords)
+    inserted_points = []
+
+    line_node_set = set(tuple(coord) for coord in line_coords) 
+
+    for node in existing_nodes:
+        if node in line_node_set:
+            continue 
+
+        pt = Point(node)
+        if line.distance(pt) < tolerance:
+            projected_distance = line.project(pt)
+            if 0 < projected_distance < line.length:
+                snapped_point = line.interpolate(projected_distance)
+                inserted_points.append((projected_distance, (snapped_point.x, snapped_point.y)))
+
+    if not inserted_points:
+        return line_coords
+
+    inserted_points.sort()
+    new_coords = [tuple(line_coords[0])]  # đảm bảo định dạng tuple
+    new_points_set = set(new_coords)
+
+    for _, coord in inserted_points:
+        if coord not in new_points_set:
+            new_coords.append(coord)
+            new_points_set.add(coord)
+
+    if tuple(line_coords[-1]) not in new_points_set:
+        new_coords.append(tuple(line_coords[-1]))
+
+    return new_coords
+
+
+def build_graph_from_geojson(geojson_file, insert_tolerance=1e-6):
     with open(geojson_file, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     G = nx.DiGraph()
     banned_nodes = set()
+    all_existing_nodes = set()
 
+    # 1. Quét trước toàn bộ node đầu/cuối để tạo danh sách node đã có
+    for feature in data["features"]:
+        geometry = feature.get("geometry", {})
+        coords_list = []
+
+        if geometry["type"] == "LineString":
+            coords_list = [geometry["coordinates"]]
+        elif geometry["type"] == "MultiLineString":
+            coords_list = geometry["coordinates"]
+        else:
+            continue
+
+        for line in coords_list:
+            for pt in line:
+                all_existing_nodes.add(tuple(pt))
+
+    # 2. Xử lý từng feature và chèn node nếu cần
     for feature in data["features"]:
         geometry = feature.get("geometry", {})
         props = feature.get("properties", {})
@@ -42,6 +94,9 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
                     for pt in line[1:-1]:  # loại node giữa
                         banned_nodes.add(tuple(pt))
                 continue
+
+            # ✅ Chèn các node nếu nằm giữa đoạn
+            line = insert_existing_nodes_into_linestring(line, all_existing_nodes, insert_tolerance)
 
             for i in range(len(line) - 1):
                 x1, y1 = line[i]

@@ -37,7 +37,7 @@ def filter_routes():
     sync_geojson_file('vhc_allowed.geojson')
     print(f"[filter_routes] Ghi {len(allowed_routes)} tuyến cho {vehicle}")
 
-    G = build_graph_from_geojson(VHC_ALLOWED_FILE, snap_threshold=1)
+    G = build_graph_from_geojson(VHC_ALLOWED_FILE)
 
     return jsonify({'status': 'success', 'message': 'Đã lọc các đoạn đường cho phương tiện: ' + vehicle}), 200
 
