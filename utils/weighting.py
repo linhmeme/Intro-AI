@@ -1,17 +1,8 @@
-from config import VHC_ALLOWED_FILE
 import json
 import os
-from config import DEFAULT_SPEED_BY_VEHICLE, CONDITION_SPEED_FACTORS, VHC_ALLOWED_FILE
+from config import DEFAULT_SPEED_BY_VEHICLE, CONDITION_SPEED_FACTORS
 
-def compute_weight(length, highway, vehicle, edge_id=None, condition_cache=None):
-    with open(VHC_ALLOWED_FILE, 'r', encoding='utf-8') as f:
-        geojson_data = json.load(f)
-    for feature in geojson_data['features']:
-        props = feature['properties']
-        if str(props.get('id')) == str(edge_id):
-            length = props.get('length', 0)
-            break
-
+def compute_weight(length, highway, vehicle, condition):
     if not length or length <= 0:
         return float('inf'), 0, "normal"
 
@@ -20,11 +11,6 @@ def compute_weight(length, highway, vehicle, edge_id=None, condition_cache=None)
     # Nếu không lấy được tốc độ, gán mặc định là 5 km/h
     if base_speed <= 0:
         base_speed = 5
-
-    # Lấy condition từ cache hoặc mặc định
-    condition = "normal"
-    if condition_cache and edge_id:
-        condition = condition_cache.get(str(edge_id), "normal")
 
     factor = CONDITION_SPEED_FACTORS.get(condition, 1.0)
     speed_used = base_speed * factor
@@ -37,9 +23,9 @@ def compute_weight(length, highway, vehicle, edge_id=None, condition_cache=None)
 
     return round(travel_time, 5), round(speed_used, 1), condition
 
-def update_weight_file(edge_id, length, condition, highway, vehicle, condition_cache, weights):
+def update_weight_file(edge_id, length, condition, highway, vehicle, weights):
     # Tính trọng số, tốc độ sử dụng và condition từ condition_cache
-    weight, speed_used, condition = compute_weight(length, highway, vehicle, edge_id, condition_cache)
+    weight, speed_used, condition = compute_weight(length, highway, vehicle, condition)
 
     weights[edge_id] = {
         "vehicle": vehicle,

@@ -29,7 +29,7 @@ ALLOWED_HIGHWAYS = {
 CONDITION_SPEED_FACTORS= {
     "normal": 1.0,
     "jam": 0.3,
-    "flooded": 0.2,
+    "flooded": 0.5,
     "not allowed": 0.00000001
 }
 # nhân tốc độ xe theo loại đường với hệ số điều kiện->tốc độ của xe trong đkien đó

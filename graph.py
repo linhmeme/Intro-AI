@@ -2,12 +2,10 @@ import json
 import pickle
 import networkx as nx
 import numpy as np
-# from geopy.distance import geodesic
+from geopy.distance import geodesic
 from pathlib import Path
 from config import WEIGHTS_FILE, GRAPH_PATH
-
-# def calculate_distance(lat1, lon1, lat2, lon2):#distance between two nearest nodes
-#     return geodesic((lat1, lon1), (lat2, lon2)).meters
+from utils.weighting import compute_weight
 
 def build_graph_from_geojson(geojson_file, snap_threshold=1):
     with open(geojson_file, "r", encoding="utf-8") as f:
@@ -15,38 +13,33 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
 
     G = nx.DiGraph()
     banned_nodes = set()
-    
-    print(f"Đang xử lý {len(data['features'])} feature từ GeoJSON")
+
     for feature in data["features"]:
         geometry = feature.get("geometry", {})
         props = feature.get("properties", {})
-        weight = props.get("weight")  # 🔹 Lấy từ file weights.geojson
-        length = props.get("length")
         edge_id = props.get("id")
         highway = props.get("highway", "")
         condition = props.get("condition", "normal")
         speed = props.get("speed", None)
         vehicle = props.get("vehicle", None)
+
+        if edge_id is None:
+            continue
+
         coords_list = []
-
-        if weight is None or length is None or edge_id is None:
-            continue  
-
         if geometry["type"] == "LineString":
             coords_list = [geometry["coordinates"]]
-
         elif geometry["type"] == "MultiLineString":
-            coords_list = geometry["coordinates"]
-
+            coords_list = geometry["coordinates"]  # list of lines
         else:
             print("Không hỗ trợ geometry:", geometry["type"])
             continue
 
         for line in coords_list:
-            # Nếu là đường bị cấm, chỉ đánh dấu các node ở giữa (trừ đầu/cuối)
+            # Xử lý đoạn cấm (not allowed)
             if condition == "not allowed":
                 if len(line) > 2:
-                    for pt in line[1:-1]:  # Bỏ node đầu và cuối
+                    for pt in line[1:-1]:  # loại node giữa
                         banned_nodes.add(tuple(pt))
                 continue
 
@@ -57,21 +50,26 @@ def build_graph_from_geojson(geojson_file, snap_threshold=1):
                 G.add_node((x1, y1), x=x1, y=y1)
                 G.add_node((x2, y2), x=x2, y=y2)
 
+                # Tính lại độ dài từng segment nhỏ thay vì dùng length tổng của feature
+                segment_length = geodesic((y1, x1), (y2, x2)).meters
+                travel_time, speed_used, _ = compute_weight(segment_length, highway, vehicle, condition)
+
                 edge_attrs = {
-                    "weight": weight,
-                    "length": length,
-                    "id": edge_id,
+                    "weight": travel_time,  # Nếu bạn muốn dùng lại weight thì cần tính lại
+                    "length": segment_length,
+                    "id": f"{edge_id}_{i}",  # tạo id segment riêng
                     "highway": highway,
                     "condition": condition,
-                    "speed": speed,
+                    "speed": speed_used,
                     "vehicle": vehicle
                 }
 
                 G.add_edge((x1, y1), (x2, y2), **edge_attrs)
-                G.add_edge((x2, y2), (x1, y1), **edge_attrs)  # ✅ (2) Sửa: thêm chiều ngược lại để graph đi được 2 chiều
-    
+                G.add_edge((x2, y2), (x1, y1), **edge_attrs)
+
     G.remove_nodes_from(banned_nodes)
 
+    print(f"Đã xây dựng graph: {len(G.nodes)} nodes, {len(G.edges)} edges")
     return G
 
 

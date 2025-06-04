@@ -151,21 +151,9 @@ function finalizeCondition(){
       })
   })
   .then(response => response.json())
-  .then(data => {
-      console.log(data.message);  // In thông báo từ server
-      const totalTravelTime = data.total_travel_time;
-      const totalLength = data.total_length;
-      displayResults(totalTravelTime, totalLength);
-  })
   .catch(error => {
       console.error('Lỗi khi gọi finalize_conditions:', error);
   });
 }
 
-function displayResults(total_travel_time, total_length) {
-  const timeElem = document.getElementById('total_travel_time');
-  const lengthElem = document.getElementById('total_length');
 
-  if (timeElem) timeElem.textContent = `Tổng thời gian di chuyển: ${total_travel_time} giờ`;
-  if (lengthElem) lengthElem.textContent = `Tổng chiều dài quãng đường: ${total_length} mét`;
-}

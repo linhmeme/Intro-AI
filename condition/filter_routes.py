@@ -1,5 +1,4 @@
 from flask import Blueprint 
-from utils.length import add_length_to_vhc_allowed
 from config import ROADS_FILE, VHC_ALLOWED_FILE, ALLOWED_HIGHWAYS
 import json
 from utils.sync_geojson import sync_geojson_file
@@ -32,9 +31,7 @@ def filter_routes():
     
     # Lưu các đoạn đường được phép vào vhc_allowed.geojson
     with open(VHC_ALLOWED_FILE, 'w', encoding='utf-8') as f:
-        json.dump({"type": "FeatureCollection", "features": allowed_routes}, f, indent=2, ensure_ascii=False)
-
-    add_length_to_vhc_allowed()    
+        json.dump({"type": "FeatureCollection", "features": allowed_routes}, f, indent=2, ensure_ascii=False) 
 
     #✅ Sau khi ghi xong, đồng bộ sang static/
     sync_geojson_file('vhc_allowed.geojson')

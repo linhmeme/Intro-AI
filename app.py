@@ -1,13 +1,14 @@
 from flask import Flask
 from routes import map_bp, algo_bp
 from condition import filter_bp, update_bp, final_bp
-from utils.reset import reset_weights
+from config import WEIGHTS_FILE
 from utils.sync_geojson import sync_geojson_selected
+from utils.reset_weights import reset_weights
 
 def create_app():
-    reset_weights()
     app = Flask(__name__)
-
+    
+    reset_weights(WEIGHTS_FILE)
     sync_geojson_selected(['area.geojson', 'boundary.geojson'])
     
     app.register_blueprint(map_bp)
